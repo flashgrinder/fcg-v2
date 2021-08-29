@@ -1,12 +1,11 @@
 :root {
-    --color-blue: #4A72CE;
-    --color-blue-opaciti-85: rgba(74, 114, 206, 0.85);
-    --color-light-blue: #5FB2D6;
-    --color-dark-blue: #43b1e0;
-    --color-dark: #555555;
-	--color-gray: #EFEFEF;
-	--color-white: #FFFFFF;
-    --color-dark-gray: #A9A9A9;
+    --gradient-blue: linear-gradient(88.3deg, #1165A1 0%, #4FA4E1 100%);
+    --color-blue: #1165A1;
+    --color-blue-75: rgba(17, 101, 161, 0.75);
+    --color-dark: #333333;
+    --color-dark-gray: #555555;
+    --color-white: #FFFFFF;
+    --color-white-75: rgba(254, 254, 254, 0.75);
     --color-white-gray: #E5E5E5;
     --font-roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-gotham: "GothamPro", "Helvetica Neue", Helvetica, Arial, sans-serif;

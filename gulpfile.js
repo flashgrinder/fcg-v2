@@ -38,7 +38,7 @@ const source = {
 		fonts: './src/fonts/**/*.*',
 		img:   './src/img/**/*.*',
 		js:    './src/js/*.js',
-		libs: './src/libs/scripts.js'
+		libs: './src/libs/scripts-v2.js'
 	},
 	dist: {
 		html:  './dist',
@@ -87,7 +87,7 @@ function styles() {
 	
 	return gulp.src(source.src.sass)
 	.pipe(sass().on('error', sass.logError))
-	.pipe(concat('style.min.css'))
+	.pipe(concat('style-v2.min.css'))
 	.pipe(gcmq())
 	.pipe(postcss(plugins))
 	.pipe(gulp.dest(source.src.css))
@@ -96,7 +96,7 @@ function styles() {
 gulp.task('styles', styles);
 
 function js() {
-    const entry = 'scripts.js';
+    const entry = 'scripts-v2.js';
     const jsFolder = './src/libs/';
     return browserify({
         entries: [jsFolder + entry]

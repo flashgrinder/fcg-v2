@@ -14,10 +14,6 @@
     display: none !important;
 }
 
-.hide-medium {
-	@include medium(display, none !important);
-}
-
 .hide-tablet {
 	@include tablet(display, none !important);
 }
@@ -65,21 +61,20 @@
 /* Title */
 
 .title {
-    font-family: var(--font-gotham);
+    font-family: var(--font-roboto);
     font-style: normal;
     margin: 0;
     &--big {
-		font-size: 45px;
-        font-size: responsive 16px 45px;
-        font-range: 320px 1440px;
+        font-size: responsive 16px 65px;
+        font-range: 320px 1160px;
     }
     &--large {
-        font-size: responsive 20px 26px;
-        font-range: 1024px 1440px;
+        font-size: responsive 20px 40px;
+        font-range: 320px 1160px;
     }
     &--medium {
         font-size: responsive 18px 22px;
-        font-range: 1024px 1440px;
+        font-range: 320px 1160px;
     }
     &--small {
         font-size: 16px;
@@ -117,15 +112,13 @@
 }
 
 .title--indent {
-    margin: 0 0 30px 50px;
-    @include tablet(margin, 0 0 20px 15px);
-    @include mobile(margin, 0 0 20px 0);
+    margin-bottom: 45px;
 }
 
 /* Text */
 
 .text {
-    font-family: var(--font-roboto);
+    font-family: var(--font-gotham);
     font-style: normal;
     margin: 0;
 	&--black-gray {
@@ -140,19 +133,19 @@
 	&--big {
 		font-size: 22px;
         font-size: responsive 20px 30px;
-        font-range: 320px 1440px;
+        font-range: 320px 1160px;
 	}
 	&--large {
-		font-size: 22px;
+		font-size: 20px;
         font-size: responsive 14px 22px;
-        font-range: 320px 1440px;
+        font-range: 320px 1160px;
 	}
 	&--normal {
         font-size: responsive 12px 16px;
-        font-range: 1024px 1440px;
+        font-range: 320px 1160px;
 	}
 	&--small {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	&--tiny {
 		font-size: 10px;
