@@ -127,7 +127,7 @@
   --color-dark-gray: #555555;
   --color-white: #FFFFFF;
   --color-white-75: rgba(254, 254, 254, 0.75);
-  --color-white-gray: #E5E5E5;
+  --color-white-gray: #EDF0F3;
   --font-roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-gotham: "GothamPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -225,8 +225,18 @@ img {
   background-color: var(--color-white);
 }
 
+.bg--white-gray {
+  background-color: var(--color-white-gray);
+}
+
 .bg--dark {
   background-color: var(--color-dark);
+}
+
+/* Padding */
+
+.block-padding {
+  padding: 100px 0 100px;
 }
 
 /* Links */

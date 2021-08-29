@@ -42,9 +42,17 @@
     &--white {
         background-color: var(--color-white);
     }
+    &--white-gray {
+        background-color: var(--color-white-gray);
+    }
     &--dark {
         background-color: var(--color-dark);
     }
+}
+
+/* Padding */
+.block-padding {
+    padding: 100px 0 100px;
 }
 
 /* Links */
