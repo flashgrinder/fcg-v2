@@ -353,6 +353,14 @@ img {
   margin: 0;
 }
 
+.text--blue {
+  color: var(--color-blue);
+}
+
+.text--blue-75 {
+  color: var(--color-blue-75);
+}
+
 .text--dark {
   color: var(--color-dark);
 }
@@ -388,20 +396,20 @@ img {
 }
 
 .text--large {
-  font-size: calc(14px + 8 * ((100vw - 320px) / 840));
+  font-size: calc(18px + 2 * ((100vw - 320px) / 840));
 }
 
 @media screen and (min-width: 1160px) {
 
   .text--large {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 320px) {
 
   .text--large {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -510,6 +518,77 @@ img {
 .page__container {
   max-width: 1920px;
   margin: 0 auto;
+}
+
+/* Add-services */
+
+.add-services__columns {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+}
+
+/* Card-services */
+
+.card-services {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 368px;
+}
+
+.card-services ~ .card-services {
+  margin-left: 28px;
+}
+
+.card-services__figure {
+  height: 296px;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.card-services__img {
+  display: block;
+  height: 296px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-services__body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  height: 100%;
+  box-shadow: 0px -15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 5px 10px 10px;
+  margin-top: -25px;
+  padding-bottom: 25px;
+}
+
+.card-services__title {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 0 38px;
+  text-align: center;
+}
+
+.card-services__copy {
+  padding: 0 14px;
+}
+
+.card-services__action {
+  margin-top: 25px;
+  padding: 0 25px;
 }
 
 /* Benefits */

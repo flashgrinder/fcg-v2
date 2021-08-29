@@ -131,6 +131,12 @@
     font-family: var(--font-gotham);
     font-style: normal;
     margin: 0;
+	&--blue {
+		color: var(--color-blue); 
+	}
+	&--blue-75 {
+		color: var(--color-blue-75); 
+	}
 	&--dark {
 		color: var(--color-dark); 
 	}
@@ -148,7 +154,7 @@
         font-range: 320px 1160px;
 	}
 	&--large {
-        font-size: responsive 14px 22px;
+        font-size: responsive 18px 20px;
         font-range: 320px 1160px;
 	}
 	&--normal {
