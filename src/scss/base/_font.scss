@@ -36,6 +36,30 @@
 
 @font-face {
 	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Medium.eot');
+	src: url('../fonts/Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+	url('../fonts/Roboto/Roboto-Medium.woff') format('woff'),
+	url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-MediumItalic.eot');
+	src: url('../fonts/Roboto/Roboto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Roboto/Roboto-MediumItalic.woff2') format('woff2'),
+	url('../fonts/Roboto/Roboto-MediumItalic.woff') format('woff'),
+	url('../fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
 	src: url('../fonts/Roboto/Roboto-Bold.eot');
 	src: url('../fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
 	url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),

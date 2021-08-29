@@ -5,7 +5,7 @@ module.exports = {
 	offset: "30px",
 	container: {
 		maxWidth: "1200px",
-		fields: "30px"
+		fields: "20px"
 	},
 	breakPoints: {
 		tablet: {

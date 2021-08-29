@@ -1,0 +1,72 @@
+.faq__details ~ .faq__details {
+    margin-top: 45px;
+}
+
+.faq__details {
+    position: relative;
+    min-height: 0rem;
+    max-height: 3rem;
+    transition: min-height .15s linear, max-height .5s linear;
+    overflow: hidden;
+}
+
+.faq__summary {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    outline: 0;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.faq__summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq__summary::-moz-list-bullet {
+    list-style-type: none;
+}
+
+.faq__summary::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 27px;
+    height: 12px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAyNyAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMUwxMi4xMTQ5IDExLjY3MDNDMTIuODg4OSAxMi40MTMzIDE0LjExMTEgMTIuNDEzMyAxNC44ODUxIDExLjY3MDNMMjYgMSIgc3Ryb2tlPSIjNzI3MjcyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==') no-repeat 50% 50% / 27px 12px;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform .2s linear;
+}
+
+.faq__summary ~ * {
+    margin-top: 25px;
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+
+.faq__details[open] {
+    min-height: 2em;
+    max-height: 30em;
+}
+
+.faq__details[open] .faq__summary ~ * {
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.faq__details[open] .faq__summary::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq__question {
+    display: inline-block;
+}
+
+.faq__question:hover {
+    text-decoration: underline;
+}
+
+.faq__answer {
+    margin-top: 20px;
+}

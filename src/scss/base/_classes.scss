@@ -90,14 +90,11 @@
     &--tiny {
         font-size: 12px;
     }
-    &--orange {
-        color: var(--color-orange);
-    }
     &--white {
         color: var(--color-white);
 	}
-    &--black-gray {
-		color: var(--color-black-gray); 
+    &--dark {
+		color: var(--color-dark); 
 	}
 	&--w-light {
 		font-weight: 300;
@@ -129,22 +126,23 @@
     font-family: var(--font-gotham);
     font-style: normal;
     margin: 0;
-	&--black-gray {
-		color: var(--color-black-gray); 
+	&--dark {
+		color: var(--color-dark); 
 	}
-	&--orange {
-		color: var(--color-orange);
+	&--dark-gray {
+		color: var(--color-dark-gray); 
+	}
+	&--dark-gray-low {
+		color: var(--color-dark-gray-low); 
 	}
 	&--white {
 		color: var(--color-white);
 	}
 	&--big {
-		font-size: 22px;
-        font-size: responsive 20px 30px;
+        font-size: responsive 20px 22px;
         font-range: 320px 1160px;
 	}
 	&--large {
-		font-size: 20px;
         font-size: responsive 14px 22px;
         font-range: 320px 1160px;
 	}

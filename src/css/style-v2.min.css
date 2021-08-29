@@ -29,6 +29,24 @@
 
 @font-face {
   font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Medium.eot");
+  src: url("../fonts/Roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-MediumItalic.eot");
+  src: url("../fonts/Roboto/Roboto-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-MediumItalic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-MediumItalic.woff") format("woff"), url("../fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-Bold.eot");
   src: url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
@@ -125,6 +143,7 @@
   --color-blue-75: rgba(17, 101, 161, 0.75);
   --color-dark: #333333;
   --color-dark-gray: #555555;
+  --color-dark-gray-low: #727272;
   --color-white: #FFFFFF;
   --color-white-75: rgba(254, 254, 254, 0.75);
   --color-white-gray: #EDF0F3;
@@ -146,41 +165,6 @@ img {
   max-width: 100%;
 }
 
-.debug {
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-}
-
-.debug > div {
-  height: inherit;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.debug > div > div {
-  height: inherit;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.debug > div > div > div {
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: calc(8.33333% - 30px);
-  height: inherit;
-  outline: 1px solid #ff0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
 /* Animation */
 
 /* Base Classes */
@@ -190,13 +174,13 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .container-full {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Hide */
@@ -320,16 +304,12 @@ img {
   font-size: 12px;
 }
 
-.title--orange {
-  color: var(--color-orange);
-}
-
 .title--white {
   color: var(--color-white);
 }
 
-.title--black-gray {
-  color: var(--color-black-gray);
+.title--dark {
+  color: var(--color-dark);
 }
 
 .title--w-light {
@@ -368,12 +348,16 @@ img {
   margin: 0;
 }
 
-.text--black-gray {
-  color: var(--color-black-gray);
+.text--dark {
+  color: var(--color-dark);
 }
 
-.text--orange {
-  color: var(--color-orange);
+.text--dark-gray {
+  color: var(--color-dark-gray);
+}
+
+.text--dark-gray-low {
+  color: var(--color-dark-gray-low);
 }
 
 .text--white {
@@ -381,14 +365,13 @@ img {
 }
 
 .text--big {
-  font-size: 22px;
-  font-size: calc(20px + 10 * ((100vw - 320px) / 840));
+  font-size: calc(20px + 2 * ((100vw - 320px) / 840));
 }
 
 @media screen and (min-width: 1160px) {
 
   .text--big {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -400,7 +383,6 @@ img {
 }
 
 .text--large {
-  font-size: 20px;
   font-size: calc(14px + 8 * ((100vw - 320px) / 840));
 }
 
@@ -481,7 +463,7 @@ img {
   margin: 0;
   font-family: var(--font-roboto);
   font-size: 16px;
-  line-height: 122.19%;
+  line-height: 1.22;
   background-color: var(--color-white);
   overflow-x: hidden;
 }
@@ -489,6 +471,85 @@ img {
 .page__container {
   max-width: 1920px;
   margin: 0 auto;
+}
+
+/* FAQ */
+
+.faq__details ~ .faq__details {
+  margin-top: 45px;
+}
+
+.faq__details {
+  position: relative;
+  min-height: 0rem;
+  max-height: 3rem;
+  transition: min-height .15s linear, max-height .5s linear;
+  overflow: hidden;
+}
+
+.faq__summary {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  outline: 0;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.faq__summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+.faq__summary::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 27px;
+  height: 12px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAyNyAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMUwxMi4xMTQ5IDExLjY3MDNDMTIuODg4OSAxMi40MTMzIDE0LjExMTEgMTIuNDEzMyAxNC44ODUxIDExLjY3MDNMMjYgMSIgc3Ryb2tlPSIjNzI3MjcyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==") no-repeat 50% 50%/27px 12px;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+          transform: translateY(-50%) rotate(0deg);
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear;
+}
+
+.faq__summary ~ * {
+  margin-top: 25px;
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+.faq__details[open] {
+  min-height: 2em;
+  max-height: 30em;
+}
+
+.faq__details[open] .faq__summary ~ * {
+  opacity: 1;
+  transition: opacity .5s linear;
+}
+
+.faq__details[open] .faq__summary::before {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.faq__question {
+  display: inline-block;
+}
+
+.faq__question:hover {
+  text-decoration: underline;
+}
+
+.faq__answer {
+  margin-top: 20px;
 }
 
 /* ANOTHER MODULES */
@@ -514,25 +575,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .debug > div {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .debug > div > div {
-    margin-left: -7.5px;
-    margin-right: -7.5px;
-  }
-
-  .debug > div > div > div {
-    margin-left: 7.5px;
-    margin-right: 7.5px;
-  }
-
-  .debug > div > div > div {
-    width: calc(8.33333% - 15px);
-  }
-
   .container {
     padding-left: 15px;
     padding-right: 15px;
