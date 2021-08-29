@@ -217,9 +217,13 @@ img {
   background-color: var(--color-dark);
 }
 
+.bg--blue {
+  background-color: var(--color-blue);
+}
+
 /* Padding */
 
-.block-padding {
+.block--padding {
   padding: 100px 0 100px;
 }
 
@@ -512,6 +516,8 @@ img {
   margin-top: 95px;
   text-align: center;
 }
+
+/* Main-form */
 
 /* FAQ */
 
