@@ -141,10 +141,12 @@
   --gradient-blue: linear-gradient(88.3deg, #1165A1 0%, #4FA4E1 100%);
   --color-blue: #1165A1;
   --color-blue-low: #196DAA;
+  --color-darkcyan: #0484AB;
   --color-blue-75: rgba(17, 101, 161, 0.75);
   --color-dark: #333333;
   --color-dark-gray: #555555;
   --color-dark-gray-low: #727272;
+  --color-milk: #FEFEFE;
   --color-white: #FFFFFF;
   --color-white-75: rgba(254, 254, 254, 0.75);
   --color-white-gray: #EDF0F3;
@@ -225,7 +227,7 @@ img {
 /* Padding */
 
 .block--padding {
-  padding: 100px 0 100px;
+  padding: 50px 0 50px;
 }
 
 /* Links */
@@ -359,6 +361,10 @@ img {
 
 .text--blue-75 {
   color: var(--color-blue-75);
+}
+
+.text--darkcyan {
+  color: var(--color-darkcyan);
 }
 
 .text--dark {
@@ -518,6 +524,72 @@ img {
 .page__container {
   max-width: 1920px;
   margin: 0 auto;
+}
+
+/* Why-us */
+
+.why-us__cards {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 55px;
+  display: flex;
+  -webkit-align-content: stretch;
+          align-content: stretch;
+}
+
+.why-us__action {
+  text-align: center;
+  margin-top: 95px;
+}
+
+/* Card-features */
+
+.card-features {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(20% - 30px);
+  background: var(--color-milk);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+  padding: 25px 13px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.card-features__icon {
+  width: 110px;
+  height: 110px;
+  background: var(--color-blue);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.card-features__img {
+  display: block;
+  width: 65px;
+  height: auto;
+}
+
+.card-features__title {
+  margin-top: 15px;
+  text-align: center;
 }
 
 /* Add-services */
@@ -828,5 +900,15 @@ img {
 
   .hide-mobile {
     display: none !important;
+  }
+
+  .why-us__cards {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+
+  .card-features {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
   }
 }
