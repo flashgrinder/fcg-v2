@@ -1,38 +1,48 @@
 .header-page {
     padding-top: 100px;
-    // padding-bottom: 121px;
+    @include tablet-block {
+        padding-top: 70px;
+    }
+    @include mobile-block {
+        padding-top: 45px;
+    }
 }
 
 .header-page__body {
     position: relative;
 }
 
-.header-page__pic {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.header-page__img {
-    display: block;
-}
 .header-page__wrapp {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     padding-right: 67px;
+    @include mobile-block {
+        padding-right: 0;
+    }
 }
 .header-page__heading {
-    position: relative;
-    z-index: 10;
+    // position: relative;
+    // z-index: 10;
     display: flex;
     flex-direction: column;
     max-width: 690px;
     padding-bottom: 121px;
+    @include tablet-block {
+        max-width: 500px;
+    }
+    @include mobile-block {
+        padding-bottom: 70px;
+    }
 }
+
+
 
 .header-page__wrapper-title {
     display: flex;
+    @include tablet-block {
+        position: relative;
+    }
 }
 
 .header-page__title {
@@ -46,14 +56,59 @@
     padding: 35px 15px;
     align-self: center;
     margin-left: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tablet-block {
+        position: absolute;
+        left: -165px;
+        top: 50%;
+        margin-left: 0;
+        transform: translateY(-50%);
+    }
+    @include mobile-block {
+        width: 91px;
+        height: 91px;
+        left: -125px;
+    }
+}
+
+.header-page__logo-img {
+    display: block;
+}
+
+.header-page__pic {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.header-page__img {
+    display: block;
+    max-height: 550px;
+    @include tablet-block {
+        max-height: 450px;
+    }
+    @include mobile-block {
+        max-height: 282px;
+    }
 }
 
 .header-page__subtitle {
     margin-top: 45px;
+    @include mobile-block {
+        margin-top: 25px;
+    }
 }
 
 .header-page__action {
     margin-top: 153px;
+    @include tablet-block {
+        margin-top: 50px;
+    }
+    @include mobile-block {
+        margin-top: 35px;
+    }
 }
 
 .header-page__icon {
@@ -63,4 +118,7 @@
     transform: translateX(-50%);
     cursor: pointer;
     z-index: 10;
+    @include mobile-block {
+        bottom: 15px;
+    }
 }

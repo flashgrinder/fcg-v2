@@ -1,11 +1,23 @@
 .why-us__cards {
-    @include row-flex();
-    margin-top: 55px;
-    display: flex;
-    align-content: stretch;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 248px));
+    grid-auto-rows: 1fr;
+    grid-gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+    @include tablet-block {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-gap: 15px;
+    }
+    @include mobile-block {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-column-gap: 35px;
+        grid-row-gap: 25px;
+    }
 }
 
 .why-us__action {
     text-align: center;
-    margin-top: 95px;
+    margin-top: 45px;
 }

@@ -1,5 +1,8 @@
 .benefits__row ~ .benefits__row {
     margin-top: 45px;
+    @include mobile-block {
+        margin-top: 25px;
+    }
 }
 
 .benefits__text {
@@ -9,4 +12,7 @@
 .benefits__action {
     margin-top: 95px;
     text-align: center;
+    @include mobile-block {
+        margin-top: 35px;
+    }
 }

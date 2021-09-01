@@ -81,7 +81,7 @@
     font-style: normal;
     margin: 0;
     &--big {
-        font-size: responsive 16px 65px;
+        font-size: responsive 35px 65px;
         font-range: 320px 1160px;
     }
     &--large {
@@ -126,6 +126,7 @@
 
 .title--indent {
     margin-bottom: 45px;
+    @include mobile(margin-bottom, 25px);
 }
 
 /* Text */
@@ -156,15 +157,15 @@
 		color: var(--color-white);
 	}
 	&--big {
-        font-size: responsive 20px 22px;
+        font-size: responsive 18px 22px;
         font-range: 320px 1160px;
 	}
 	&--large {
-        font-size: responsive 18px 20px;
+        font-size: responsive 16px 20px;
         font-range: 320px 1160px;
 	}
 	&--normal {
-        font-size: responsive 12px 16px;
+        font-size: responsive 14px 16px;
         font-range: 320px 1160px;
 	}
 	&--small {

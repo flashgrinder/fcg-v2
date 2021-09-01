@@ -15,7 +15,6 @@
 
 .button--blue {
     font-family: var(--font-gotham);
-    font-size: 18px;
     padding: 15px 45px;
     color: var(--color-white);
     background: var(--gradient-blue);
@@ -24,11 +23,16 @@
 
 .button--white {
     font-family: var(--font-gotham);
-    font-size: 18px;
     padding: 10px 45px;
     color: var(--color-blue);
     background: var(--color-white);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+}
+
+.button--blue,
+.button--white {
+    font-size: 18px;
+    @include tablet(font-size, 16px);
 }
 
 .button .button__span {
@@ -39,7 +43,10 @@
 .button .button__span::before {
     content: attr(data-hover-btn);
     position: absolute;
+    width: 100%;
     top: 200%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .button:hover > .button__span {

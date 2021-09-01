@@ -1,12 +1,23 @@
 .card-services {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 368px;
+    // width: 100%;
+    // max-width: 368px;
 }
 
 .card-services ~ .card-services {
-    margin-left: 28px;
+    // margin-left: 28px;
+}
+
+.card-services:nth-child(3) {
+    @include tablet-block {
+        // align-self: stretch;
+        grid-column: 1/3;
+    }
+    @include tablet-block {
+        // align-self: stretch;
+        grid-column: auto;
+    }
 }
 
 .card-services__figure {
@@ -48,4 +59,8 @@
 .card-services__action {
     margin-top: 25px;
     padding: 0 25px;
+    text-align: center;
+    @include tablet-block {
+        padding: 0;
+    }
 }

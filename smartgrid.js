@@ -12,7 +12,7 @@ module.exports = {
 				width: '1024px'
 		},
 		mobile: {
-				width: "767px",
+				width: "940px",
 				offset: "15px",
 				fields: "15px"
 		},
