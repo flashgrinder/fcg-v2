@@ -4,6 +4,9 @@
 
 .form.form--page {
     display: flex;
+    @include mobile-block {
+        flex-direction: column;
+    }
 }
 
 .form__field {
@@ -45,6 +48,10 @@
 
 .form--page .form__field ~ .form__field {
     margin-left: 20px;
+    @include mobile-block {
+        margin-left: 0;
+        margin-top: 25px;
+    }
 }
 
 .form--page .form__action.form__field {
@@ -74,6 +81,12 @@
 
 .form__input::placeholder {
     color: var(--color-white-75);
+}
+
+.form__action {
+    @include mobile-block {
+        text-align: center;
+    }
 }
 
 .form__submit {

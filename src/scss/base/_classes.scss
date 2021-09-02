@@ -60,6 +60,9 @@
 .block {
     &--padding {
         padding: 50px 0 50px;
+        @include mobileMD-block {
+            padding: 25px 0 25px;
+        }
     }
 }
 

@@ -1,3 +1,9 @@
+.why-us {
+    @include mobileXS-block {
+        padding-top: 100px;
+    }
+}
+
 .why-us__cards {
     margin-top: 45px;
     display: grid;
@@ -15,9 +21,16 @@
         grid-column-gap: 35px;
         grid-row-gap: 25px;
     }
+    @include mobileXS-block {
+        margin-top: 25px;
+        grid-gap: 15px;
+    }
 }
 
 .why-us__action {
     text-align: center;
     margin-top: 45px;
+    @include mobileXS-block {
+        margin-top: 25px;
+    }
 }

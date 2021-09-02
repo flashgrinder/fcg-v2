@@ -12,14 +12,17 @@ module.exports = {
 				width: '1024px'
 		},
 		mobile: {
-				width: "940px",
-				offset: "15px",
-				fields: "15px"
+				width: "940px"
 		},
-		mobileXL: {
-				width: "567px"
+		mobileMD: {
+				width: "768px"
 		},
 		mobileXS: {
+				width: "576px",
+                fields: "10px",
+                offset: "10px"
+		},
+		mobileXSS: {
 				width: "400px"
 		}
 	},

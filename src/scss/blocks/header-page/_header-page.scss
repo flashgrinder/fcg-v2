@@ -6,6 +6,9 @@
     @include mobile-block {
         padding-top: 45px;
     }
+    @include mobileXS-block {
+        padding-top: 25px;
+    }
 }
 
 .header-page__body {
@@ -20,10 +23,13 @@
     @include mobile-block {
         padding-right: 0;
     }
+    @include mobileXS-block {
+        justify-content: flex-start;
+        margin-bottom: -25px;
+    }
 }
+
 .header-page__heading {
-    // position: relative;
-    // z-index: 10;
     display: flex;
     flex-direction: column;
     max-width: 690px;
@@ -34,14 +40,21 @@
     @include mobile-block {
         padding-bottom: 70px;
     }
+    @include mobileXS-block {
+        position: relative;
+        z-index: 10;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
 }
 
 
 
 .header-page__wrapper-title {
+    position: relative;
     display: flex;
-    @include tablet-block {
-        position: relative;
+    @include mobileXS-block {
+        position: static;
     }
 }
 
@@ -53,9 +66,13 @@
     background: var(--color-white);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 35px 15px;
-    align-self: center;
-    margin-left: 38px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 135px;
+    height: 135px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,16 +88,32 @@
         height: 91px;
         left: -125px;
     }
+    @include mobileXS-block {
+        bottom: 160px;
+        right: 0;
+        top: auto;
+        width: 169px;
+        height: 169px;
+        left: auto;
+        transform: none;
+    }
 }
 
 .header-page__logo-img {
     display: block;
+    @include mobileXS-block {
+        width: 132px;
+    }
 }
 
 .header-page__pic {
     position: absolute;
     left: 0;
     bottom: 0;
+    @include mobileXS-block {
+        position: relative;
+        margin-top: 25px;
+    }
 }
 
 .header-page__img {
@@ -109,6 +142,16 @@
     @include mobile-block {
         margin-top: 35px;
     }
+    @include mobileXS-block {
+        margin-top: 0;
+    }
+}
+
+.header-page__action .button {
+    @include mobileXSS-block {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .header-page__icon {
@@ -120,5 +163,8 @@
     z-index: 10;
     @include mobile-block {
         bottom: 15px;
+    }
+    @include mobileMD-block {
+        bottom: -55px;
     }
 }

@@ -1,5 +1,8 @@
 .faq__details ~ .faq__details {
     margin-top: 45px;
+    @include mobileMD-block {
+        margin-top: 40px;
+    }
 }
 
 .faq__details {
