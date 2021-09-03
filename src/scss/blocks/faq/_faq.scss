@@ -1,3 +1,7 @@
+.faq__heading {
+    @include mobileXS(text-align, center);
+}
+
 .faq__details ~ .faq__details {
     margin-top: 45px;
     @include mobileMD-block {

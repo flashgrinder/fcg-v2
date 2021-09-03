@@ -1472,6 +1472,10 @@ img {
     padding-top: 100px;
   }
 
+  .why-us__heading {
+    text-align: center;
+  }
+
   .why-us__cards {
     margin-top: 25px;
     grid-gap: 15px;
@@ -1498,12 +1502,28 @@ img {
     font-size: 10px;
   }
 
+  .add-services-slider__heading {
+    text-align: center;
+  }
+
   .add-services-slider__arrow--prev {
     left: 0;
   }
 
   .add-services-slider__arrow--next {
     right: 0;
+  }
+
+  .benefits__heading {
+    text-align: center;
+  }
+
+  .main-form__heading {
+    text-align: center;
+  }
+
+  .faq__heading {
+    text-align: center;
   }
 }
 

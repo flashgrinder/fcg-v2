@@ -1,6 +1,11 @@
 .add-services-slider__wrapper {
     position: relative;
 }
+
+.add-services-slider__heading {
+    @include mobileXS(text-align, center);
+}
+
 .add-services-slider__swiper.swiper-container {
     width: 100%;
     height: 100%;

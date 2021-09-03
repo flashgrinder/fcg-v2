@@ -4,6 +4,10 @@
     }
 }
 
+.why-us__heading {
+    @include mobileXS(text-align, center);
+}
+
 .why-us__cards {
     margin-top: 45px;
     display: grid;
