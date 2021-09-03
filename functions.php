@@ -1,5 +1,7 @@
 <?php
 
+    define('STANDART_DIR', get_stylesheet_directory_uri() . "/assets/");
+
     add_action('wp_enqueue_scripts', function() {
 
         wp_enqueue_style('style-v2', get_stylesheet_directory_uri() . '/assets/css/style-v2.min.css', ['new-styles','styles-ver-2.0'], '2.0.0');

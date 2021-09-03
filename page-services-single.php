@@ -16,14 +16,14 @@
 
                         </h1>
                         <div class="header-page__logo">
-                            <img src="img/logo-1c.png" alt="Логотип 1С" class="header-page__logo-img">
+                            <img src="<?php echo STANDART_DIR; ?>img/logo-1c.png" alt="Логотип 1С" class="header-page__logo-img">
                         </div>
                     </div>
                     <p class="header-page__subtitle text text--big text--dark-gray text--w-regular">
                         1С:БухОбслуживание. ФИНКОМ АККАУНТИНГ - лучшее решение для Вашего бизнеса
                     </p>
                     <div class="header-page__pic">
-                        <img src="img/upload/header-page-img.png" alt="" class="header-page__img">
+                        <img src="<?php echo STANDART_DIR; ?>img/upload/header-page-img.png" alt="" class="header-page__img">
                     </div>
                     <div class="header-page__action">
                         <a href="javascript:;" class="button button--blue">
