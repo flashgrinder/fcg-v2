@@ -26,7 +26,7 @@
                         <img src="<?php echo STANDART_DIR; ?>img/upload/header-page-img.png" alt="" class="header-page__img">
                     </div>
                     <div class="header-page__action">
-                        <a href="javascript:;" class="button button--blue">
+                        <a href="javascript:;" class="button button--blue btn-modal">
                             <span class="button__span" data-hover-btn="Рассчитать стоимость">Рассчитать стоимость</span>
                         </a>
                     </div>
@@ -71,7 +71,7 @@
                 <div class="card-features">
                     <div class="card-features__header">
                         <div class="card-features__icon">
-                            <img src="img/card-features/icon-features-1.svg" alt="" class="card-features__img">
+                            <img src="<?php echo STANDART_DIR; ?>img/card-features/icon-features-1.svg" alt="" class="card-features__img">
                         </div>
                     </div>
                     <div class="card-features__body">
@@ -85,7 +85,7 @@
                 <div class="card-features">
                     <div class="card-features__header">
                         <div class="card-features__icon">
-                            <img src="img/card-features/icon-features-2.svg" alt="" class="card-features__img">
+                            <img src="<?php echo STANDART_DIR; ?>img/card-features/icon-features-2.svg" alt="" class="card-features__img">
                         </div>
                     </div>
                     <div class="card-features__body">
@@ -99,7 +99,7 @@
                 <div class="card-features">
                     <div class="card-features__header">
                         <div class="card-features__icon">
-                            <img src="img/card-features/icon-features-3.svg" alt="" class="card-features__img">
+                            <img src="<?php echo STANDART_DIR; ?>img/card-features/icon-features-3.svg" alt="" class="card-features__img">
                         </div>
                     </div>
                     <div class="card-features__body">
@@ -113,7 +113,7 @@
                 <div class="card-features">
                     <div class="card-features__header">
                         <div class="card-features__icon">
-                            <img src="img/card-features/icon-features-5.svg" alt="" class="card-features__img">
+                            <img src="<?php echo STANDART_DIR; ?>img/card-features/icon-features-5.svg" alt="" class="card-features__img">
                         </div>
                     </div>
                     <div class="card-features__body">
@@ -127,7 +127,7 @@
                 <!-- /. Card-features -->
             </div>
             <div class="why-us__action">
-                <a href="javascript:;" class="button button--blue">
+                <a href="javascript:;" class="button button--blue btn-modal">
                     <span class="button__span" data-hover-btn="Оставить заявку">Оставить заявку</span>
                 </a>
             </div>
@@ -167,7 +167,7 @@
                                         проблем, возникающих при ведении бизнеса.
                                     </p>
                                     <div class="card-services__action">
-                                        <a href="javascript:;" class="card-services__button button button--blue">
+                                        <a href="javascript:;" class="card-services__button button button--blue btn-modal">
                                             <span class="button__span" data-hover-btn="Получить консультацию">Получить
                                                 консультацию</span>
                                         </a>
@@ -198,7 +198,7 @@
                                         возможности наложения штрафов.
                                     </p>
                                     <div class="card-services__action">
-                                        <a href="javascript:;" class="card-services__button button button--blue">
+                                        <a href="javascript:;" class="card-services__button button button--blue btn-modal">
                                             <span class="button__span" data-hover-btn="Получить консультацию">Получить
                                                 консультацию</span>
                                         </a>
@@ -228,7 +228,7 @@
                                         налоговому праву
                                     </p>
                                     <div class="card-services__action">
-                                        <a href="javascript:;" class="card-services__button button button--blue">
+                                        <a href="javascript:;" class="card-services__button button button--blue btn-modal">
                                             <span class="button__span" data-hover-btn="Получить консультацию">Получить
                                                 консультацию</span>
                                         </a>
@@ -258,7 +258,7 @@
                                         налоговому праву
                                     </p>
                                     <div class="card-services__action">
-                                        <a href="javascript:;" class="card-services__button button button--blue">
+                                        <a href="javascript:;" class="card-services__button button button--blue btn-modal">
                                             <span class="button__span" data-hover-btn="Получить консультацию">Получить
                                                 консультацию</span>
                                         </a>
@@ -363,7 +363,7 @@
                 </div>
             </div>
             <div class="benefits__action">
-                <a href="javascript:;" class="button button--blue">
+                <a href="javascript:;" class="button button--blue btn-modal">
                     <span class="button__span" data-hover-btn="Оставить заявку">Оставить заявку</span>
                 </a>
             </div>
