@@ -6,7 +6,6 @@ function init() {
 
     const addServicesSlider = new Swiper(".add-services-slider__swiper", {
         slidesPerView: 1,
-        loop: true,
         navigation: {
             nextEl: '.add-services-slider__arrow--next',
             prevEl: '.add-services-slider__arrow--prev'
