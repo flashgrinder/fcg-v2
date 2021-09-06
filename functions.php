@@ -9,3 +9,6 @@
         wp_enqueue_script('scripts-v2', get_stylesheet_directory_uri() . '/assets/js/scripts-v2.min.js', [], '2.0.0', true );
 
     });
+
+    /* Битрикс 24 */
+    include_once(__DIR__ . '/inc/bitrix24.php');
