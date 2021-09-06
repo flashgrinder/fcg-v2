@@ -150,7 +150,7 @@
                             <article class="card-services">
                                 <aside class="card-services__aside">
                                     <div class="card-services__figure">
-                                        <img src="https://picsum.photos/500/300" alt="" class="card-services__img">
+                                        <img src="<?php echo STANDART_DIR; ?>img/upload/services-slide-1.jpg" alt="" class="card-services__img">
                                     </div>
                                 </aside>
                                 <div class="card-services__body bg--white">
@@ -181,7 +181,7 @@
                             <article class="card-services">
                                 <aside class="card-services__aside">
                                     <div class="card-services__figure">
-                                        <img src="https://picsum.photos/500/300" alt="" class="card-services__img">
+                                        <img src="<?php echo STANDART_DIR; ?>img/upload/services-slide-2.jpg" alt="" class="card-services__img">
                                     </div>
                                 </aside>
                                 <div class="card-services__body bg--white">
@@ -212,37 +212,7 @@
                             <article class="card-services">
                                 <aside class="card-services__aside">
                                     <div class="card-services__figure">
-                                        <img src="https://picsum.photos/500/300" alt="" class="card-services__img">
-                                    </div>
-                                </aside>
-                                <div class="card-services__body bg--white">
-                                    <h3 class="card-services__title text text--large text--blue text--w-regular">
-
-                                        Юридическое <br> сопровождение
-
-                                    </h3>
-                                    <p class="card-services__copy text text--small text--blue-75 text--w-light">
-                                        В бухгалтерии нередко приходится сталкиваться с проблемами, для решения которых
-                                        не обойтись без грамотного юриста. В комплекс услуг от компании FINCOM group
-                                        обязательно входят юридические консультации экспертов по корпоративному и
-                                        налоговому праву
-                                    </p>
-                                    <div class="card-services__action">
-                                        <a href="javascript:;" class="card-services__button button button--blue btn-modal">
-                                            <span class="button__span" data-hover-btn="Получить консультацию">Получить
-                                                консультацию</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- /. Card-services -->
-                        </div>
-                        <div class="add-services-slider__swiper-slide swiper-slide">
-                            <!-- Card-services -->
-                            <article class="card-services">
-                                <aside class="card-services__aside">
-                                    <div class="card-services__figure">
-                                        <img src="https://picsum.photos/500/300" alt="" class="card-services__img">
+                                        <img src="<?php echo STANDART_DIR; ?>img/upload/services-slide-3.jpg" alt="" class="card-services__img">
                                     </div>
                                 </aside>
                                 <div class="card-services__body bg--white">
