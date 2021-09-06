@@ -1,15 +1,15 @@
-.faq__heading {
+.v2.faq__heading {
     @include mobileXS(text-align, center);
 }
 
-.faq__details ~ .faq__details {
+.v2.faq__details ~ .v2.faq__details {
     margin-top: 45px;
     @include mobileMD-block {
         margin-top: 40px;
     }
 }
 
-.faq__details {
+.v2.faq__details {
     position: relative;
     min-height: 0rem;
     max-height: 10rem;
@@ -17,7 +17,7 @@
     overflow: hidden;
 }
 
-.faq__summary {
+.v2.faq__summary {
     position: relative;
     width: 100%;
     display: inline-block;
@@ -29,15 +29,15 @@
     }
 }
 
-.faq__summary::-webkit-details-marker {
+.v2.faq__summary::-webkit-details-marker {
     display: none;
 }
 
-.faq__summary::-moz-list-bullet {
+.v2.faq__summary::-moz-list-bullet {
     list-style-type: none;
 }
 
-.faq__summary::before {
+.v2.faq__summary::before {
     content: '';
     position: absolute;
     right: 0;
@@ -53,34 +53,34 @@
     }
 }
 
-.faq__summary ~ * {
+.v2.faq__summary ~ * {
     margin-top: 25px;
     opacity: 0;
     transition: opacity .5s linear;
 }
 
-.faq__details[open] {
+.v2.faq__details[open] {
     min-height: 2em;
     max-height: 30em;
 }
 
-.faq__details[open] .faq__summary ~ * {
+.v2.faq__details[open] .faq__summary ~ * {
     opacity: 1;
     transition: opacity .5s linear;
 }
 
-.faq__details[open] .faq__summary::before {
+.v2.faq__details[open] .faq__summary::before {
     transform: translateY(-50%) rotate(180deg);
 }
 
-.faq__question {
+.v2.faq__question {
     display: inline-block;
 }
 
-.faq__question:hover {
+.v2.faq__question:hover {
     text-decoration: underline;
 }
 
-.faq__answer {
+.v2.faq__answer {
     margin-top: 20px;
 }

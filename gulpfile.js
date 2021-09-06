@@ -41,7 +41,7 @@ const source = {
 		libs: './src/libs/scripts-v2.js'
 	},
 	dist: {
-		html:  './assetsdist',
+		html:  './assets',
 		css:   './assets/css',
 		fonts: './assets/fonts',
 		img:   './assets/img',
