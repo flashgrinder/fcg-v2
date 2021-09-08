@@ -11,16 +11,14 @@
                 <div class="header-page__heading">
                     <div class="header-page__wrapper-title">
                         <h1 class="header-page__title title title--big title--dark title--w-bold">
-
                             Бухгалтерское сопровождение
-
                         </h1>
                         <div class="header-page__logo">
                             <img src="<?php echo STANDART_DIR; ?>img/logo-1c.png" alt="Логотип 1С" class="header-page__logo-img">
                         </div>
                     </div>
                     <p class="header-page__subtitle text text--big text--dark-gray text--w-regular">
-                        1С:БухОбслуживание. ФИНКОМ АККАУНТИНГ - лучшее решение для Вашего бизнеса
+                        1С:БухОбслуживание. ФИНКОМ АККАУНТИНГ — лучшее решение для Вашего бизнеса
                     </p>
                     <div class="header-page__pic">
                         <img src="<?php echo STANDART_DIR; ?>img/upload/header-page-img.png" alt="" class="header-page__img">
@@ -46,9 +44,7 @@
     <section class="why-us block--padding bg--white">
         <div class="why-us__body container">
             <h2 class="why-us__heading title title--large title--dark title--w-medium title--indent">
-
                 Почему мы?
-
             </h2>
             <div class="why-us__content wysiwyg text text--normal text--dark-gray">
                 <p>
@@ -76,9 +72,7 @@
                     </div>
                     <div class="card-features__body">
                         <h3 class="card-features__title text text--small text--darkcyan text--w-regular">
-
                             Команда квалифицированных специалистов
-
                         </h3>
                     </div>
                 </div>
@@ -90,9 +84,7 @@
                     </div>
                     <div class="card-features__body">
                         <h3 class="card-features__title text text--small text--darkcyan text--w-regular">
-
                             Комплексное бухгалтерское сопровождение
-
                         </h3>
                     </div>
                 </div>
@@ -104,9 +96,7 @@
                     </div>
                     <div class="card-features__body">
                         <h3 class="card-features__title text text--small text--darkcyan text--w-regular">
-
                             Безопасное облачное хранилище 1С
-
                         </h3>
                     </div>
                 </div>
@@ -118,9 +108,7 @@
                     </div>
                     <div class="card-features__body">
                         <h3 class="card-features__title text text--small text--darkcyan text--w-regular">
-
                             Деятельность компании застрахована
-
                         </h3>
                     </div>
                 </div>
@@ -155,21 +143,20 @@
                                 </aside>
                                 <div class="card-services__body bg--white">
                                     <h3 class="card-services__title text text--large text--blue text--w-regular">
-
                                         Бухгалтерское <br> сопровождение
-
                                     </h3>
                                     <p class="card-services__copy text text--small text--blue-75 text--w-light">
                                         Принцип нашей работы - обеспечить комплексную и полномасштабную работу над вашим
                                         проектом. Мы не просто подсчитываем и подаем бухгалтерскую отчетность, а ведем
-                                        полноценный бухгалтерский учет, оповещаем о всех возможных “Подводных камнях” и
+                                        полноценный бухгалтерский учет, оповещаем о всех возможных “подводных камнях” и
                                         ищем пути решения
                                         проблем, возникающих при ведении бизнеса.
                                     </p>
                                     <div class="card-services__action">
                                         <a href="javascript:;" class="card-services__button button button--blue btn-modal">
-                                            <span class="button__span" data-hover-btn="Получить консультацию">Получить
-                                                консультацию</span>
+                                            <span class="button__span" data-hover-btn="Получить консультацию">
+                                                Получить консультацию
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -186,9 +173,7 @@
                                 </aside>
                                 <div class="card-services__body bg--white">
                                     <h3 class="card-services__title text text--large text--blue text--w-regular">
-
-                                        Оптимизация <br> налогооблажения
-
+                                        Оптимизация <br> налогообложения
                                     </h3>
                                     <p class="card-services__copy text text--small text--blue-75 text--w-light">
                                         Специалисты компании FINCOM group не только помогут разобраться во всех
@@ -199,8 +184,9 @@
                                     </p>
                                     <div class="card-services__action">
                                         <a href="javascript:;" class="card-services__button button button--blue btn-modal">
-                                            <span class="button__span" data-hover-btn="Получить консультацию">Получить
-                                                консультацию</span>
+                                            <span class="button__span" data-hover-btn="Получить консультацию">
+                                                Получить консультацию
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -217,9 +203,7 @@
                                 </aside>
                                 <div class="card-services__body bg--white">
                                     <h3 class="card-services__title text text--large text--blue text--w-regular">
-
                                         Юридическое <br> сопровождение
-
                                     </h3>
                                     <p class="card-services__copy text text--small text--blue-75 text--w-light">
                                         В бухгалтерии нередко приходится сталкиваться с проблемами, для решения которых
@@ -229,8 +213,9 @@
                                     </p>
                                     <div class="card-services__action">
                                         <a href="javascript:;" class="card-services__button button button--blue btn-modal">
-                                            <span class="button__span" data-hover-btn="Получить консультацию">Получить
-                                                консультацию</span>
+                                            <span class="button__span" data-hover-btn="Получить консультацию">
+                                                Получить консультацию
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -263,16 +248,12 @@
     <section class="benefits bg--white block--padding">
         <div class="benefits__body container">
             <h2 class="benefits__heading title title--large title--dark title--w-medium title--indent">
-
                 Преимущества работы с нами
-
             </h2>
             <div class="benefits__rows">
                 <div class="benefits__row">
                     <h3 class="benefits__title text text--big text--dark-gray text--w-regular">
-
                         Командная работа
-
                     </h3>
                     <div class="benefits__text text text--normal text--dark-gray-low text--w-light">
                         Над каждым проектом работает группа специалистов, которая оперативно подключается к решению
@@ -282,9 +263,7 @@
                 </div>
                 <div class="benefits__row">
                     <h3 class="benefits__title text text--big text--dark-gray text--w-regular">
-
                         Снижение затрат
-
                     </h3>
                     <div class="benefits__text text text--normal text--dark-gray-low text--w-light">
                         Специалисты, работающие над проектом, используют ровно столько времени, сколько требуется для
@@ -296,9 +275,7 @@
                 </div>
                 <div class="benefits__row">
                     <h3 class="benefits__title text text--big text--dark-gray text--w-regular">
-
                         Улучшение качества бизнес-процессов
-
                     </h3>
                     <div class="benefits__text text text--normal text--dark-gray-low text--w-light">
                         Участие в каждом проекте высококвалифицированных специалистов увеличивает скорость и качество
@@ -308,9 +285,7 @@
                 </div>
                 <div class="benefits__row">
                     <h3 class="benefits__title text text--big text--dark-gray text--w-regular">
-
                         Режим одного окна
-
                     </h3>
                     <div class="benefits__text text text--normal text--dark-gray-low text--w-light">
                         Все контакты происходят через одного специалиста, который поможет решить текущие вопросы,
@@ -320,9 +295,7 @@
                 </div>
                 <div class="benefits__row">
                     <h3 class="benefits__title text text--big text--dark-gray text--w-regular">
-
                         Безопасность
-
                     </h3>
                     <div class="benefits__text text text--normal text--dark-gray-low text--w-light">
                         В нашей компании предоставляют гарантию конфиденциальности полученной от клиента информации. Все
