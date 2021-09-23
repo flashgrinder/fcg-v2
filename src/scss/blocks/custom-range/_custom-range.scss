@@ -1,0 +1,214 @@
+.custom-range {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1;
+    z-index: 1;
+}
+
+.custom-range__num {
+    position: absolute;
+    opacity: .75;
+    bottom: -15px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.custom-range__num--first {
+    left: 0;
+}
+
+.custom-range__num--last {
+    right: 0;
+}
+
+.custom-range__container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.custom-range__bubble {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    width: 40px;
+    height: 27px;
+    border-radius: 5px;
+}
+
+.custom-range__fake-track {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background: rgba(254, 254, 254, 0.15);
+}
+
+.custom-range__slide {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.custom-range__slide:focus {
+    outline: none;
+}
+
+.custom-range__slide::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    background-color: rgba(254, 254, 254, 0.15);
+    border: none;
+    border-color: transparent;
+}
+
+.custom-range__slide:focus::-webkit-slider-runnable-track {
+    background-color: rgba(254, 254, 254, 0.15);
+}
+
+.custom-range__slide::-webkit-slider-thumb {
+    position: relative;
+    width: 50px;
+    height: 10px;
+    margin: -8px 0 0 0;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    border: 0;
+    border-color: transparent;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 1;
+}
+
+.custom-range__slide::-webkit-slider-thumb:active {
+    background-color: transparent;
+}
+
+.custom-range__slide::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    background-color: rgba(254, 254, 254, 0.15);
+    border: none;
+    border-color: transparent;
+}
+
+.custom-range__slide::-moz-range-thumb {
+    position: relative;
+    width: 50px;
+    height: 10px;
+    margin: -8px 0 0 0;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    border: 0;
+    border-color: transparent;
+    box-shadow: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 1;
+}
+
+.custom-range__slide::-moz-range-thumb:active {
+    background-color: transparent;
+}
+
+.custom-range__slide::-moz-focus-outer {
+    border: 0;
+}
+
+.custom-range__slide::-ms-track {
+    width: 100%;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    background: transparent;
+    border: none;
+    border-color: transparent;
+}
+
+.custom-range__slide::-ms-fill-lower {
+    background: var(--color-blue-low);
+}
+
+.custom-range__slide::-ms-fill-upper {
+    background: rgba(254, 254, 254, 0.15);
+}
+
+.custom-range__slide::-ms-thumb {
+    position: relative;
+    width: 50px;
+    height: 10px;
+    margin: -8px 0 0 0;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    border: 0;
+    border-color: transparent;
+    box-shadow: none;
+    appearance: none;
+    z-index: 1;
+}
+
+.custom-range__slide::-ms-thumb:active {
+    background-color: transparent;
+}
+
+.custom-range__slide::-ms-tooltip {
+    display: none;
+}
+
+.custom-range__slide {
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.custom-range__slide::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+.custom-range__slide:focus::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+.custom-range__slide::-moz-range-track {
+    background: transparent;
+}
+
+.custom-range__slide::-ms-fill-lower {
+    background: transparent;
+}
+
+.custom-range__slide::-ms-fill-upper {
+    background: transparent;
+}

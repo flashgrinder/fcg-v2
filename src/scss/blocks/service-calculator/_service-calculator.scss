@@ -1,0 +1,67 @@
+.service-calculator__subheading {
+    display: block;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.service-calculator__top {
+    display: flex;
+}
+
+.service-calculator__top,
+.service-calculator__middle {
+    margin-bottom: 45px;
+}
+
+.service-calculator__tarif {
+    margin-right: 55px;
+    min-width: 450px;
+}
+
+.service-calculator__ownership {
+    min-width: 312px;
+}
+
+.service-calculator__system-tax {
+    max-width: 353px;
+}
+
+.service-calculator__headline {
+    margin-bottom: 15px;
+}
+
+.service-calculator__slide {
+    margin-top: 45px;
+}
+
+.service-calculator__custom-range {
+    width: 100%;
+}
+
+.service-calculator__title-total {
+    margin-bottom: 21px;
+}
+
+.service-calculator__total {
+    display: flex;
+}
+
+.service-calculator__workers {
+    margin-left: 146px;
+}
+
+.service-calculator__price,
+.service-calculator__quantity {
+    font-size: 40px;
+    padding: 1px 25px 1px;
+    border-radius: 5px;
+}
+
+.service-calculator__quantity {
+    display: flex;
+    align-items: center;
+}
+
+.service-calculator__quantity-icon {
+    margin-left: 15px;
+}
