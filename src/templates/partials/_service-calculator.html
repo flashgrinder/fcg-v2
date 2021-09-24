@@ -22,16 +22,16 @@
                                 <div class="custom-select__arrow arrow"></div>
                             </div>
                             <div class="custom-select__options bg--blue-low">
-                                <span class="custom-select__option is-selected text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option custom-select__option--tarif is-selected text text--white text--normal text--w-regular" data-tarif="full-service">
                                     Комплексный сервис 1С: Бухобслуживание
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="reporting">
                                     Сервис 1С: Бухобслуживание. Отчетность
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="personnel-records">
                                     Кадровый учет и расчет ЗП
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="salary">
                                     Зарплата
                                 </span>
                             </div>
@@ -51,10 +51,10 @@
                                 <div class="custom-select__arrow arrow"></div>
                             </div>
                             <div class="custom-select__options bg--blue-low">
-                                <span class="custom-select__option is-selected text text--white text--normal text--w-regular" data-value="1">
+                                <span class="custom-select__option custom-select__option--ownership is-selected text text--white text--normal text--w-regular" data-ownership="bussines-without-workers">
                                     ИП без работников
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="2">
+                                <span class="custom-select__option custom-select__option--ownership text text--white text--normal text--w-regular" data-ownership="bussines-workers">
                                     Юр. лица и ИП с работниками
                                 </span>
                             </div>
@@ -76,25 +76,25 @@
                                 <div class="custom-select__arrow arrow"></div>
                             </div>
                             <div class="custom-select__options bg--blue-low">
-                                <span class="custom-select__option is-selected text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option is-selected text text--white text--normal text--w-regular" data-tax="">
                                     УСН «Доходы»
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
                                     УСН «Доходы - расходы»
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
                                     Патент + УСН «Доходы − расходы»
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
                                     Патент + ОСН
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
                                     Патент
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
                                     ОСН
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-value="">
+                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
                                     ЕСХН
                                 </span>
                             </div>
@@ -126,7 +126,7 @@
                             Цена в месяц
                         </h3>
                         <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
-                            15 000 ₽
+                            0 ₽
                         </div>
                     </div>
                     <div class="service-calculator__workers">
@@ -153,3 +153,173 @@
     </div>
 </section>
 <!-- /. Service-calculator -->
+<script>
+
+    // const tarifs = [
+    //     {
+    //         name: 'full-service'
+    //     },
+    //     {
+    //         name: 'reporting'
+    //     },
+    //     {
+    //         name: 'personnel-records'
+    //     },
+    //     {
+    //         name: 'salary'
+    //     }
+    // ];
+
+    const serviceObject = {
+        tarifs: [
+            {
+                name: 'full-service'
+            },
+            {
+                name: 'reporting'
+            },
+            {
+                name: 'personnel-records'
+            },
+            {
+                name: 'salary'
+            }
+        ],
+        ownerships: [
+            {
+                id: 100,
+                min: 1,
+                max: 10,
+                price: 1500,
+                workers: 1,
+                name: 'bussines-without-workers'
+            },
+            {
+                id: 101,
+                min: 11,
+                max: 20,
+                price: 2500,
+                workers: 2,
+                name: 'bussines-without-workers',
+            },
+            {
+                id: 102,
+                min: 21,
+                max: 30,
+                price: 3700,
+                workers: 5,
+                name: 'bussines-without-workers',
+            }
+        ]
+    }
+
+    console.log(serviceObject.tarifs[0].name);
+
+    // const ownership = [
+    //     {
+    //         name: 'bussines-without-workers',
+    //         price: 3000
+    //     },
+    //     {
+    //         name: 'bussines-workers',
+    //         price: 5000
+    //     }
+    // ];
+
+    const tax = [
+        {
+            name: 'usn',
+            price: 1500
+        }
+    ]
+
+    // console.log(ownership);
+    // let totalArr = serviceObject.ownership[0].price + tax[0].price;
+    // console.log(totalArr)
+
+    const rangeSlider = document.querySelector('.custom-range__slide');
+    // console.log(rangeSlider);
+
+    const totalPrice = document.querySelector('.service-calculator__price');
+    // console.log(totalPrice);
+
+    const optionTarifs = document.querySelectorAll('.custom-select__option--tarif');
+    // console.log(optionTarifs);
+
+    const optionOwnerships = document.querySelectorAll('.custom-select__option--ownership');
+    // console.log(optionTarifs);
+
+    const assignValue = (e) => {
+
+        // rangeSlider.addEventListener('input', () => {
+        //     totalPrice.innerHTML = rangeSlider.value;
+        // })
+
+        // console.log(totalPrice);
+        // return rangeSlider.value;
+
+        // rangeSlider.addEventListener('input', () => {
+
+        //     if( rangeSlider.value >= 100 ) {
+        //         totalPrice.innerHTML = '7000';
+        //     } else {
+        //         totalPrice.innerHTML = '5000';
+        //     }
+
+        // })
+        
+        // console.log(totalPrice.value);
+    }
+
+    // assignValue();
+
+    function takeActiveTarif( currentActiveTarif ) {
+
+        const dataAttrValue = currentActiveTarif.dataset.tarif;
+        const currentTarif = serviceObject.tarifs.find( tarif => tarif.name === dataAttrValue );
+        currentName = currentTarif.name;
+
+        return currentName;
+
+    }
+
+    function takeActiveOwnership( currentActiveOwnership ) {
+
+        const dataAttrValue = currentActiveOwnership.dataset.ownership;
+        const currentOwnership = serviceObject.ownerships.find( ownership => ownership.name === dataAttrValue );
+        currentName = currentOwnership.name;
+
+        return currentName;
+
+    }
+
+    for(const optionTarif of optionTarifs) {
+        
+        optionTarif.addEventListener('click', () => {
+
+            if ( takeActiveTarif(optionTarif) == 'reporting' ) {
+                totalPrice.innerHTML = '5599';
+            } else {
+                totalPrice.innerHTML = '4999';
+            }
+
+        })
+
+    }
+
+    for(const optionOwnership of optionOwnerships) {
+        
+        optionOwnership.addEventListener('click', () => {
+
+            if ( takeActiveOwnership(optionOwnership) == 'bussines-without-workers' ) {
+                totalPrice.innerHTML = '5599';
+            } else {
+                totalPrice.innerHTML = '4999';
+            }
+
+        })
+
+    }
+    
+
+</script>
