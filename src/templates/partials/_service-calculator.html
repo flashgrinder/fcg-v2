@@ -3,7 +3,7 @@
     <div class="service-calculator__body container">
         <h2 class="service-calculator__heading title title--large title--white title--w-medium title--indent">
             Рассчитать стоимость услуг
-            <span class="service-calculator__subheading text text--white text-w-regular">
+            <span class="service-calculator__subheading text text--white text--w-regular">
                 1С: БухОбслуживание. ФИНКОМ АККАУНТИНГ
             </span>
         </h2>
@@ -21,17 +21,17 @@
                                 </span>
                                 <div class="custom-select__arrow arrow"></div>
                             </div>
-                            <div class="custom-select__options bg--blue-low">
-                                <span class="custom-select__option custom-select__option--tarif is-selected text text--white text--normal text--w-regular" data-tarif="full-service">
+                            <div class="custom-select__options bg--blue-low js-select-tarif">
+                                <span class="js-calc-trigger custom-select__option custom-select__option--tarif is-selected text text--white text--normal text--w-regular" data-tarif="full-service">
                                     Комплексный сервис 1С: Бухобслуживание
                                 </span>
-                                <span class="custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="reporting">
+                                <span class="js-calc-trigger custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="reporting">
                                     Сервис 1С: Бухобслуживание. Отчетность
                                 </span>
-                                <span class="custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="personnel-records">
+                                <span class="js-calc-trigger custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="personnel-records">
                                     Кадровый учет и расчет ЗП
                                 </span>
-                                <span class="custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="salary">
+                                <span class="js-calc-trigger custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="salary">
                                     Зарплата
                                 </span>
                             </div>
@@ -50,11 +50,11 @@
                                 </span>
                                 <div class="custom-select__arrow arrow"></div>
                             </div>
-                            <div class="custom-select__options bg--blue-low">
-                                <span class="custom-select__option custom-select__option--ownership is-selected text text--white text--normal text--w-regular" data-ownership="bussines-without-workers">
+                            <div class="custom-select__options bg--blue-low js-select-ownership">
+                                <span class="js-calc-trigger custom-select__option custom-select__option--ownership is-selected text text--white text--normal text--w-regular" data-ownership="bussines-without-workers">
                                     ИП без работников
                                 </span>
-                                <span class="custom-select__option custom-select__option--ownership text text--white text--normal text--w-regular" data-ownership="bussines-workers">
+                                <span class="js-calc-trigger custom-select__option custom-select__option--ownership text text--white text--normal text--w-regular" data-ownership="bussines-workers">
                                     Юр. лица и ИП с работниками
                                 </span>
                             </div>
@@ -75,28 +75,28 @@
                                 </span>
                                 <div class="custom-select__arrow arrow"></div>
                             </div>
-                            <div class="custom-select__options bg--blue-low">
-                                <span class="custom-select__option is-selected text text--white text--normal text--w-regular" data-tax="">
+                            <div class="custom-select__options bg--blue-low js-select-tax">
+                                <span class="js-calc-trigger custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn">
                                     УСН «Доходы»
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
+                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="nalog">
                                     УСН «Доходы - расходы»
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
+                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="doxod">
                                     Патент + УСН «Доходы − расходы»
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
+                                <!-- <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="4">
                                     Патент + ОСН
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
+                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="5">
                                     Патент
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
+                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="6">
                                     ОСН
                                 </span>
-                                <span class="custom-select__option text text--white text--normal text--w-regular" data-tax="">
+                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="7">
                                     ЕСХН
-                                </span>
+                                </span> -->
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                         <span class="custom-range__num custom-range__num--first text text--white text--normal text--w-light">0</span>
                         <div class="custom-range__container">
                             <div class="custom-range__fake-track"></div>
-                            <input class="custom-range__slide" min="0" max="150" step="1" type="range">
+                            <input class="custom-range__slide js-operations-value" min="0" max="150" step="1" type="range">
                             <div class="custom-range__bubble text text--white text--normal text--w-regular bg--blue-low"></div>
                         </div>
                         <span class="custom-range__num custom-range__num--last text text--white text--normal text--w-light">150</span>
@@ -126,7 +126,7 @@
                             Цена в месяц
                         </h3>
                         <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
-                            0 ₽
+                            <span class="js-price-value">0</span> ₽
                         </div>
                     </div>
                     <div class="service-calculator__workers">
@@ -134,7 +134,7 @@
                             Работников
                         </h3>
                         <div class="service-calculator__quantity text text--white text--w-regular bg--blue-low">
-                            <div class="service-calculator__quantity-num">
+                            <div class="service-calculator__quantity-num js-workers-value">
                                 2
                             </div>
                             <div class="service-calculator__quantity-icon">
@@ -150,176 +150,461 @@
                 </div>
             </div>
         </div>
+        <div style="margin-bottom: 200px"></div>
+        <div class="service-calculator__container">
+            <div class="service-calculator__top">
+                <div class="service-calculator__tarif">
+                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+                        Тариф
+                    </h3>
+                    <div class="custom-select service-calculator__select service-calculator__select--tarifs">
+                        <div class="custom-select__container">
+                            <div class="custom-select__trigger bg--blue-low">
+                                <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+                                    Комплексный сервис 1С: Бухобслуживание
+                                </span>
+                                <div class="custom-select__arrow arrow"></div>
+                            </div>
+                            <div class="custom-select__options bg--blue-low js-select-tarif-reports">
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif is-selected text text--white text--normal text--w-regular" data-tarif="full-service">
+                                    Комплексный сервис 1С: Бухобслуживание
+                                </span>
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="reporting">
+                                    Сервис 1С: Бухобслуживание. Отчетность
+                                </span>
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="personnel-records">
+                                    Кадровый учет и расчет ЗП
+                                </span>
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="salary">
+                                    Зарплата
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-calculator__ownership">
+                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+                        Форма собственности
+                    </h3>
+                    <div class="custom-select service-calculator__select service-calculator__select--owhership">
+                        <div class="custom-select__container">
+                            <div class="custom-select__trigger bg--blue-low">
+                                <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+                                    ИП без работников
+                                </span>
+                                <div class="custom-select__arrow arrow"></div>
+                            </div>
+                            <div class="custom-select__options bg--blue-low js-select-ownership-reports">
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--ownership is-selected text text--white text--normal text--w-regular" data-ownership="bussines-without-workers">
+                                    ИП без работников
+                                </span>
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--ownership text text--white text--normal text--w-regular" data-ownership="bussines-workers">
+                                    Юр. лица и ИП с работниками
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-calculator__middle">
+                <div class="service-calculator__system-tax">
+                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+                        Система налогообложения
+                    </h3>
+                    <div class="custom-select service-calculator__select service-calculator__select--system-tax">
+                        <div class="custom-select__container">
+                            <div class="custom-select__trigger bg--blue-low">
+                                <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+                                    УСН «Доходы»
+                                </span>
+                                <div class="custom-select__arrow arrow"></div>
+                            </div>
+                            <div class="custom-select__options bg--blue-low js-select-tax-reports">
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn">
+                                    УСН «Доходы»
+                                </span>
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="nalog">
+                                    УСН «Доходы - расходы»
+                                </span>
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="doxod">
+                                    Патент + УСН «Доходы − расходы»
+                                </span>
+                                <!-- <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="4">
+                                    Патент + ОСН
+                                </span>
+                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="5">
+                                    Патент
+                                </span>
+                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="6">
+                                    ОСН
+                                </span>
+                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="7">
+                                    ЕСХН
+                                </span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-calculator__bottom">
+                <h3 class="service-calculator__title-total text text--big text--white text--w-regular">
+                    Итого:
+                </h3>
+                <div class="service-calculator__total">
+                    <div class="service-calculator__sum">
+                        <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+                            Цена в месяц
+                        </h3>
+                        <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
+                            <span class="js-price-value-reports">0</span> ₽
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-bottom: 200px"></div>
+        <div class="service-calculator__container">
+            <div class="service-calculator__top">
+                <div class="service-calculator__tarif">
+                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+                        Тариф
+                    </h3>
+                    <div class="custom-select service-calculator__select service-calculator__select--tarifs">
+                        <div class="custom-select__container">
+                            <div class="custom-select__trigger bg--blue-low">
+                                <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+                                    Комплексный сервис 1С: Бухобслуживание
+                                </span>
+                                <div class="custom-select__arrow arrow"></div>
+                            </div>
+                            <div class="custom-select__options bg--blue-low">
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif is-selected text text--white text--normal text--w-regular" data-tarif="full-service">
+                                    Комплексный сервис 1С: Бухобслуживание
+                                </span>
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="reporting">
+                                    Сервис 1С: Бухобслуживание. Отчетность
+                                </span>
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="personnel-records">
+                                    Кадровый учет и расчет ЗП
+                                </span>
+                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="salary">
+                                    Зарплата
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-calculator__ownership">
+                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+                        Форма собственности
+                    </h3>
+                 
+                    <input type="number" class="js-input-kadastr" min="1" max="150" value="50">
+                    <button class="js-calc-kadastr">Calc</button>
+                </div>
+            </div>
+            <div class="service-calculator__bottom">
+                <h3 class="service-calculator__title-total text text--big text--white text--w-regular">
+                    Итого:
+                </h3>
+                <div class="service-calculator__total">
+                    <div class="service-calculator__sum">
+                        <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+                            Цена в месяц
+                        </h3>
+                        <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
+                            <span class="js-price-value-kadastr">0</span> ₽
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- /. Service-calculator -->
 <script>
 
-    // const tarifs = [
-    //     {
-    //         name: 'full-service'
-    //     },
-    //     {
-    //         name: 'reporting'
-    //     },
-    //     {
-    //         name: 'personnel-records'
-    //     },
-    //     {
-    //         name: 'salary'
-    //     }
-    // ];
+   (function() {
+    const fullServiceArray = [
+        {
+            id: 99,
+            min: 1,
+            max: 75,
+            price: 1500,
+            workers: 1,
+            tax: 'usn',
+            ownership: 'bussines-without-workers'
+        },
+        {
+            id: 100,
+            min: 76,
+            max: 150,
+            price: 2500,
+            workers: 1,
+            tax: 'usn',
+            ownership: 'bussines-without-workers'
+        },
+        {
+            id: 101,
+            min: 1,
+            max: 150,
+            price: 3500,
+            workers: 2,
+            tax: 'nalog',
+            ownership: 'bussines-without-workers'
+        },
+        {
+            id: 103,
+            min: 1,
+            max: 150,
+            price: 3700,
+            workers: 5,
+            tax: 'doxod',
+            ownership: 'bussines-without-workers'
+        },
+        {
+            id: 104,
+            min: 1,
+            max: 150,
+            price: 33700,
+            workers: 5,
+            tax: 'usn',
+            ownership: 'bussines-workers'
+        },
+        {
+            id: 105,
+            min: 1,
+            max: 150,
+            price: 8900,
+            workers: 5,
+            tax: 'nalog',
+            ownership: 'bussines-workers'
+        },
+        {
+            id: 106,
+            min: 1,
+            max: 150,
+            price: 11900,
+            workers: 5,
+            tax: 'doxod',
+            ownership: 'bussines-workers'
+        },
+    ];
 
-    const serviceObject = {
-        tarifs: [
-            {
-                name: 'full-service'
-            },
-            {
-                name: 'reporting'
-            },
-            {
-                name: 'personnel-records'
-            },
-            {
-                name: 'salary'
+    const selectTarif = document.querySelector('.js-select-tarif');
+    const selectTax = document.querySelector('.js-select-tax');
+    const selectOwnership = document.querySelector('.js-select-ownership');
+
+    let currentTarif = selectTarif.querySelector('.is-selected').dataset.tarif;
+    let currentTax = selectTax.querySelector('.is-selected').dataset.tax;
+    let currentOwnership = selectOwnership.querySelector('.is-selected').dataset.ownership;
+
+    const calcTriggers = document.querySelectorAll('.js-calc-trigger');
+
+    const operationsValueEl = document.querySelector('.js-operations-value');
+    let operationsValue = operationsValueEl.value;
+
+    const priceValueEl = document.querySelector('.js-price-value');
+    const workersValueEl = document.querySelector('.js-workers-value');
+
+    calcTriggers.forEach(trigger => {
+        trigger.addEventListener('click', calc);
+    });
+
+    operationsValueEl.addEventListener('change', (e) => {
+        operationsValue = e.target.value;
+        calc();
+    })
+
+    function getCurrents() {
+        currentTarif = selectTarif.querySelector('.is-selected').dataset.tarif;
+        currentTax = selectTax.querySelector('.is-selected').dataset.tax;
+        currentOwnership = selectOwnership.querySelector('.is-selected').dataset.ownership;
+    }
+
+    function calc() {
+        setTimeout( () => {
+            getCurrents();
+            calculateSum();
+        }, 100)
+    }
+
+    function calculateSum() {
+        const filteredArrayOwnership = fullServiceArray.filter(item => item.ownership === currentOwnership);
+        const filteredArrayTax = filteredArrayOwnership.filter(item => item.tax === currentTax);
+        
+        // переиспользовать для кадастровый учёт и зп
+        filteredArrayTax.forEach(item => {
+            if (operationsValue >= item.min && operationsValue <= item.max) {
+                priceValueEl.innerHTML = divideNumber(item.price);
+                workersValueEl.innerHTML = item.workers;
             }
-        ],
-        ownerships: [
+        })
+        //
+    }
+
+    function divideNumber(x) {
+        return x.toLocaleString('ru-Ru', { minimumFractionDigits: 0 });
+    }
+
+    calc()
+   })();
+
+
+
+</script>
+<script>
+
+    (function() {
+        const fullServiceArrayKadastr = [
+            {
+                id: 99,
+                min: 1,
+                max: 75,
+                price: 1500,
+            },
             {
                 id: 100,
-                min: 1,
-                max: 10,
-                price: 1500,
-                workers: 1,
-                name: 'bussines-without-workers'
+                min: 76,
+                max: 150,
+                price: 1512300,
             },
-            {
-                id: 101,
-                min: 11,
-                max: 20,
-                price: 2500,
-                workers: 2,
-                name: 'bussines-without-workers',
-            },
-            {
-                id: 102,
-                min: 21,
-                max: 30,
-                price: 3700,
-                workers: 5,
-                name: 'bussines-without-workers',
-            }
-        ]
-    }
+        ];
 
-    console.log(serviceObject.tarifs[0].name);
+        const inputKadastr = document.querySelector('.js-input-kadastr');
+        const buttonKadastr = document.querySelector('.js-calc-kadastr');
+        const priceValueElKadastr = document.querySelector('.js-price-value-kadastr');
+        
+        let inputKadastrValue = inputKadastr.value;
 
-    // const ownership = [
-    //     {
-    //         name: 'bussines-without-workers',
-    //         price: 3000
-    //     },
-    //     {
-    //         name: 'bussines-workers',
-    //         price: 5000
-    //     }
-    // ];
+        inputKadastr.addEventListener('input', () => {
+            inputKadastrValue = inputKadastr.value;
+        });
+        inputKadastr.addEventListener('change', calc);
 
-    const tax = [
-        {
-            name: 'usn',
-            price: 1500
+        buttonKadastr.addEventListener('click', calc)
+
+
+        function calc() {
+            setTimeout( () => {
+                calculateSum();
+            }, 100)
         }
-    ]
 
-    // console.log(ownership);
-    // let totalArr = serviceObject.ownership[0].price + tax[0].price;
-    // console.log(totalArr)
+        function calculateSum() {
+            
+            // переиспользовать для кадастровый учёт и зп
+            fullServiceArrayKadastr.forEach(item => {
+                if (inputKadastrValue >= item.min && inputKadastrValue <= item.max) {
+                    priceValueElKadastr.innerHTML = divideNumber(item.price);
+                }
+            })
+            //
+        }
 
-    const rangeSlider = document.querySelector('.custom-range__slide');
-    // console.log(rangeSlider);
+        function divideNumber(x) {
+            return x.toLocaleString('ru-Ru', { minimumFractionDigits: 0 });
+        }
 
-    const totalPrice = document.querySelector('.service-calculator__price');
-    // console.log(totalPrice);
+        calc()
+    })();
 
-    const optionTarifs = document.querySelectorAll('.custom-select__option--tarif');
-    // console.log(optionTarifs);
+</script>
+<script>
 
-    const optionOwnerships = document.querySelectorAll('.custom-select__option--ownership');
-    // console.log(optionTarifs);
+    (function() {
+        const fullServiceArrayReports = [
+        {
+            id: 99,
+            price: 1500,
+            workers: 1,
+            tax: 'usn',
+            ownership: 'bussines-without-workers'
+        },
+        {
+            id: 101,
+            price: 3500,
+            workers: 2,
+            tax: 'nalog',
+            ownership: 'bussines-without-workers'
+        },
+        {
+            id: 103,
+            price: 3700,
+            workers: 5,
+            tax: 'doxod',
+            ownership: 'bussines-without-workers'
+        },
+        {
+            id: 104,
+            price: 33700,
+            workers: 5,
+            tax: 'usn',
+            ownership: 'bussines-workers'
+        },
+        {
+            id: 105,
+            price: 8900,
+            workers: 5,
+            tax: 'nalog',
+            ownership: 'bussines-workers'
+        },
+        {
+            id: 106,
+            price: 11900,
+            workers: 5,
+            tax: 'doxod',
+            ownership: 'bussines-workers'
+        },
+    ];
 
-    const assignValue = (e) => {
+    const selectTarifReports = document.querySelector('.js-select-tarif-reports');
+    const selectTaxReports = document.querySelector('.js-select-tax-reports');
+    const selectOwnershipReports = document.querySelector('.js-select-ownership-reports');
 
-        // rangeSlider.addEventListener('input', () => {
-        //     totalPrice.innerHTML = rangeSlider.value;
-        // })
+    let currentTarifReports = selectTarifReports.querySelector('.is-selected').dataset.tarif;
+    let currentTaxReports = selectTaxReports.querySelector('.is-selected').dataset.tax;
+    let currentOwnershipReports = selectOwnershipReports.querySelector('.is-selected').dataset.ownership;
 
-        // console.log(totalPrice);
-        // return rangeSlider.value;
+    const calcTriggersReports = document.querySelectorAll('.js-calc-trigger-reports');
 
-        // rangeSlider.addEventListener('input', () => {
+    const priceValueElReports = document.querySelector('.js-price-value-reports');
 
-        //     if( rangeSlider.value >= 100 ) {
-        //         totalPrice.innerHTML = '7000';
-        //     } else {
-        //         totalPrice.innerHTML = '5000';
-        //     }
+    calcTriggersReports.forEach(trigger => {
+        trigger.addEventListener('click', calc);
+    });
 
-        // })
-        
-        // console.log(totalPrice.value);
+
+    function getCurrents() {
+        currentTarifReports = selectTarifReports.querySelector('.is-selected').dataset.tarif;
+        currentTaxReports = selectTaxReports.querySelector('.is-selected').dataset.tax;
+        currentOwnershipReports = selectOwnershipReports.querySelector('.is-selected').dataset.ownership;
     }
 
-    // assignValue();
-
-    function takeActiveTarif( currentActiveTarif ) {
-
-        const dataAttrValue = currentActiveTarif.dataset.tarif;
-        const currentTarif = serviceObject.tarifs.find( tarif => tarif.name === dataAttrValue );
-        currentName = currentTarif.name;
-
-        return currentName;
-
+    function calc() {
+        setTimeout( () => {
+            getCurrents();
+            calculateSum();
+        }, 100)
     }
 
-    function takeActiveOwnership( currentActiveOwnership ) {
-
-        const dataAttrValue = currentActiveOwnership.dataset.ownership;
-        const currentOwnership = serviceObject.ownerships.find( ownership => ownership.name === dataAttrValue );
-        currentName = currentOwnership.name;
-
-        return currentName;
-
-    }
-
-    for(const optionTarif of optionTarifs) {
-        
-        optionTarif.addEventListener('click', () => {
-
-            if ( takeActiveTarif(optionTarif) == 'reporting' ) {
-                totalPrice.innerHTML = '5599';
-            } else {
-                totalPrice.innerHTML = '4999';
+    function calculateSum() {
+        const filteredArrayOwnershipReports = fullServiceArrayReports.filter(item => item.ownership === currentOwnershipReports);
+        filteredArrayOwnershipReports.forEach(item => {
+            if (item.tax === currentTaxReports) {
+                priceValueElReports.innerHTML = divideNumber(item.price);
             }
-
-        })
-
-    }
-
-    for(const optionOwnership of optionOwnerships) {
+        });
         
-        optionOwnership.addEventListener('click', () => {
-
-            if ( takeActiveOwnership(optionOwnership) == 'bussines-without-workers' ) {
-                totalPrice.innerHTML = '5599';
-            } else {
-                totalPrice.innerHTML = '4999';
-            }
-
-        })
-
     }
-    
+
+    function divideNumber(x) {
+        return x.toLocaleString('ru-Ru', { minimumFractionDigits: 0 });
+    }
+
+    calc()
+    })();
+
+
 
 </script>
