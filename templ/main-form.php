@@ -9,7 +9,7 @@
                     echo "Get a free consultation ";
                 }
                 elseif($currentLanguage == 'ru'){
-                    echo "Получить бесплатную консультацию";
+                    echo "Получить консультацию";
                 }
             ?>
         </h2>
