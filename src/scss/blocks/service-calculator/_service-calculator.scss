@@ -65,3 +65,16 @@
 .service-calculator__quantity-icon {
     margin-left: 15px;
 }
+
+.tab__content {
+    display: none;
+}
+// .accordion-item__label {
+//     display: none;
+// }
+// .tab--active .accordion-item__label{
+//     display: block;
+// }
+.tab--active .tab__content {
+    display: block;
+}

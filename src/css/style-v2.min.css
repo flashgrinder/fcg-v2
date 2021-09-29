@@ -887,6 +887,14 @@ img {
   margin-left: 15px;
 }
 
+.tab__content {
+  display: none;
+}
+
+.tab--active .tab__content {
+  display: block;
+}
+
 /* Custom-select */
 
 .custom-select,
@@ -1198,6 +1206,45 @@ img {
 
 .custom-range__slide::-ms-fill-upper {
   background: transparent;
+}
+
+/* Custom-input */
+
+.custom-input {
+  position: relative;
+  width: 100%;
+}
+
+.custom-input__field {
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: 16px;
+  padding: 11px 52px 10px 15px;
+  background: var(--color-blue-low);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  color: var(--color-white-75);
+  border: 1px solid var(--color-white-75);
+  outline: 0;
+  border-radius: 5px;
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.custom-input__button {
+  position: absolute;
+  right: 0;
+  padding: 13px 15px 12px;
+  border: none;
+  border-radius: 5px;
+  color: var(--color-blue);
+  background: var(--color-white);
+  min-width: 122px;
+}
+
+.custom-input__button:active {
+  opacity: 0.75;
 }
 
 /* Benefits */

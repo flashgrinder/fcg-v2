@@ -288,7 +288,7 @@
                         <div class="service-calculator__tarif">
                             <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                        Тариф
+                        Тариф:
 
                     </h3>
                             <div class="custom-select service-calculator__select service-calculator__select--tarifs">
@@ -302,22 +302,22 @@
                                         <div class="custom-select__arrow arrow"></div>
                                     </div>
                                     <div class="custom-select__options bg--blue-low js-select-tarif">
-                                        <span class="js-calc-trigger custom-select__option custom-select__option--tarif is-selected text text--white text--normal text--w-regular" data-tarif="full-service">
+                                        <span class="tab tab--active accordion-active js-calc-trigger custom-select__option custom-select__option--tarif is-selected text text--white text--normal text--w-regular" data-actab-group="0" data-actab-id="0" data-tarif="full-service">
 
                                     Комплексный сервис 1С: Бухобслуживание
 
                                 </span>
-                                        <span class="js-calc-trigger custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="reporting">
+                                        <span class="tab custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-actab-group="0" data-actab-id="1" data-tarif="reporting">
 
                                     Сервис 1С: Бухобслуживание. Отчетность
 
                                 </span>
-                                        <span class="js-calc-trigger custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="personnel-records">
+                                        <span class="tab custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-actab-group="0" data-actab-id="2" data-tarif="personnel-records">
 
                                     Кадровый учет и расчет ЗП
 
                                 </span>
-                                        <span class="js-calc-trigger custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="salary">
+                                        <span class="tab custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-actab-group="0" data-actab-id="3" data-tarif="salary">
 
                                     Зарплата
 
@@ -327,102 +327,252 @@
                             </div>
                         </div>
                         <div class="service-calculator__ownership">
-                            <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+                            <!-- Ownership -->
+                            <div class="service-calculator__tab-container tab__container tab--active" data-actab-group="0" data-actab-id="0">
+                                <div class="service-calculator__tab-content tab__content">
 
-                        Форма собственности
+                                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                    </h3>
-                            <div class="custom-select service-calculator__select service-calculator__select--owhership">
-                                <div class="custom-select__container">
-                                    <div class="custom-select__trigger bg--blue-low">
-                                        <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+                                Форма собственности:
 
-                                    ИП без работников
+                            </h3>
+                                    <div class="custom-select service-calculator__select service-calculator__select--owhership">
+                                        <div class="custom-select__container">
+                                            <div class="custom-select__trigger bg--blue-low">
+                                                <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
 
-                                </span>
-                                        <div class="custom-select__arrow arrow"></div>
+                                            ИП без работников
+
+                                        </span>
+                                                <div class="custom-select__arrow arrow"></div>
+                                            </div>
+                                            <div class="custom-select__options bg--blue-low js-select-ownership">
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--ownership is-selected text text--white text--normal text--w-regular" data-ownership="bussines-without-workers">
+
+                                            ИП без работников
+
+                                        </span>
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--ownership text text--white text--normal text--w-regular" data-ownership="bussines-workers">
+
+                                            Юр. лица и ИП с работниками
+
+                                        </span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="custom-select__options bg--blue-low js-select-ownership">
-                                        <span class="js-calc-trigger custom-select__option custom-select__option--ownership is-selected text text--white text--normal text--w-regular" data-ownership="bussines-without-workers">
 
-                                    ИП без работников
-
-                                </span>
-                                        <span class="js-calc-trigger custom-select__option custom-select__option--ownership text text--white text--normal text--w-regular" data-ownership="bussines-workers">
-
-                                    Юр. лица и ИП с работниками
-
-                                </span>
-                                    </div>
                                 </div>
                             </div>
+
+                            <!-- Reports -->
+                            <div class="service-calculator__tab-container tab__container" data-actab-group="0" data-actab-id="1">
+                                <div class="service-calculator__tab-content tab__content">
+
+                                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+
+                                Форма собственности:
+
+                            </h3>
+                                    <div class="custom-select service-calculator__select service-calculator__select--reports">
+                                        <div class="custom-select__container">
+                                            <div class="custom-select__trigger bg--blue-low">
+                                                <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+
+                                            ИП без работников
+
+                                        </span>
+                                                <div class="custom-select__arrow arrow"></div>
+                                            </div>
+
+                                            <div class="custom-select__options bg--blue-low js-select-ownership-reports">
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--ownership is-selected text text--white text--normal text--w-regular" data-ownership="bussines-without-workers">
+
+                                            ИП без работников
+
+                                        </span>
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--ownership text text--white text--normal text--w-regular" data-ownership="bussines-workers">
+
+                                            Юр. лица и ИП с работниками
+
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Kadastr -->
+                            <div class="service-calculator__tab-container tab__container" data-actab-group="0" data-actab-id="2">
+                                <div class="service-calculator__tab-content tab__content">
+                                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+
+                                Количество сотрудников:
+
+                            </h3>
+                                    <div class="custom-input service-calculator__input service-calculator__input--kadastr tabs__pane">
+                                        <input type="number" class="custom-input__field js-input-kadastr" min="1" max="150" value="50">
+                                        <button class="custom-input__button js-calc-kadastr">Рассчитать</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Salary -->
+                            <div class="service-calculator__tab-container tab__container" data-actab-group="0" data-actab-id="3">
+                                <div class="service-calculator__tab-content tab__content">
+
+                                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+
+                                Количество сотрудников:
+
+                            </h3>
+                                    <div class="custom-input service-calculator__input service-calculator__input--salary tabs__pane">
+                                        <input type="number" class="custom-input__field js-input-salary" min="1" max="150" value="10">
+                                        <button class="custom-input__button js-calc-salary">Рассчитать</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="service-calculator__middle">
-                        <div class="service-calculator__system-tax">
-                            <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                        Система налогообложения
+                        <div class="service-calculator__tab-container tab__container tab--active" data-actab-group="0" data-actab-id="0">
+                            <div class="service-calculator__tab-content tab__content">
 
-                    </h3>
-                            <div class="custom-select service-calculator__select service-calculator__select--system-tax">
-                                <div class="custom-select__container">
-                                    <div class="custom-select__trigger bg--blue-low">
-                                        <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+                                <div class="service-calculator__system-tax">
+                                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                                    УСН «Доходы»
+                                Система налогообложения:
 
-                                </span>
-                                        <div class="custom-select__arrow arrow"></div>
-                                    </div>
-                                    <div class="custom-select__options bg--blue-low js-select-tax">
-                                        <span class="js-calc-trigger custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn">
+                            </h3>
+                                    <div class="custom-select service-calculator__select service-calculator__select--system-tax service-calculator__select--ownership">
+                                        <div class="custom-select__container">
+                                            <div class="custom-select__trigger bg--blue-low">
+                                                <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
 
-                                    УСН «Доходы»
+                                            УСН «Доходы»
 
-                                </span>
-                                        <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="nalog">
+                                        </span>
+                                                <div class="custom-select__arrow arrow"></div>
+                                            </div>
+                                            <div class="custom-select__options bg--blue-low js-select-tax">
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn">
 
-                                    УСН «Доходы - расходы»
+                                            УСН «Доходы»
 
-                                </span>
-                                        <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="doxod">
+                                        </span>
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="nalog">
 
-                                    Патент + УСН «Доходы − расходы»
+                                            УСН «Доходы - расходы»
 
-                                </span>
-                                        <!-- <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="4">
-                                    Патент + ОСН
-                                </span>
-                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="5">
-                                    Патент
-                                </span>
-                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="6">
-                                    ОСН
-                                </span>
-                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="7">
-                                    ЕСХН
-                                </span> -->
+                                        </span>
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="doxod">
+
+                                            Патент + УСН «Доходы − расходы»
+
+                                        </span>
+                                                <!-- <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="4">
+                                            Патент + ОСН
+                                        </span>
+                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="5">
+                                            Патент
+                                        </span>
+                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="6">
+                                            ОСН
+                                        </span>
+                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="7">
+                                            ЕСХН
+                                        </span> -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-                        <div class="service-calculator__slide">
-                            <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                        Количество операций в месяц
+                        <div class="service-calculator__tab-container tab__container" data-actab-group="0" data-actab-id="1">
+                            <div class="service-calculator__tab-content tab__content">
 
-                    </h3>
-                            <div class="custom-range service-calculator__custom-range">
-                                <span class="custom-range__num custom-range__num--first text text--white text--normal text--w-light">0</span>
-                                <div class="custom-range__container">
-                                    <div class="custom-range__fake-track"></div>
-                                    <input class="custom-range__slide js-operations-value" min="0" max="150" step="1" type="range">
-                                    <div class="custom-range__bubble text text--white text--normal text--w-regular bg--blue-low"></div>
+                                <!-- Reports -->
+                                <div class="service-calculator__system-tax">
+                                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+
+                                Система налогообложения:
+
+                            </h3>
+                                    <div class="custom-select service-calculator__select service-calculator__select--system-tax service-calculator__select--reports">
+                                        <div class="custom-select__container">
+                                            <div class="custom-select__trigger bg--blue-low">
+                                                <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+
+                                            УСН «Доходы»
+
+                                        </span>
+                                                <div class="custom-select__arrow arrow"></div>
+                                            </div>
+                                            <div class="custom-select__options bg--blue-low js-select-tax-reports">
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn">
+
+                                            УСН «Доходы»
+
+                                        </span>
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="nalog">
+
+                                            УСН «Доходы - расходы»
+
+                                        </span>
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="doxod">
+
+                                            Патент + УСН «Доходы − расходы»
+
+                                        </span>
+                                                <!-- <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="4">
+                                            Патент + ОСН
+                                        </span>
+                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="5">
+                                            Патент
+                                        </span>
+                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="6">
+                                            ОСН
+                                        </span>
+                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="7">
+                                            ЕСХН
+                                        </span> -->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="custom-range__num custom-range__num--last text text--white text--normal text--w-light">150</span>
+
                             </div>
                         </div>
+
+                        <div class="service-calculator__tab-container tab__container tab--active" data-actab-group="0" data-actab-id="0">
+                            <div class="service-calculator__tab-content tab__content">
+
+                                <div class="service-calculator__slide">
+                                    <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+
+                                Количество операций в месяц:
+
+                            </h3>
+                                    <div class="custom-range service-calculator__custom-range">
+                                        <span class="custom-range__num custom-range__num--first text text--white text--normal text--w-light">0</span>
+                                        <div class="custom-range__container">
+                                            <div class="custom-range__fake-track"></div>
+                                            <input class="custom-range__slide js-operations-value" min="0" max="150" step="1" type="range">
+                                            <div class="custom-range__bubble text text--white text--normal text--w-regular bg--blue-low"></div>
+                                        </div>
+                                        <span class="custom-range__num custom-range__num--last text text--white text--normal text--w-light">150</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                     <div class="service-calculator__bottom">
                         <h3 class="service-calculator__title-total text text--big text--white text--w-regular">
@@ -431,259 +581,101 @@
 
                 </h3>
                         <div class="service-calculator__total">
-                            <div class="service-calculator__sum">
-                                <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                            Цена в месяц
+                            <div class="service-calculator__tab-container tab__container tab--active" data-actab-group="0" data-actab-id="0">
+                                <div class="service-calculator__tab-content tab__content">
 
-                        </h3>
-                                <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
-                                    <span class="js-price-value">0</span> ₽
+                                    <div class="service-calculator__sum">
+                                        <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+
+                                    Цена в месяц:
+
+                                </h3>
+                                        <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
+                                            <span class="js-price-value">0</span> ₽
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="service-calculator__workers">
-                                <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                            Работников
+                            <div class="service-calculator__tab-container tab__container" data-actab-group="0" data-actab-id="1">
+                                <div class="service-calculator__tab-content tab__content">
 
-                        </h3>
-                                <div class="service-calculator__quantity text text--white text--w-regular bg--blue-low">
-                                    <div class="service-calculator__quantity-num js-workers-value">
-                                        2
+                                    <div class="service-calculator__sum">
+                                        <h3 class="service-calculator__headline text text--normal text--white text--w-light">
+
+                                    Цена за месяц (минимальный срок обслуживания 3 месяца):
+
+                                </h3>
+                                        <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
+                                            <span class="js-price-value-reports">0</span> ₽
+                                        </div>
                                     </div>
-                                    <div class="service-calculator__quantity-icon">
-                                        <svg class="service-calculator__quantity-svg" width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.35461 15.7625C9.63496 16.6482 11.1402 17.1209 12.6801 17.1209C14.745 17.1209 16.7253 16.2717 18.1854 14.7601C19.6455 13.2484 20.4658 11.1982 20.4658 9.06046C20.4658 7.46625 20.0092 5.90785 19.1537 4.58231C18.2982 3.25678 17.0822 2.22365 15.6596 1.61357C14.2369 1.00349 12.6715 0.843869 11.1612 1.15488C9.65092 1.4659 8.26364 2.23358 7.17479 3.36086C6.08594 4.48813 5.34443 5.92437 5.04401 7.48794C4.7436 9.05152 4.89778 10.6722 5.48706 12.1451C6.07635 13.6179 7.07426 14.8768 8.35461 15.7625Z"
-                                            fill="#FEFEFE" stroke="#FEFEFE" stroke-width="1.5" />
-                                            <path d="M5.86605 31.2271H19.491C20.7815 31.2271 22.0192 30.6963 22.9318 29.7516C23.8444 28.8068 24.357 27.5254 24.357 26.1893V22.1591C24.355 21.9822 24.3081 21.8091 24.221 21.657C24.1339 21.5049 24.0096 21.3792 23.8607 21.2926L19.7724 18.5195C15.6531 21.8193 10.0201 21.7522 5.33209 18.5195L1.47687 21.2926C1.33159 21.3817 1.21123 21.5085 1.12762 21.6604C1.04401 21.8124 1.00003 21.9842 1 22.1591V26.1893C1 27.5254 1.51267 28.8068 2.42523 29.7516C3.33779 30.6963 4.57549 31.2271 5.86605 31.2271Z"
-                                            fill="#FEFEFE" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" />
-                                            <path d="M23.3402 15.2243C25.1622 15.2243 26.9095 14.475 28.1979 13.1412C29.4862 11.8074 30.21 9.99844 30.21 8.11217C30.21 6.70552 29.8071 5.33045 29.0522 4.16086C28.2973 2.99127 27.2244 2.07969 25.9692 1.54138C24.7139 1.00308 23.3326 0.862237 22 1.13666"
-                                            stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" />
-                                            <path d="M29.598 16.4592L33.2053 18.906C33.3367 18.9825 33.4463 19.0934 33.5232 19.2276C33.6001 19.3618 33.6415 19.5146 33.6432 19.6706V23.2267C33.6432 24.4056 33.1909 25.5362 32.3857 26.3698C31.5805 27.2035 30.4884 27.6718 29.3497 27.6718H26.0865" stroke="#FEFEFE"
-                                            stroke-width="1.5" stroke-linecap="round" />
-                                        </svg>
-                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-bottom: 200px"></div>
-                <div class="service-calculator__container">
-                    <div class="service-calculator__top">
-                        <div class="service-calculator__tarif">
-                            <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                        Тариф
+                            <div class="service-calculator__tab-container tab__container" data-actab-group="0" data-actab-id="2">
+                                <div class="service-calculator__tab-content tab__content">
 
-                    </h3>
-                            <div class="custom-select service-calculator__select service-calculator__select--tarifs">
-                                <div class="custom-select__container">
-                                    <div class="custom-select__trigger bg--blue-low">
-                                        <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+                                    <div class="service-calculator__sum">
+                                        <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                                    Комплексный сервис 1С: Бухобслуживание
+                                    Цена за месяц:
 
-                                </span>
-                                        <div class="custom-select__arrow arrow"></div>
+                                </h3>
+                                        <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
+                                            <span class="js-price-value-kadastr">0</span> ₽
+                                        </div>
                                     </div>
-                                    <div class="custom-select__options bg--blue-low js-select-tarif-reports">
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif is-selected text text--white text--normal text--w-regular" data-tarif="full-service">
 
-                                    Комплексный сервис 1С: Бухобслуживание
-
-                                </span>
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="reporting">
-
-                                    Сервис 1С: Бухобслуживание. Отчетность
-
-                                </span>
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="personnel-records">
-
-                                    Кадровый учет и расчет ЗП
-
-                                </span>
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="salary">
-
-                                    Зарплата
-
-                                </span>
-                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="service-calculator__ownership">
-                            <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                        Форма собственности
+                            <div class="service-calculator__tab-container tab__container" data-actab-group="0" data-actab-id="3">
+                                <div class="service-calculator__tab-content tab__content">
 
-                    </h3>
-                            <div class="custom-select service-calculator__select service-calculator__select--owhership">
-                                <div class="custom-select__container">
-                                    <div class="custom-select__trigger bg--blue-low">
-                                        <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+                                    <div class="service-calculator__sum">
+                                        <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                                    ИП без работников
+                                    Цена за месяц:
 
-                                </span>
-                                        <div class="custom-select__arrow arrow"></div>
+                                </h3>
+                                        <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
+                                            <span class="js-price-value-salary">0</span> ₽
+                                        </div>
                                     </div>
-                                    <div class="custom-select__options bg--blue-low js-select-ownership-reports">
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--ownership is-selected text text--white text--normal text--w-regular" data-ownership="bussines-without-workers">
 
-                                    ИП без работников
-
-                                </span>
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--ownership text text--white text--normal text--w-regular" data-ownership="bussines-workers">
-
-                                    Юр. лица и ИП с работниками
-
-                                </span>
-                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="service-calculator__middle">
-                        <div class="service-calculator__system-tax">
-                            <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                        Система налогообложения
+                            <div class="service-calculator__tab-container tab__container tab--active" data-actab-group="0" data-actab-id="0">
+                                <div class="service-calculator__tab-content tab__content">
+                                    <div class="service-calculator__workers">
+                                        <h3 class="service-calculator__headline text text--normal text--white text--w-light">
 
-                    </h3>
-                            <div class="custom-select service-calculator__select service-calculator__select--system-tax">
-                                <div class="custom-select__container">
-                                    <div class="custom-select__trigger bg--blue-low">
-                                        <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
+                                    Работников:
 
-                                    УСН «Доходы»
-
-                                </span>
-                                        <div class="custom-select__arrow arrow"></div>
+                                </h3>
+                                        <div class="service-calculator__quantity text text--white text--w-regular bg--blue-low">
+                                            <div class="service-calculator__quantity-num js-workers-value">
+                                                1
+                                            </div>
+                                            <div class="service-calculator__quantity-icon">
+                                                <svg class="service-calculator__quantity-svg" width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.35461 15.7625C9.63496 16.6482 11.1402 17.1209 12.6801 17.1209C14.745 17.1209 16.7253 16.2717 18.1854 14.7601C19.6455 13.2484 20.4658 11.1982 20.4658 9.06046C20.4658 7.46625 20.0092 5.90785 19.1537 4.58231C18.2982 3.25678 17.0822 2.22365 15.6596 1.61357C14.2369 1.00349 12.6715 0.843869 11.1612 1.15488C9.65092 1.4659 8.26364 2.23358 7.17479 3.36086C6.08594 4.48813 5.34443 5.92437 5.04401 7.48794C4.7436 9.05152 4.89778 10.6722 5.48706 12.1451C6.07635 13.6179 7.07426 14.8768 8.35461 15.7625Z"
+                                                    fill="#FEFEFE" stroke="#FEFEFE" stroke-width="1.5" />
+                                                    <path d="M5.86605 31.2271H19.491C20.7815 31.2271 22.0192 30.6963 22.9318 29.7516C23.8444 28.8068 24.357 27.5254 24.357 26.1893V22.1591C24.355 21.9822 24.3081 21.8091 24.221 21.657C24.1339 21.5049 24.0096 21.3792 23.8607 21.2926L19.7724 18.5195C15.6531 21.8193 10.0201 21.7522 5.33209 18.5195L1.47687 21.2926C1.33159 21.3817 1.21123 21.5085 1.12762 21.6604C1.04401 21.8124 1.00003 21.9842 1 22.1591V26.1893C1 27.5254 1.51267 28.8068 2.42523 29.7516C3.33779 30.6963 4.57549 31.2271 5.86605 31.2271Z"
+                                                    fill="#FEFEFE" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" />
+                                                    <path d="M23.3402 15.2243C25.1622 15.2243 26.9095 14.475 28.1979 13.1412C29.4862 11.8074 30.21 9.99844 30.21 8.11217C30.21 6.70552 29.8071 5.33045 29.0522 4.16086C28.2973 2.99127 27.2244 2.07969 25.9692 1.54138C24.7139 1.00308 23.3326 0.862237 22 1.13666"
+                                                    stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" />
+                                                    <path d="M29.598 16.4592L33.2053 18.906C33.3367 18.9825 33.4463 19.0934 33.5232 19.2276C33.6001 19.3618 33.6415 19.5146 33.6432 19.6706V23.2267C33.6432 24.4056 33.1909 25.5362 32.3857 26.3698C31.5805 27.2035 30.4884 27.6718 29.3497 27.6718H26.0865" stroke="#FEFEFE"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="custom-select__options bg--blue-low js-select-tax-reports">
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn">
-
-                                    УСН «Доходы»
-
-                                </span>
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="nalog">
-
-                                    УСН «Доходы - расходы»
-
-                                </span>
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="doxod">
-
-                                    Патент + УСН «Доходы − расходы»
-
-                                </span>
-                                        <!-- <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="4">
-                                    Патент + ОСН
-                                </span>
-                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="5">
-                                    Патент
-                                </span>
-                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="6">
-                                    ОСН
-                                </span>
-                                <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="7">
-                                    ЕСХН
-                                </span> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-calculator__bottom">
-                        <h3 class="service-calculator__title-total text text--big text--white text--w-regular">
-
-                    Итого:
-
-                </h3>
-                        <div class="service-calculator__total">
-                            <div class="service-calculator__sum">
-                                <h3 class="service-calculator__headline text text--normal text--white text--w-light">
-
-                            Цена в месяц
-
-                        </h3>
-                                <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
-                                    <span class="js-price-value-reports">0</span> ₽
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-bottom: 200px"></div>
-                <div class="service-calculator__container">
-                    <div class="service-calculator__top">
-                        <div class="service-calculator__tarif">
-                            <h3 class="service-calculator__headline text text--normal text--white text--w-light">
-
-                        Тариф
-
-                    </h3>
-                            <div class="custom-select service-calculator__select service-calculator__select--tarifs">
-                                <div class="custom-select__container">
-                                    <div class="custom-select__trigger bg--blue-low">
-                                        <span class="custom-select__trigger-text text text--white text--normal text--w-regular">
-
-                                    Комплексный сервис 1С: Бухобслуживание
-
-                                </span>
-                                        <div class="custom-select__arrow arrow"></div>
-                                    </div>
-                                    <div class="custom-select__options bg--blue-low">
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif is-selected text text--white text--normal text--w-regular" data-tarif="full-service">
-
-                                    Комплексный сервис 1С: Бухобслуживание
-
-                                </span>
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="reporting">
-
-                                    Сервис 1С: Бухобслуживание. Отчетность
-
-                                </span>
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="personnel-records">
-
-                                    Кадровый учет и расчет ЗП
-
-                                </span>
-                                        <span class="js-calc-trigger-reports custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-tarif="salary">
-
-                                    Зарплата
-
-                                </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-calculator__ownership">
-                            <h3 class="service-calculator__headline text text--normal text--white text--w-light">
-
-                        Форма собственности
-
-                    </h3>
-
-                            <input type="number" class="js-input-kadastr" min="1" max="150" value="50">
-                            <button class="js-calc-kadastr">Calc</button>
-                        </div>
-                    </div>
-                    <div class="service-calculator__bottom">
-                        <h3 class="service-calculator__title-total text text--big text--white text--w-regular">
-
-                    Итого:
-
-                </h3>
-                        <div class="service-calculator__total">
-                            <div class="service-calculator__sum">
-                                <h3 class="service-calculator__headline text text--normal text--white text--w-light">
-
-                            Цена в месяц
-
-                        </h3>
-                                <div class="service-calculator__price text text--white text--w-regular bg--blue-low">
-                                    <span class="js-price-value-kadastr">0</span> ₽
                                 </div>
                             </div>
                         </div>
@@ -692,6 +684,49 @@
             </div>
         </section>
         <!-- /. Service-calculator -->
+        <script>
+            const labels = document.querySelectorAll(".tab__content");
+            const tabs = document.querySelectorAll(".tab");
+        
+            function toggleShow() {
+                const target = this;
+                const item = target.classList.contains("tab")
+                    ? target
+                    : target.parentElement;
+                const group = item.dataset.actabGroup;
+                const id = item.dataset.actabId;
+        
+                tabs.forEach(function(tab) {
+                    if (tab.dataset.actabGroup === group) {
+                        if (tab.dataset.actabId === id) {
+                            tab.classList.add("tab--active");
+                        } else {
+                            tab.classList.remove("tab--active");
+                        }
+                    }
+                });
+        
+                labels.forEach(function(label) {
+                    const tabItem = label.parentElement;
+        
+                    if (tabItem.dataset.actabGroup === group) {
+                        if (tabItem.dataset.actabId === id) {
+                            tabItem.classList.add("tab--active");
+                        } else {
+                            tabItem.classList.remove("tab--active");
+                        }
+                    }
+                });
+            }
+        
+            labels.forEach(function(label) {
+                label.addEventListener("click", toggleShow);
+            });
+        
+            tabs.forEach(function(tab) {
+                tab.addEventListener("click", toggleShow);
+            });
+        </script>
         <script>
             (function() {
                 const fullServiceArray = [
@@ -760,11 +795,11 @@
                     },
                 ];
             
-                const selectTarif = document.querySelector('.js-select-tarif');
+                // const selectTarif = document.querySelector('.js-select-tarif');
                 const selectTax = document.querySelector('.js-select-tax');
                 const selectOwnership = document.querySelector('.js-select-ownership');
             
-                let currentTarif = selectTarif.querySelector('.is-selected').dataset.tarif;
+                // let currentTarif = selectTarif.querySelector('.is-selected').dataset.tarif;
                 let currentTax = selectTax.querySelector('.is-selected').dataset.tax;
                 let currentOwnership = selectOwnership.querySelector('.is-selected').dataset.ownership;
             
@@ -786,7 +821,7 @@
                 })
             
                 function getCurrents() {
-                    currentTarif = selectTarif.querySelector('.is-selected').dataset.tarif;
+                    // currentTarif = selectTarif.querySelector('.is-selected').dataset.tarif;
                     currentTax = selectTax.querySelector('.is-selected').dataset.tax;
                     currentOwnership = selectOwnership.querySelector('.is-selected').dataset.ownership;
                 }
@@ -921,11 +956,11 @@
                 },
             ];
         
-            const selectTarifReports = document.querySelector('.js-select-tarif-reports');
+            // const selectTarifReports = document.querySelector('.js-select-tarif-reports');
             const selectTaxReports = document.querySelector('.js-select-tax-reports');
             const selectOwnershipReports = document.querySelector('.js-select-ownership-reports');
         
-            let currentTarifReports = selectTarifReports.querySelector('.is-selected').dataset.tarif;
+            // let currentTarifReports = selectTarifReports.querySelector('.is-selected').dataset.tarif;
             let currentTaxReports = selectTaxReports.querySelector('.is-selected').dataset.tax;
             let currentOwnershipReports = selectOwnershipReports.querySelector('.is-selected').dataset.ownership;
         
@@ -939,7 +974,7 @@
         
         
             function getCurrents() {
-                currentTarifReports = selectTarifReports.querySelector('.is-selected').dataset.tarif;
+                // currentTarifReports = selectTarifReports.querySelector('.is-selected').dataset.tarif;
                 currentTaxReports = selectTaxReports.querySelector('.is-selected').dataset.tax;
                 currentOwnershipReports = selectOwnershipReports.querySelector('.is-selected').dataset.ownership;
             }
