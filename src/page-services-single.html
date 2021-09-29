@@ -459,33 +459,46 @@
                                                 <div class="custom-select__arrow arrow"></div>
                                             </div>
                                             <div class="custom-select__options bg--blue-low js-select-tax">
-                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn">
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn-income">
 
                                             УСН «Доходы»
 
                                         </span>
-                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="nalog">
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="usn-income-expenses">
 
                                             УСН «Доходы - расходы»
 
                                         </span>
-                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="doxod">
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="patent_usn-income">
+
+                                            Патент + УСН «Доходы»
+
+                                        </span>
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="patent_usn-income-expenses">
 
                                             Патент + УСН «Доходы − расходы»
 
                                         </span>
-                                                <!-- <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="4">
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="patent_osn">
+
                                             Патент + ОСН
+
                                         </span>
-                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="5">
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="patent">
+
                                             Патент
+
                                         </span>
-                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="6">
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="osn">
+
                                             ОСН
+
                                         </span>
-                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="7">
+                                                <span class="js-calc-trigger custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="esxn">
+
                                             ЕСХН
-                                        </span> -->
+
+                                        </span>
                                             </div>
                                         </div>
                                     </div>
@@ -515,33 +528,46 @@
                                                 <div class="custom-select__arrow arrow"></div>
                                             </div>
                                             <div class="custom-select__options bg--blue-low js-select-tax-reports">
-                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn">
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax is-selected text text--white text--normal text--w-regular" data-tax="usn-income">
 
                                             УСН «Доходы»
 
                                         </span>
-                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="nalog">
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="usn-income-expenses">
 
                                             УСН «Доходы - расходы»
 
                                         </span>
-                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="doxod">
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="patent_usn-income">
+
+                                            Патент + УСН «Доходы»
+
+                                        </span>
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="patent_usn-income-expenses">
 
                                             Патент + УСН «Доходы − расходы»
 
                                         </span>
-                                                <!-- <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="4">
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="patent_osn">
+
                                             Патент + ОСН
+
                                         </span>
-                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="5">
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="patent">
+
                                             Патент
+
                                         </span>
-                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="6">
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="osn">
+
                                             ОСН
+
                                         </span>
-                                        <span class="custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="7">
+                                                <span class="js-calc-trigger-reports custom-select__option custom-select__option--tax text text--white text--normal text--w-regular" data-tax="esxn">
+
                                             ЕСХН
-                                        </span> -->
+
+                                        </span>
                                             </div>
                                         </div>
                                     </div>
@@ -688,68 +714,450 @@
             (function() {
                 const fullServiceArray = [
                     {
-                        id: 99,
+                        id: 272801,
                         min: 1,
-                        max: 75,
+                        max: 10,
                         price: 1500,
                         workers: 1,
-                        tax: 'usn',
+                        tax: 'usn-income',
                         ownership: 'bussines-without-workers'
                     },
                     {
-                        id: 100,
-                        min: 76,
-                        max: 150,
+                        id: 272802,
+                        min: 11,
+                        max: 20,
                         price: 2500,
                         workers: 1,
-                        tax: 'usn',
+                        tax: 'usn-income',
                         ownership: 'bussines-without-workers'
                     },
                     {
-                        id: 101,
-                        min: 1,
-                        max: 150,
-                        price: 3500,
-                        workers: 2,
-                        tax: 'nalog',
-                        ownership: 'bussines-without-workers'
-                    },
-                    {
-                        id: 103,
-                        min: 1,
-                        max: 150,
+                        id: 272803,
+                        min: 21,
+                        max: 30,
                         price: 3700,
-                        workers: 5,
-                        tax: 'doxod',
+                        workers: 2,
+                        tax: 'usn-income',
                         ownership: 'bussines-without-workers'
                     },
                     {
-                        id: 104,
-                        min: 1,
-                        max: 150,
-                        price: 33700,
-                        workers: 5,
-                        tax: 'usn',
-                        ownership: 'bussines-workers'
+                        id: 272804,
+                        min: 31,
+                        max: 40,
+                        price: 5000,
+                        workers: 2,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
                     },
                     {
-                        id: 105,
-                        min: 1,
-                        max: 150,
-                        price: 8900,
+                        id: 272805,
+                        min: 41,
+                        max: 50,
+                        price: 6500,
                         workers: 5,
-                        tax: 'nalog',
-                        ownership: 'bussines-workers'
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
                     },
                     {
-                        id: 106,
-                        min: 1,
-                        max: 150,
-                        price: 11900,
+                        id: 272806,
+                        min: 51,
+                        max: 60,
+                        price: 8000,
                         workers: 5,
-                        tax: 'doxod',
-                        ownership: 'bussines-workers'
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
                     },
+                    {
+                        id: 272807,
+                        min: 61,
+                        max: 70,
+                        price: 9500,
+                        workers: 5,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 272808,
+                        min: 71,
+                        max: 80,
+                        price: 11000,
+                        workers: 10,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 272809,
+                        min: 81,
+                        max: 90,
+                        price: 13000,
+                        workers: 10,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2728010,
+                        min: 91,
+                        max: 100,
+                        price: 15000,
+                        workers: 10,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2728011,
+                        min: 101,
+                        max: 110,
+                        price: 17000,
+                        workers: 10,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2728012,
+                        min: 111,
+                        max: 120,
+                        price: 18000,
+                        workers: 10,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2728012,
+                        min: 121,
+                        max: 130,
+                        price: 19000,
+                        workers: 10,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2728013,
+                        min: 131,
+                        max: 140,
+                        price: 20000,
+                        workers: 10,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2728014,
+                        min: 141,
+                        max: 150,
+                        price: 21000,
+                        workers: 10,
+                        tax: 'usn-income',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729015,
+                        min: 1,
+                        max: 10,
+                        price: 2000,
+                        workers: 1,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729016,
+                        min: 11,
+                        max: 20,
+                        price: 3000,
+                        workers: 1,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729017,
+                        min: 21,
+                        max: 30,
+                        price: 4500,
+                        workers: 2,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729018,
+                        min: 31,
+                        max: 40,
+                        price: 6000,
+                        workers: 2,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729019,
+                        min: 41,
+                        max: 50,
+                        price: 8000,
+                        workers: 5,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729020,
+                        min: 51,
+                        max: 60,
+                        price: 10000,
+                        workers: 5,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729021,
+                        min: 61,
+                        max: 70,
+                        price: 11000,
+                        workers: 5,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729022,
+                        min: 71,
+                        max: 80,
+                        price: 13000,
+                        workers: 10,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729023,
+                        min: 81,
+                        max: 90,
+                        price: 15000,
+                        workers: 10,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729024,
+                        min: 91,
+                        max: 100,
+                        price: 16000,
+                        workers: 10,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729025,
+                        min: 101,
+                        max: 110,
+                        price: 19000,
+                        workers: 10,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729026,
+                        min: 111,
+                        max: 120,
+                        price: 20000,
+                        workers: 10,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729027,
+                        min: 121,
+                        max: 130,
+                        price: 21000,
+                        workers: 10,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729028,
+                        min: 131,
+                        max: 140,
+                        price: 23000,
+                        workers: 10,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729029,
+                        min: 141,
+                        max: 150,
+                        price: 25000,
+                        workers: 10,
+                        tax: 'usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729030,
+                        min: 1,
+                        max: 21,
+                        price: 2000,
+                        workers: 1,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729031,
+                        min: 11,
+                        max: 20,
+                        price: 3500,
+                        workers: 1,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729032,
+                        min: 21,
+                        max: 30,
+                        price: 5500,
+                        workers: 2,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729033,
+                        min: 31,
+                        max: 40,
+                        price: 7500,
+                        workers: 2,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729034,
+                        min: 41,
+                        max: 50,
+                        price: 9000,
+                        workers: 5,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729035,
+                        min: 51,
+                        max: 60,
+                        price: 12000,
+                        workers: 5,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729036,
+                        min: 61,
+                        max: 70,
+                        price: 14000,
+                        workers: 5,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729037,
+                        min: 71,
+                        max: 80,
+                        price: 16000,
+                        workers: 10,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729038,
+                        min: 81,
+                        max: 90,
+                        price: 18000,
+                        workers: 10,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729039,
+                        min: 91,
+                        max: 100,
+                        price: 20000,
+                        workers: 10,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729040,
+                        min: 101,
+                        max: 110,
+                        price: 22000,
+                        workers: 10,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729041,
+                        min: 111,
+                        max: 120,
+                        price: 23000,
+                        workers: 10,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729042,
+                        min: 121,
+                        max: 130,
+                        price: 25000,
+                        workers: 10,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729043,
+                        min: 131,
+                        max: 140,
+                        price: 28000,
+                        workers: 10,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729044,
+                        min: 141,
+                        max: 150,
+                        price: 30000,
+                        workers: 10,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+                    {
+                        id: 2729045,
+                        min: 1,
+                        max: 10,
+                        price: 30000,
+                        workers: 10,
+                        tax: 'patent_usn-income-expenses',
+                        ownership: 'bussines-without-workers'
+                    },
+            
+            
+            
+                    
+                    // {
+                    //     id: 104,
+                    //     min: 1,
+                    //     max: 150,
+                    //     price: 33700,
+                    //     workers: 5,
+                    //     tax: 'usn',
+                    //     ownership: 'bussines-workers'
+                    // },
+                    // {
+                    //     id: 105,
+                    //     min: 1,
+                    //     max: 150,
+                    //     price: 8900,
+                    //     workers: 5,
+                    //     tax: 'nalog',
+                    //     ownership: 'bussines-workers'
+                    // },
+                    // {
+                    //     id: 106,
+                    //     min: 1,
+                    //     max: 150,
+                    //     price: 11900,
+                    //     workers: 5,
+                    //     tax: 'doxod',
+                    //     ownership: 'bussines-workers'
+                    // },
                 ];
             
                 const selectTax = document.querySelector('.js-select-tax');
