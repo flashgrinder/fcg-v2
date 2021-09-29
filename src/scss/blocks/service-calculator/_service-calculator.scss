@@ -52,6 +52,7 @@
 
 .service-calculator__price,
 .service-calculator__quantity {
+    display: inline-block;
     font-size: 40px;
     padding: 1px 25px 1px;
     border-radius: 5px;
@@ -64,17 +65,4 @@
 
 .service-calculator__quantity-icon {
     margin-left: 15px;
-}
-
-.tab__content {
-    display: none;
-}
-// .accordion-item__label {
-//     display: none;
-// }
-// .tab--active .accordion-item__label{
-//     display: block;
-// }
-.tab--active .tab__content {
-    display: block;
 }

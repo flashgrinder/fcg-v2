@@ -684,49 +684,49 @@
             </div>
         </section>
         <!-- /. Service-calculator -->
-        <script>
-            const labels = document.querySelectorAll(".tab__content");
-            const tabs = document.querySelectorAll(".tab");
-        
-            function toggleShow() {
-                const target = this;
-                const item = target.classList.contains("tab")
-                    ? target
-                    : target.parentElement;
-                const group = item.dataset.actabGroup;
-                const id = item.dataset.actabId;
-        
-                tabs.forEach(function(tab) {
-                    if (tab.dataset.actabGroup === group) {
-                        if (tab.dataset.actabId === id) {
-                            tab.classList.add("tab--active");
-                        } else {
-                            tab.classList.remove("tab--active");
-                        }
-                    }
-                });
-        
-                labels.forEach(function(label) {
-                    const tabItem = label.parentElement;
-        
-                    if (tabItem.dataset.actabGroup === group) {
-                        if (tabItem.dataset.actabId === id) {
-                            tabItem.classList.add("tab--active");
-                        } else {
-                            tabItem.classList.remove("tab--active");
-                        }
-                    }
-                });
+        <!-- <script>
+    const labels = document.querySelectorAll(".tab__content");
+    const tabs = document.querySelectorAll(".tab");
+
+    function toggleShow() {
+        const target = this;
+        const item = target.classList.contains("tab")
+            ? target
+            : target.parentElement;
+        const group = item.dataset.actabGroup;
+        const id = item.dataset.actabId;
+
+        tabs.forEach(function(tab) {
+            if (tab.dataset.actabGroup === group) {
+                if (tab.dataset.actabId === id) {
+                    tab.classList.add("tab--active");
+                } else {
+                    tab.classList.remove("tab--active");
+                }
             }
-        
-            labels.forEach(function(label) {
-                label.addEventListener("click", toggleShow);
-            });
-        
-            tabs.forEach(function(tab) {
-                tab.addEventListener("click", toggleShow);
-            });
-        </script>
+        });
+
+        labels.forEach(function(label) {
+            const tabItem = label.parentElement;
+
+            if (tabItem.dataset.actabGroup === group) {
+                if (tabItem.dataset.actabId === id) {
+                    tabItem.classList.add("tab--active");
+                } else {
+                    tabItem.classList.remove("tab--active");
+                }
+            }
+        });
+    }
+
+    labels.forEach(function(label) {
+        label.addEventListener("click", toggleShow);
+    });
+
+    tabs.forEach(function(tab) {
+        tab.addEventListener("click", toggleShow);
+    });
+</script> -->
         <script>
             (function() {
                 const fullServiceArray = [
@@ -795,11 +795,9 @@
                     },
                 ];
             
-                // const selectTarif = document.querySelector('.js-select-tarif');
                 const selectTax = document.querySelector('.js-select-tax');
                 const selectOwnership = document.querySelector('.js-select-ownership');
             
-                // let currentTarif = selectTarif.querySelector('.is-selected').dataset.tarif;
                 let currentTax = selectTax.querySelector('.is-selected').dataset.tax;
                 let currentOwnership = selectOwnership.querySelector('.is-selected').dataset.ownership;
             
@@ -821,7 +819,6 @@
                 })
             
                 function getCurrents() {
-                    // currentTarif = selectTarif.querySelector('.is-selected').dataset.tarif;
                     currentTax = selectTax.querySelector('.is-selected').dataset.tax;
                     currentOwnership = selectOwnership.querySelector('.is-selected').dataset.ownership;
                 }
@@ -837,14 +834,13 @@
                     const filteredArrayOwnership = fullServiceArray.filter(item => item.ownership === currentOwnership);
                     const filteredArrayTax = filteredArrayOwnership.filter(item => item.tax === currentTax);
                     
-                    // переиспользовать для кадастровый учёт и зп
                     filteredArrayTax.forEach(item => {
                         if (operationsValue >= item.min && operationsValue <= item.max) {
                             priceValueEl.innerHTML = divideNumber(item.price);
                             workersValueEl.innerHTML = item.workers;
                         }
                     })
-                    //
+            
                 }
             
                 function divideNumber(x) {
@@ -854,61 +850,7 @@
                 calc()
                })();
         </script>
-        <script>
-            (function() {
-                const fullServiceArrayKadastr = [
-                    {
-                        id: 99,
-                        min: 1,
-                        max: 75,
-                        price: 1500,
-                    },
-                    {
-                        id: 100,
-                        min: 76,
-                        max: 150,
-                        price: 1512300,
-                    },
-                ];
-        
-                const inputKadastr = document.querySelector('.js-input-kadastr');
-                const buttonKadastr = document.querySelector('.js-calc-kadastr');
-                const priceValueElKadastr = document.querySelector('.js-price-value-kadastr');
-                
-                let inputKadastrValue = inputKadastr.value;
-        
-                inputKadastr.addEventListener('input', () => {
-                    inputKadastrValue = inputKadastr.value;
-                });
-                inputKadastr.addEventListener('change', calc);
-        
-                buttonKadastr.addEventListener('click', calc)
-        
-        
-                function calc() {
-                    setTimeout( () => {
-                        calculateSum();
-                    }, 100)
-                }
-        
-                function calculateSum() {
-                    
-                    // переиспользовать для кадастровый учёт и зп
-                    fullServiceArrayKadastr.forEach(item => {
-                        if (inputKadastrValue >= item.min && inputKadastrValue <= item.max) {
-                            priceValueElKadastr.innerHTML = divideNumber(item.price);
-                        }
-                    })
-                    //
-                }
-        
-                function divideNumber(x) {
-                    return x.toLocaleString('ru-Ru', { minimumFractionDigits: 0 });
-                }
-        
-                calc()
-            })();
-        </script>
+
         <script>
             (function() {
                 const fullServiceArrayReports = [
@@ -956,11 +898,9 @@
                 },
             ];
         
-            // const selectTarifReports = document.querySelector('.js-select-tarif-reports');
             const selectTaxReports = document.querySelector('.js-select-tax-reports');
             const selectOwnershipReports = document.querySelector('.js-select-ownership-reports');
         
-            // let currentTarifReports = selectTarifReports.querySelector('.is-selected').dataset.tarif;
             let currentTaxReports = selectTaxReports.querySelector('.is-selected').dataset.tax;
             let currentOwnershipReports = selectOwnershipReports.querySelector('.is-selected').dataset.ownership;
         
@@ -974,7 +914,6 @@
         
         
             function getCurrents() {
-                // currentTarifReports = selectTarifReports.querySelector('.is-selected').dataset.tarif;
                 currentTaxReports = selectTaxReports.querySelector('.is-selected').dataset.tax;
                 currentOwnershipReports = selectOwnershipReports.querySelector('.is-selected').dataset.ownership;
             }
@@ -1001,8 +940,118 @@
             }
         
             calc()
+        })();
+        </script>
+
+        <script>
+            (function() {
+                const fullServiceArrayKadastr = [
+                    {
+                        id: 99,
+                        min: 1,
+                        max: 75,
+                        price: 1500,
+                    },
+                    {
+                        id: 100,
+                        min: 76,
+                        max: 150,
+                        price: 1512300,
+                    },
+                ];
+        
+                const inputKadastr = document.querySelector('.js-input-kadastr');
+                const buttonKadastr = document.querySelector('.js-calc-kadastr');
+                const priceValueElKadastr = document.querySelector('.js-price-value-kadastr');
+                
+                let inputKadastrValue = inputKadastr.value;
+        
+                inputKadastr.addEventListener('input', () => {
+                    inputKadastrValue = inputKadastr.value;
+                });
+                inputKadastr.addEventListener('change', calc);
+        
+                buttonKadastr.addEventListener('click', calc)
+        
+        
+                function calc() {
+                    setTimeout( () => {
+                        calculateSum();
+                    }, 100)
+                }
+        
+                function calculateSum() {
+                    
+                    fullServiceArrayKadastr.forEach(item => {
+                        if (inputKadastrValue >= item.min && inputKadastrValue <= item.max) {
+                            priceValueElKadastr.innerHTML = divideNumber(item.price);
+                        }
+                    })
+        
+                }
+        
+                function divideNumber(x) {
+                    return x.toLocaleString('ru-Ru', { minimumFractionDigits: 0 });
+                }
+        
+                calc()
             })();
         </script>
+        <script>
+            (function() {
+                const fullServiceArraySalary = [
+                    {
+                        id: 99,
+                        min: 1,
+                        max: 75,
+                        price: 1500,
+                    },
+                    {
+                        id: 100,
+                        min: 76,
+                        max: 150,
+                        price: 1512300,
+                    },
+                ];
+        
+                const inputSalary = document.querySelector('.js-input-salary');
+                const buttonSalary = document.querySelector('.js-calc-salary');
+                const priceValueElSalary = document.querySelector('.js-price-value-salary');
+                
+                let inputSalaryValue = inputSalary.value;
+        
+                inputSalary.addEventListener('input', () => {
+                    inputSalaryValue = inputSalary.value;
+                });
+                inputSalary.addEventListener('change', calc);
+        
+                buttonSalary.addEventListener('click', calc)
+        
+        
+                function calc() {
+                    setTimeout( () => {
+                        calculateSum();
+                    }, 100)
+                }
+        
+                function calculateSum() {
+                    
+                    fullServiceArraySalary.forEach(item => {
+                        if (inputSalaryValue >= item.min && inputSalaryValue <= item.max) {
+                            priceValueElSalary.innerHTML = divideNumber(item.price);
+                        }
+                    })
+        
+                }
+        
+                function divideNumber(x) {
+                    return x.toLocaleString('ru-Ru', { minimumFractionDigits: 0 });
+                }
+        
+                calc()
+            })();
+        </script>
+
         <!-- Benefits -->
         <section class="benefits bg--white block--padding">
             <div class="benefits__body container">

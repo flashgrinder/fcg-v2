@@ -873,6 +873,7 @@ img {
 
 .service-calculator__price,
 .service-calculator__quantity {
+  display: inline-block;
   font-size: 40px;
   padding: 1px 25px 1px;
   border-radius: 5px;
@@ -885,14 +886,6 @@ img {
 
 .service-calculator__quantity-icon {
   margin-left: 15px;
-}
-
-.tab__content {
-  display: none;
-}
-
-.tab--active .tab__content {
-  display: block;
 }
 
 /* Custom-select */
@@ -1245,6 +1238,16 @@ img {
 
 .custom-input__button:active {
   opacity: 0.75;
+}
+
+/* Tabs */
+
+.tab__content {
+  display: none;
+}
+
+.tab--active .tab__content {
+  display: block;
 }
 
 /* Benefits */
