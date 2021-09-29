@@ -2,28 +2,51 @@
     display: block;
     font-size: 18px;
     margin-top: 25px;
+    @include mobileMD-block {
+        font-size: 14px;
+    }
+    @include mobileXS-block {
+        font-size: 12px;
+    }
 }
 
 .service-calculator__top {
     display: flex;
+    @include mobile-block {
+        flex-direction: column;
+    }
 }
 
 .service-calculator__top,
 .service-calculator__middle {
     margin-bottom: 45px;
+    @include mobile-block {
+        margin-bottom: 30px;
+    }
 }
 
 .service-calculator__tarif {
     margin-right: 55px;
     min-width: 450px;
+    @include mobile-block {
+        margin-right: 0;
+        margin-bottom: 30px;
+        min-width: 100%;
+    }
 }
 
 .service-calculator__ownership {
     min-width: 312px;
+    @include mobile-block {
+        min-width: 100%;
+    }
 }
 
 .service-calculator__system-tax {
     max-width: 353px;
+    @include mobile-block {
+        max-width: 100%;
+    }
 }
 
 .service-calculator__headline {
@@ -32,6 +55,9 @@
 
 .service-calculator__slide {
     margin-top: 45px;
+    @include mobile-block {
+        margin-top: 30px;
+    }
 }
 
 .service-calculator__custom-range {
@@ -48,6 +74,9 @@
 
 .service-calculator__workers {
     margin-left: 146px;
+    @include mobile-block {
+        margin-left: 40px;
+    }
 }
 
 .service-calculator__price,
@@ -56,6 +85,10 @@
     font-size: 40px;
     padding: 1px 25px 1px;
     border-radius: 5px;
+    @include mobileXS-block {
+        font-size: 20px;
+        padding: 7px 25px 7px;
+    }
 }
 
 .service-calculator__quantity {
@@ -65,4 +98,10 @@
 
 .service-calculator__quantity-icon {
     margin-left: 15px;
+    width: 35px;
+    height: 32px;
+    @include mobileXS-block {
+        width: 16px;
+        height: auto;
+    }
 }

@@ -19,6 +19,18 @@
     flex-grow: 1;
 }
 
+.custom-input__field {
+    @include mobileXS-block {
+        padding: 9px 10px 9px 15px;
+    }
+}
+
+.custom-input__button {
+    @include mobileXS-block {
+        padding: 11px 15px 11px;
+    }
+}
+
 .custom-input__button {
     position: absolute;
     right: 0;

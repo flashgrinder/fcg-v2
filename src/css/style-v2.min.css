@@ -582,6 +582,7 @@ img {
 .page__container {
   max-width: 1920px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* Header-page */
@@ -886,6 +887,8 @@ img {
 
 .service-calculator__quantity-icon {
   margin-left: 15px;
+  width: 35px;
+  height: 32px;
 }
 
 /* Custom-select */
@@ -1819,6 +1822,37 @@ img {
     grid-row-gap: 25px;
   }
 
+  .service-calculator__top {
+    flex-direction: column;
+  }
+
+  .service-calculator__top,
+  .service-calculator__middle {
+    margin-bottom: 30px;
+  }
+
+  .service-calculator__tarif {
+    margin-right: 0;
+    margin-bottom: 30px;
+    min-width: 100%;
+  }
+
+  .service-calculator__ownership {
+    min-width: 100%;
+  }
+
+  .service-calculator__system-tax {
+    max-width: 100%;
+  }
+
+  .service-calculator__slide {
+    margin-top: 30px;
+  }
+
+  .service-calculator__workers {
+    margin-left: 40px;
+  }
+
   .benefits__row ~ .benefits__row {
     margin-top: 25px;
   }
@@ -1865,6 +1899,10 @@ img {
 
   .header-page__icon {
     bottom: -55px;
+  }
+
+  .service-calculator__subheading {
+    font-size: 14px;
   }
 
   .v2.faq__details ~ .v2.faq__details {
@@ -1971,6 +2009,29 @@ img {
 
   .add-services-slider__arrow--next {
     right: 0;
+  }
+
+  .service-calculator__subheading {
+    font-size: 12px;
+  }
+
+  .service-calculator__price,
+  .service-calculator__quantity {
+    font-size: 20px;
+    padding: 7px 25px 7px;
+  }
+
+  .service-calculator__quantity-icon {
+    width: 16px;
+    height: auto;
+  }
+
+  .custom-input__field {
+    padding: 9px 10px 9px 15px;
+  }
+
+  .custom-input__button {
+    padding: 11px 15px 11px;
   }
 
   .benefits__heading {
