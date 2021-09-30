@@ -1392,7 +1392,6 @@ img {
   background: var(--color-white);
   color: red;
   border-radius: 5px;
-  display: block;
   position: absolute;
   top: -33px;
   left: 50%;
