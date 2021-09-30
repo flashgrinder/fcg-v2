@@ -24,10 +24,17 @@
 
 .button--white {
     font-family: var(--font-gotham);
-    padding: 10px 45px;
+    padding: 8px 45px;
     color: var(--color-blue);
     background: var(--color-white);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+}
+
+.button--white:hover {
+    background: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
 }
 
 .button--blue,
