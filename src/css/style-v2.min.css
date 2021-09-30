@@ -1373,14 +1373,38 @@ img {
 
 .form.form--page.v2 .wpcf7-response-output {
   position: absolute;
-  bottom: -50px;
+  bottom: -40px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  max-width: -webkit-max-content;
+  max-width: max-content;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .form.form--page.v2 .wpa-test-msg {
   display: none;
+}
+
+.form.form--page.v2 .wpcf7-not-valid-tip {
+  background: var(--color-white);
+  color: red;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  top: -33px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 12px;
+  text-align: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 2px 8px;
+  width: 100%;
 }
 
 /* FAQ */
@@ -1875,6 +1899,10 @@ img {
     margin-top: 25px;
   }
 
+  .form__input.v2 {
+    padding: 11px 15px 11px 40px;
+  }
+
   .form__action.v2 {
     text-align: center;
   }
@@ -1885,6 +1913,14 @@ img {
             transform: none;
     left: auto;
     width: auto;
+    font-size: 12px;
+  }
+
+  .form.form--page.v2 .wpcf7-not-valid-tip {
+    top: -30px;
+    width: 100%;
+    font-size: 10px;
+    max-width: 100%;
   }
 
   .v2.faq__summary {
