@@ -317,7 +317,7 @@
                                     Кадровый учет и расчет ЗП
 
                                 </span>
-                                        <span class="tab custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular" data-actab-group="0" data-actab-id="3" data-tarif="salary">
+                                        <span class="tab custom-select__option custom-select__option--tarif text text--white text--normal text--w-regular hide" data-actab-group="0" data-actab-id="3" data-tarif="salary">
 
                                     Зарплата
 
@@ -710,6 +710,7 @@
             </div>
         </section>
         <!-- /. Service-calculator -->
+        <!-- FullService -->
         <script>
             (function() {
                 const fullServiceArray = [
@@ -3065,7 +3066,7 @@
                 calc()
                })();
         </script>
-
+        <!-- Reports -->
         <script>
             (function() {
                 const fullServiceArrayReports = [
@@ -3211,21 +3212,39 @@
             calc()
         })();
         </script>
-
+        <!-- Kadastr -->
         <script>
             (function() {
                 const fullServiceArrayKadastr = [
                     {
                         id: 99,
                         min: 1,
-                        max: 75,
-                        price: 1500,
+                        max: 5,
+                        price: 5000,
                     },
                     {
                         id: 100,
-                        min: 76,
-                        max: 150,
-                        price: 1512300,
+                        min: 6,
+                        max: 15,
+                        price: 800,
+                    },
+                    {
+                        id: 101,
+                        min: 16,
+                        max: 30,
+                        price: 700,
+                    },
+                    {
+                        id: 102,
+                        min: 31,
+                        max: 50,
+                        price: 600,
+                    },
+                    {
+                        id: 103,
+                        min: 51,
+                        max: 1000,
+                        price: 500,
                     },
                 ];
         
@@ -3253,8 +3272,9 @@
                     
                     fullServiceArrayKadastr.forEach(item => {
                         if (inputKadastrValue >= item.min && inputKadastrValue <= item.max) {
-                            priceValueElKadastr.innerHTML = divideNumber(item.price);
-                        }
+                            const sum = inputKadastrValue > 5 ? (item.price * (inputKadastrValue - 5)) + 5000 : item.price;
+                            priceValueElKadastr.innerHTML = divideNumber(sum);
+                        }   
                     })
         
                 }
@@ -3266,20 +3286,39 @@
                 calc()
             })();
         </script>
+        <!-- Salary -->
         <script>
             (function() {
                 const fullServiceArraySalary = [
                     {
                         id: 99,
                         min: 1,
-                        max: 75,
-                        price: 1500,
+                        max: 5,
+                        price: 5000,
                     },
                     {
                         id: 100,
-                        min: 76,
-                        max: 150,
-                        price: 1512300,
+                        min: 6,
+                        max: 15,
+                        price: 800,
+                    },
+                    {
+                        id: 101,
+                        min: 16,
+                        max: 30,
+                        price: 700,
+                    },
+                    {
+                        id: 102,
+                        min: 31,
+                        max: 50,
+                        price: 600,
+                    },
+                    {
+                        id: 103,
+                        min: 51,
+                        max: 1000,
+                        price: 500,
                     },
                 ];
         
@@ -3307,7 +3346,8 @@
                     
                     fullServiceArraySalary.forEach(item => {
                         if (inputSalaryValue >= item.min && inputSalaryValue <= item.max) {
-                            priceValueElSalary.innerHTML = divideNumber(item.price);
+                            const sum = inputSalaryValue > 5 ? (item.price * (inputSalaryValue - 5)) + 5000 : item.price;
+                            priceValueElSalary.innerHTML = divideNumber(sum);
                         }
                     })
         
