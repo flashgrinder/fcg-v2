@@ -24,7 +24,7 @@
                         <img src="<?php echo STANDART_DIR; ?>img/upload/header-page-img.png" alt="" class="header-page__img">
                     </div>
                     <div class="header-page__action">
-                        <a href="javascript:;" class="button button--blue btn-modal">
+                        <a href="#calculator" class="button button--blue">
                             <span class="button__span" data-hover-btn="Рассчитать стоимость">Рассчитать стоимость</span>
                         </a>
                     </div>
@@ -243,7 +243,7 @@
     </section>
     <!-- /. Add-services -->
     <!-- Service-calculator -->
-    <section class="service-calculator bg--blue block--padding">
+    <section class="service-calculator bg--blue block--padding" id="calculator">
         <div class="service-calculator__body container">
             <h2 class="service-calculator__heading title title--large title--white title--w-medium title--indent">
 
