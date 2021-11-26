@@ -1285,6 +1285,7 @@ img {
 
 .form.form--page.v2 {
   display: flex;
+  align-items: baseline;
 }
 
 .form__field.v2 {
@@ -1891,6 +1892,7 @@ img {
 
   .form.form--page.v2 {
     flex-direction: column;
+    align-items: center;
   }
 
   .form--page.v2 .form__field ~ .form__field {
@@ -1899,7 +1901,8 @@ img {
   }
 
   .form__input.v2 {
-    padding: 11px 15px 11px 40px;
+    padding: 11px 15px 11px 55px;
+    text-align: left;
   }
 
   .form__action.v2 {
