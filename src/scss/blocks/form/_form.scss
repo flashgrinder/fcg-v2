@@ -91,9 +91,17 @@
 }
 
 .form__action.v2 {
+    position: relative;
     @include mobile-block {
         text-align: center;
     }
+}
+
+.form__action.v2 .wpcf7-spinner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 10px;
 }
 
 .form__submit.v2 {

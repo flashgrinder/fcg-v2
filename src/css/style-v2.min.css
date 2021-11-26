@@ -1372,6 +1372,18 @@ img {
   color: var(--color-white-75);
 }
 
+.form__action.v2 {
+  position: relative;
+}
+
+.form__action.v2 .wpcf7-spinner {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0 10px;
+}
+
 .form__submit.v2 {
   outline: 0;
   box-sizing: border-box;
