@@ -6,7 +6,6 @@ function init() {
 
     const reviewsSlider = new Swiper(".reviews-slider__swiper", {
         slidesPerView: 1,
-        loop: true,
         navigation: {
             nextEl: '.reviews-slider__arrow--next',
             prevEl: '.reviews-slider__arrow--prev'
@@ -21,9 +20,8 @@ function init() {
                 spaceBetween: 15
             },
             1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 20,
-                slidesPerColumn: 1
             }
         }
     });

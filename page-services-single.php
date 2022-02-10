@@ -3512,7 +3512,7 @@
     <!-- /. Benefits -->
 
     <!-- Reviews-slider -->
-    <section class="reviews-slider block--padding bg--white-gray hide">
+    <section class="reviews-slider block--padding bg--white-gray">
         <div class="reviews-slider__body container">
             <div class="reviews-slider__heading-wrapp title--indent">
                 <h2 class="reviews-slider__heading title title--large title--dark title--w-medium">
@@ -3532,27 +3532,16 @@
                 </nav>
             </div>
             <div class="reviews-slider__swiper swiper-container">
-                <div class="reviews-slider__swiper-wrapper swiper-wrapper">
-                    <article class="reviews-slider__swiper-slide swiper-slide">
-                        <div class="reviews-slider__pic">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-1.jpg" alt="" class="reviews-slider__img">
-                        </div>
-                    </article>
-                    <article class="reviews-slider__swiper-slide swiper-slide">
-                        <div class="reviews-slider__pic">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-2.jpg" alt="" class="reviews-slider__img">
-                        </div>
-                    </article>
-                    <article class="reviews-slider__swiper-slide swiper-slide">
-                        <div class="reviews-slider__pic">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-3.jpg" alt="" class="reviews-slider__img">
-                        </div>
-                    </article>
-                    <article class="reviews-slider__swiper-slide swiper-slide">
-                        <div class="reviews-slider__pic">
-                            <img src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-4.jpg" alt="" class="reviews-slider__img">
-                        </div>
-                    </article>
+                <div class="reviews-slider__swiper-wrapper swiper-wrapper" id="js-reviews-slider-zoom">
+                    <div data-src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-1.jpg" class="reviews-slider__slide swiper-slide">
+                        <img src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-1.jpg" alt="" class="reviews-slider__img">
+                    </div>
+                    <div data-src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-2.jpg" class="reviews-slider__slide swiper-slide">
+                        <img src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-2.jpg" alt="" class="reviews-slider__img">
+                    </div>
+                    <div data-src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-3.jpg" class="reviews-slider__slide swiper-slide">
+                        <img src="<?php echo STANDART_DIR; ?>img/upload/reviews-slider-img-3.jpg" alt="" class="reviews-slider__img">
+                    </div>
                 </div>
             </div>
         </div>

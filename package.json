@@ -47,6 +47,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "lightgallery": "^2.4.0",
     "postcss-responsive-type": "^1.0.0",
     "swiper": "^6.8.4"
   },
