@@ -18,7 +18,7 @@
             $phone = $posted_data['tel-289'];
             $title = $posted_data['text-564'];
         
-            $queryUrl = 'https://fincom.bitrix24.ru/rest/114/keviule2jvconggu/';
+            $queryUrl = 'https://fincom.bitrix24.ru/rest/114/keviule2jvconggu/crm.lead.add.json';
 
             $queryData = http_build_query(array(
                 'fields' => array(
