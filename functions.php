@@ -14,3 +14,5 @@
     include_once(__DIR__ . '/inc/actions.php');
     /* Битрикс 24 */
     include_once(__DIR__ . '/inc/bitrix24.php');
+    /* Битрикс 24 - вебхук */
+    include_once(__DIR__ . '/inc/bitrix24-webhook.php');
