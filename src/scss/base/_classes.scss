@@ -22,6 +22,14 @@
 	@include mobile(display, none !important);
 }
 
+.hide-mobile-md {
+	@include mobileMD(display, none !important);
+}
+
+.hide-mobile-xs {
+	@include mobileXS(display, none !important);
+}
+
 /* Position */
 
 .left {
