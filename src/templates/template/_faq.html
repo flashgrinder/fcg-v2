@@ -5,46 +5,73 @@
             FAQ | Часто задаваемые вопросы
         </h2>
         <div class="faq__accordion v2">
-            <details class="faq__details v2">
-                <summary class="faq__summary v2">
-                    <span class="faq__question v2 text text--big text--dark-gray text--w-regular">На чьей стороне ответственность за ошибки при бухгалтерском сопровождении?</span>
-                </summary>
-                <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
-                    С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
-                </div>
-            </details>
-            <details class="faq__details v2">
-                <summary class="faq__summary v2">
-                    <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Каким образом осуществляется передача первичной документации?</span>
-                </summary>
-                <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
-                    С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
-                </div>
-            </details>
-            <details class="faq__details v2">
-                <summary class="faq__summary v2">
-                    <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Какие документы необходимы для составления налоговой отчетности? Кто взаимодействует с налоговой?</span>
-                </summary>
-                <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
-                    С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
-                </div>
-            </details>
-            <details class="faq__details v2">
-                <summary class="faq__summary v2">
-                    <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Как контролировать консалтинговую компанию?</span>
-                </summary>
-                <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
-                    С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
-                </div>
-            </details>
-            <details class="faq__details v2">
-                <summary class="faq__summary v2">
-                    <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Можем ли мы перевести на аутсорсинг только одну категорию учета? У нас в штате уже есть бухгалтер</span>
-                </summary>
-                <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
-                    С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
-                </div>
-            </details>
+            {% if title == "Бухгалтерское сопровождение" %}
+                <details class="faq__details v2">
+                    <summary class="faq__summary v2">
+                        <span class="faq__question v2 text text--big text--dark-gray text--w-regular">На чьей стороне ответственность за ошибки при бухгалтерском сопровождении?</span>
+                    </summary>
+                    <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
+                        С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
+                    </div>
+                </details>
+                <details class="faq__details v2">
+                    <summary class="faq__summary v2">
+                        <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Каким образом осуществляется передача первичной документации?</span>
+                    </summary>
+                    <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
+                        С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
+                    </div>
+                </details>
+                <details class="faq__details v2">
+                    <summary class="faq__summary v2">
+                        <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Какие документы необходимы для составления налоговой отчетности? Кто взаимодействует с налоговой?</span>
+                    </summary>
+                    <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
+                        С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
+                    </div>
+                </details>
+                <details class="faq__details v2">
+                    <summary class="faq__summary v2">
+                        <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Как контролировать консалтинговую компанию?</span>
+                    </summary>
+                    <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
+                        С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
+                    </div>
+                </details>
+                <details class="faq__details v2">
+                    <summary class="faq__summary v2">
+                        <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Можем ли мы перевести на аутсорсинг только одну категорию учета? У нас в штате уже есть бухгалтер</span>
+                    </summary>
+                    <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
+                        С каждым клиентом компания FINCOM group заключает договор, в котором прописана зона ответственности каждой стороны. Наши специалисты имеют 15-летний опыт и постоянно проходят курсы повышения квалификации, знают обо всех изменениях в текущем законодательстве. А количество довольных клиентов говорит само за себя, и с каждым годом их число растёт.
+                    </div>
+                </details>
+            {% elif title == "Открытие компании в Сербии" %}
+                <details class="faq__details v2">
+                    <summary class="faq__summary v2">
+                        <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Нужно ли гражданину России оформлять визу для посещения Сербии?</span>
+                    </summary>
+                    <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
+                        В Сербии для россиян действует безвизовый режим для посещения на срок не более 30 дней. Для дальнейшего пребывания необходимо оформить ВНЖ. Наши специалисты проконсультируют вас и подберут оптимальный вариант с учетом ваших целей и задач.
+                    </div>
+                </details>
+                <details class="faq__details v2">
+                    <summary class="faq__summary v2">
+                        <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Какие налоги оплачивает бизнес в Сербии?</span>
+                    </summary>
+                    <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
+                        Основные налоги для предпринимателей, действующие на территории Сербии, – это налог на прибыль (15%), на дивиденды (15%). НДС составляет 20%, налоги и сборы на зарплату – порядка 62% от нетто заработной платы.
+                    </div>
+                </details>
+                <details class="faq__details v2">
+                    <summary class="faq__summary v2">
+                        <span class="faq__question v2 text text--big text--dark-gray text--w-regular">Почему компании выбирают Сербию в качестве локации для бизнеса?</span>
+                    </summary>
+                    <div class="faq__answer v2 text text--normal text--dark-gray-low text--w-light">
+                        Во-первых, близкая ментальность и лояльное отношение к гражданам России. Во-вторых, достаточно легко и относительно недорого можно зарегистрировать компанию. Еще одним преимуществом является обслуживание в банках, которые без ограничений работают как с РФ так и со странами Евросоюза.
+                    </div>
+                </details>
+            {% endif %}
         </div>
     </div>
 </section>
