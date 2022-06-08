@@ -7,7 +7,19 @@
         <meta name="robots" content="index, follow"/>
         <meta name="theme-color" content="#000"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
-        <title>Главная</title>
+        <title>{{ title }}</title>
         <link rel="stylesheet" href="css/style-v2.min.css"/>
     </head>
 <body class="page bg--white">
+
+    {% include "partials/_grid.html" %}
+    {% include "partials/_header.html" %}
+
+    <!-- MAIN -->
+    <main class="main page__container bg--white">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <!-- /. MAIN -->
+
+    {% include "partials/_footer.html" %}

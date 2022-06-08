@@ -1,18 +1,16 @@
-{% include "partials/_header.html" %}
+{% set title = "Бухгалтерское сопровождение" %}
 
-<!-- MAIN -->
-<main class="main page__container bg--white">
+{% extends "layouts/_default.html" %}
 
-    {% include "partials/_header-page.html" %}
-    {% include "partials/_why-us.html" %}
-    {% include "partials/_add-services-slider.html" %}
-    {% include "partials/_service-calculator.html" %}
-    {% include "partials/_benefits.html" %}
-    {% include "partials/_reviews-slider.html" %}
-    {% include "partials/_main-form.html" %}
-    {% include "partials/_faq.html" %}
+{% block content %}
 
-</main>
-<!-- /. MAIN -->
+{% include "template/_header-page.html" %}
+{% include "template/_why-us.html" %}
+{% include "template/_add-services-slider.html" %}
+{% include "template/_service-calculator.html" %}
+{% include "template/_benefits.html" %}
+{% include "template/_reviews-slider.html" %}
+{% include "template/_main-form.html" %}
+{% include "template/_faq.html" %}
 
-{% include "partials/_footer.html" %}
+{% endblock %}
