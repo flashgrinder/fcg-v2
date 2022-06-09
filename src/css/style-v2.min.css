@@ -2812,12 +2812,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 .table-price__column.table-price__column--one > .table-price__row,
 .table-price__column.table-price__column--one > .table-price__col-title {
   text-align: left;
-  justify-content: start;
+  justify-content: center;
+  align-items: inherit;
 }
 
 .table-price__row,
 .table-price__col-title {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px 25px;
@@ -2839,9 +2841,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   padding: 20px 10px 20px 0px;
 }
 
-.table-price__ad-text {
+.table-price__ad-text,
+.table-price__terms {
   display: none;
+}
+
+.table-price__ad-text {
   margin-top: 25px;
+}
+
+.table-price__terms {
+  margin-top: 10px;
 }
 
 .table-price__action {
@@ -3266,7 +3276,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .table-price__ad-text {
+  .table-price__ad-text,
+  .table-price__terms {
     display: block;
   }
 }
