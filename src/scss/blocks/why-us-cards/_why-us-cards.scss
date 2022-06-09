@@ -1,0 +1,36 @@
+.why-us-cards__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    grid-gap: 20px;
+    align-items: stretch;
+    grid-template-rows: 1fr;
+}
+
+.why-us-cards__item {
+    position: relative;
+    background: rgba(17, 101, 161, 0.03);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.why-us-cards__title {
+    padding: 15px;
+}
+
+.why-us-cards__descr {
+    padding: 12px 75px 55px 15px;
+}
+
+.why-us-cards__pic {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.why-us-cards__img {
+    display: block;
+    max-width: 110px;
+    max-height: 130px;
+}

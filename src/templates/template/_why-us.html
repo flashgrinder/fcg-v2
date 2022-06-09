@@ -33,10 +33,11 @@
         <div class="why-us__cards">
             {% if title == "Бухгалтерское сопровождение" %}
                 {% include "template/_card-features.html" %}
-            {% elif title == "Открытие компании в Сербии" %}
-
             {% endif %}
         </div>
+        {% if title == "Открытие компании в Сербии" %}
+            {% include "template/_why-us-cards.html" %}
+        {% endif %}
         <div class="why-us__action">
             <a href="javascript:;" class="button button--blue btn-modal">
                 <span class="button__span" data-hover-btn="Оставить заявку">Оставить заявку</span> 
