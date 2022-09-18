@@ -22,7 +22,7 @@
                     </div>
                     <div class="header-page__action">
                         <a href="#" class="button button--blue btn-modal">
-                            <span class="button__span" data-hover-btn="Получить консультацию">Задать вопрос</span> 
+                            <span class="button__span" data-hover-btn="Задать вопрос">Задать вопрос</span> 
                         </a>
                     </div>
                 </div>
