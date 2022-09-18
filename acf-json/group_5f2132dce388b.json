@@ -1,0 +1,78 @@
+{
+    "key": "group_5f2132dce388b",
+    "title": "Параметры главной страницы (копия)",
+    "fields": [
+        {
+            "key": "field_5f2132dd04de1",
+            "label": "Ссылка на страницу новостей",
+            "name": "link_news",
+            "type": "page_link",
+            "instructions": "Укажите ссылку на страницу новостей.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_5f2132f215985",
+            "label": "Выбор категорий",
+            "name": "select_category",
+            "type": "select",
+            "instructions": "Выберите категории, которые будут отображаться в блоке Новости.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "news-company": "Новости компании",
+                "news-russia": "Новости России",
+                "news-usa": "Новости США",
+                "news-israel": "Новости Израиля",
+                "research-ru": "Все Исследования",
+                "research_business-ru": "Исследования Сопровождение бизнеса",
+                "research_legal-ru": "Исследования Судебная практика",
+                "research_anti-ru": "Исследования Антикризисные решения",
+                "research_international-ru": "Исследования Международная практика"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-research-test.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры страницы page-home.php",
+    "show_in_rest": 0,
+    "modified": 1663512692
+}

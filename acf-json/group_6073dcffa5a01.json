@@ -1,0 +1,1688 @@
+{
+    "key": "group_6073dcffa5a01",
+    "title": "Настройки страницы: Гибкий макет",
+    "fields": [
+        {
+            "key": "field_607448ee25bf4",
+            "label": "Гибкий макет страницы",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6073dd102ccd6",
+            "label": "Макет страницы",
+            "name": "content-blocks",
+            "type": "flexible_content",
+            "instructions": "Здесь вы можете добавлять и перетаскивать заранее подготовленные блоки.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_6073dd4be52f2": {
+                    "key": "layout_6073dd4be52f2",
+                    "name": "content-block-why",
+                    "label": "Блок - Преимущества",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6092847bb84aa",
+                            "label": "Показать\/Скрыть блок",
+                            "name": "why-block_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_6073f874e96de",
+                            "label": "Заголовок блока",
+                            "name": "why_title_block",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Почему мы?",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6073e9a4ee58e",
+                            "label": "Карточка преимуществ",
+                            "name": "why_items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_60741756e613d",
+                                    "label": "Карточка преимуществ",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_6073f2baee58f",
+                                    "label": "Изображение",
+                                    "name": "why_img",
+                                    "type": "image",
+                                    "instructions": "Добавьте изображение преимущества.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "large",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_6073f329ee590",
+                                    "label": "Заголовок",
+                                    "name": "why_title",
+                                    "type": "text",
+                                    "instructions": "Короткий заголовок.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_6073f357ee591",
+                                    "label": "Описание",
+                                    "name": "why_descr",
+                                    "type": "textarea",
+                                    "instructions": "Короткое описание преимущества.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6073dfad5229f": {
+                    "key": "layout_6073dfad5229f",
+                    "name": "content-block-service",
+                    "label": "Блок - Подробнее об услуге",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_609283fbb84a9",
+                            "label": "Показать\/Скрыть блок",
+                            "name": "service-block_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_6073f770e96dd",
+                            "label": "Заголовок блока",
+                            "name": "service_title_block",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Подробнее об услуге",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6073f964deaea",
+                            "label": "Описание услуг(Аккордеон)",
+                            "name": "service_items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_60741782e613e",
+                                    "label": "Описание услуг(Аккордеон)",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_6073ff45deaeb",
+                                    "label": "Заголовок",
+                                    "name": "service_title",
+                                    "type": "text",
+                                    "instructions": "Короткий заголовок.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_6073ff93deaec",
+                                    "label": "Описание",
+                                    "name": "service_descr",
+                                    "type": "wysiwyg",
+                                    "instructions": "Укажите описание.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_607416e8c3a8e",
+                            "label": "Разделитель",
+                            "name": "",
+                            "type": "accordion",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "open": 0,
+                            "multi_expand": 0,
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_60740071deaed",
+                            "label": "Фотография",
+                            "name": "service_photo",
+                            "type": "image",
+                            "instructions": "Добавьте изображение, которое будет отображаться справа от аккордеона.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "full",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6073e62725554": {
+                    "key": "layout_6073e62725554",
+                    "name": "content-block-tarrifs",
+                    "label": "Блок - Тарифы(карточки тарифов)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_609283c6b84a8",
+                            "label": "Показать\/Скрыть блок",
+                            "name": "tarrifs-block_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_607405a6cb4f1",
+                            "label": "Заголовок блока",
+                            "name": "tarrifs_title_block",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Тарифы",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_607405d0cb4f2",
+                            "label": "Карточка тарифа",
+                            "name": "tarrifs_items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_607417a0e613f",
+                                    "label": "Карточка тарифа",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_607414710528b",
+                                    "label": "Текст(Тарифный план)",
+                                    "name": "tarrifs_firstname",
+                                    "type": "text",
+                                    "instructions": "Данное название нужно для перевода на английский.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Тарифный план:",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60740c36cb4f3",
+                                    "label": "Название тарифа",
+                                    "name": "tarrifs_name",
+                                    "type": "text",
+                                    "instructions": "Укажите название тарифа.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_607415190528c",
+                                    "label": "Текст(Стоимость)",
+                                    "name": "tarrifs_cost_name",
+                                    "type": "text",
+                                    "instructions": "Данное название нужно для перевода на английский.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Стоимость:",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60740d04cb4f4",
+                                    "label": "Стоимость",
+                                    "name": "tarrifs_cost",
+                                    "type": "text",
+                                    "instructions": "Укажите стоимость тарифа",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_607410facb4f7",
+                                    "label": "Ячейка с названием опции",
+                                    "name": "tarrifs_items_child",
+                                    "type": "repeater",
+                                    "instructions": "Добавьте ячейку с названием опции.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "block",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_6074112fcb4f8",
+                                            "label": "Название опции",
+                                            "name": "tarrifs_child_name",
+                                            "type": "text",
+                                            "instructions": "Укажите название опции.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_6074114bcb4f9",
+                                            "label": "Включено\/Выключено",
+                                            "name": "tarrifs_child_turn_on_option",
+                                            "type": "text",
+                                            "instructions": "Укажите, включена ли опция.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Включено",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_60741bda04f95",
+                                    "label": "Название кнопки",
+                                    "name": "tarrifs_btn_name",
+                                    "type": "text",
+                                    "instructions": "Название кнопки в 1 короткое слово. Нужно для перевода на английский.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Оформить",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60900c60d7865": {
+                    "key": "layout_60900c60d7865",
+                    "name": "content-block-tarrifs_slider",
+                    "label": "Блок - Слайдер с тарифами(карточки тарифов)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_609284dab84ab",
+                            "label": "Показать\/Скрыть блок",
+                            "name": "tarrifs_slider-block_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_60900c60d7866",
+                            "label": "Заголовок блока",
+                            "name": "tarrifs_title_block_slider",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Тарифы",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_60900c60d7867",
+                            "label": "Карточка тарифа",
+                            "name": "tarrifs_items_slider",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_60900c60d7868",
+                                    "label": "Карточка тарифа",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_60900c60d7869",
+                                    "label": "Текст(Тарифный план)",
+                                    "name": "tarrifs_firstname_slider",
+                                    "type": "text",
+                                    "instructions": "Данное название нужно для перевода на английский.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Тарифный план:",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60900c60d786a",
+                                    "label": "Название тарифа",
+                                    "name": "tarrifs_name_slider",
+                                    "type": "text",
+                                    "instructions": "Укажите название тарифа.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60900c60d786b",
+                                    "label": "Текст(Стоимость)",
+                                    "name": "tarrifs_cost_name_slider",
+                                    "type": "text",
+                                    "instructions": "Данное название нужно для перевода на английский.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Стоимость:",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60900c60d786c",
+                                    "label": "Стоимость",
+                                    "name": "tarrifs_cost_slider",
+                                    "type": "text",
+                                    "instructions": "Укажите стоимость тарифа",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60900c60d786d",
+                                    "label": "Ячейка с названием опции",
+                                    "name": "tarrifs_items_child_slider",
+                                    "type": "repeater",
+                                    "instructions": "Добавьте ячейку с названием опции.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "block",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_60900c60d786e",
+                                            "label": "Название опции",
+                                            "name": "tarrifs_child_name_slider",
+                                            "type": "text",
+                                            "instructions": "Укажите название опции.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_60900c60d786f",
+                                            "label": "Включено\/Выключено",
+                                            "name": "tarrifs_child_turn_on_option_slider",
+                                            "type": "text",
+                                            "instructions": "Укажите, включена ли опция.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Включено",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_60900c60d7870",
+                                    "label": "Название кнопки",
+                                    "name": "tarrifs_btn_name_slider",
+                                    "type": "text",
+                                    "instructions": "Название кнопки в 1 короткое слово. Нужно для перевода на английский.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Оформить",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6073e65025555": {
+                    "key": "layout_6073e65025555",
+                    "name": "content-block-cases",
+                    "label": "Блок - Кейсы",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60928525b84ac",
+                            "label": "Показать\/Скрыть блок",
+                            "name": "cases-block_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_607423a25b073",
+                            "label": "Заголовок блока",
+                            "name": "cases_title_block",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Кейсы",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_607423ca5b074",
+                            "label": "Кейс",
+                            "name": "cases_slides",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6074288d6c3ec",
+                                    "label": "Кейс",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_607424195b075",
+                                    "label": "Фото кейса",
+                                    "name": "cases_photo",
+                                    "type": "image",
+                                    "instructions": "Параметры изображения: Ширина - 391px, Высота - 542px",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "full",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_607425d65b076",
+                                    "label": "Описание кейса",
+                                    "name": "cases_text",
+                                    "type": "wysiwyg",
+                                    "instructions": "Укажите описание кейса.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_608fde32f0d51",
+                            "label": "Показать\/Скрыть стрелку",
+                            "name": "cases_arrow_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_6074276ce4083",
+                            "label": "Название стрелки",
+                            "name": "cases_arrow_name",
+                            "type": "text",
+                            "instructions": "Нужно для перевода на английский.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_608fde32f0d51",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Посмотреть еще",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_608fde9bf0d52",
+                            "label": "Показать\/Скрыть кнопку призыва",
+                            "name": "cases_btn_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_607427bce4084",
+                            "label": "Название кнопки призыва",
+                            "name": "cases_btn_name",
+                            "type": "text",
+                            "instructions": "Нужно в первую очередь для перевода на английский.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_608fde9bf0d52",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Хочу так же!",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_6073e66f25556": {
+                    "key": "layout_6073e66f25556",
+                    "name": "content-block-additional-serv",
+                    "label": "Блок - Дополнительные услуги",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6092857eb84ad",
+                            "label": "Показать\/Скрыть блок",
+                            "name": "additional-serv-block_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_607429166c3ed",
+                            "label": "Заголовок блока",
+                            "name": "additional-serv_title_block",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Дополнительные услуги",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_607429726c3ee",
+                            "label": "Дополнительная услуга",
+                            "name": "additional-serv_slides",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_60742caf6c3f2",
+                                    "label": "Дополнительная услуга",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_60742b086c3ef",
+                                    "label": "Изображение",
+                                    "name": "additional-serv_photo",
+                                    "type": "image",
+                                    "instructions": "Добавьте изображение для заднего фона.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "large",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_60742b506c3f0",
+                                    "label": "Заголовок",
+                                    "name": "additional-serv_title",
+                                    "type": "text",
+                                    "instructions": "Укажите короткий заголовок.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Квалифицированного",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_6077d62a7f9bb",
+                                    "label": "Ссылка на услугу",
+                                    "name": "additional-serv_link",
+                                    "type": "link",
+                                    "instructions": "Укажите ссылку на услугу.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_6073e6ca25557": {
+                    "key": "layout_6073e6ca25557",
+                    "name": "content-block-reviews",
+                    "label": "Блок - Отзывы",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_609285a9b84ae",
+                            "label": "Показать\/Скрыть блок",
+                            "name": "reviews-block_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_60742de104f8f",
+                            "label": "Заголовок блока",
+                            "name": "reviews_title_block",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Отзывы наших клиентов",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6074311177d97",
+                            "label": "Отзыв клиента",
+                            "name": "reviews_items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_60743d4d77d9d",
+                                    "label": "Отзыв клиента",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_60743c6c77d98",
+                                    "label": "Аватар клиента",
+                                    "name": "reviews_avatar",
+                                    "type": "image",
+                                    "instructions": "Добавьте фото клиента.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_60743c9777d99",
+                                    "label": "Фото документа",
+                                    "name": "reviews_photo-doc",
+                                    "type": "image",
+                                    "instructions": "Добавьте фото документа.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_60743ce277d9a",
+                                    "label": "Имя\/Фамилия",
+                                    "name": "reviews_name",
+                                    "type": "text",
+                                    "instructions": "Укажите имя и фамилию клиента.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60743d1777d9b",
+                                    "label": "Компания",
+                                    "name": "reviews_company",
+                                    "type": "text",
+                                    "instructions": "Укажите компанию клиента.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60743d2b77d9c",
+                                    "label": "Должность",
+                                    "name": "reviews_rank",
+                                    "type": "text",
+                                    "instructions": "Укажите должность клиента",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_60743d8577d9e",
+                                    "label": "Текст отзыва",
+                                    "name": "reviews_review",
+                                    "type": "wysiwyg",
+                                    "instructions": "Текст отзыва.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_607446fc5561d",
+                            "label": "Название кнопки",
+                            "name": "reviews_btn_name",
+                            "type": "text",
+                            "instructions": "Нужно в первую очередь для перевода на английский.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Посмотреть ещё",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6073e70e25558": {
+                    "key": "layout_6073e70e25558",
+                    "name": "content-block-form",
+                    "label": "Блок - Форма обратной связи",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6074475a5561e",
+                            "label": "Заголовок блока",
+                            "name": "form_title_block",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Получить бесплатную консультацию",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6073e73125559": {
+                    "key": "layout_6073e73125559",
+                    "name": "content-block-faq",
+                    "label": "Блок - FAQ",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60928658b84af",
+                            "label": "Показать\/Скрыть блок",
+                            "name": "faq-block_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        },
+                        {
+                            "key": "field_6074415e52205",
+                            "label": "Заголовок блока",
+                            "name": "faq_title_block",
+                            "type": "text",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "FAQ | Часто задаваемые вопросы",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6074460352206",
+                            "label": "Вопрос\/ответ",
+                            "name": "faq_items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6074466252209",
+                                    "label": "Вопрос\/ответ",
+                                    "name": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_6074462152207",
+                                    "label": "Вопрос",
+                                    "name": "faq_question",
+                                    "type": "text",
+                                    "instructions": "Укажите вопрос.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_6074463c52208",
+                                    "label": "Ответ",
+                                    "name": "faq_answer",
+                                    "type": "wysiwyg",
+                                    "instructions": "Укажите ответ.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60744a3352537": {
+                    "key": "layout_60744a3352537",
+                    "name": "content-block-general",
+                    "label": "Главный текстовый блок WP",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60928681b84b0",
+                            "label": "Показать\/Скрыть блок",
+                            "name": "general-block_on",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Показать",
+                            "ui_off_text": "Скрыть"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Добавить",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_607448d725bf3",
+            "label": "Общие настройки страницы",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6074488725bf2",
+            "label": "Подзаголовок страницы",
+            "name": "subtitle-page",
+            "type": "text",
+            "instructions": "Укажите подзаголовок страницы. Который будет располагаться под главный заголовком H1 в шапке.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6074500f29ec4",
+            "label": "Изображение под мобильные",
+            "name": "head_mobile_photo",
+            "type": "image",
+            "instructions": "Загрузите изображение, которое будет отображаться для мобильных устройств.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-new-service.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1663512623
+}

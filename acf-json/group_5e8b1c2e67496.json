@@ -1,0 +1,51 @@
+{
+    "key": "group_5e8b1c2e67496",
+    "title": "Настройки лендинга",
+    "fields": [
+        {
+            "key": "field_5e8b1c3e147a1",
+            "label": "Скачать PDF",
+            "name": "skachat_pdf",
+            "type": "file",
+            "instructions": "Загрузите файл",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-landing-4.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-landing-5.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1663512586
+}

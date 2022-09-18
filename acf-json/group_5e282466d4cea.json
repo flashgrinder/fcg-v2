@@ -1,0 +1,735 @@
+{
+    "key": "group_5e282466d4cea",
+    "title": "Параметры страницы",
+    "fields": [
+        {
+            "key": "field_5f216f8d6e042",
+            "label": "Текст страницы",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e2824b393f20",
+            "label": "Подзаголовок",
+            "name": "subtitle-page",
+            "type": "text",
+            "instructions": "Напишите короткий подзаголовок",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e2827625b76e",
+            "label": "Заголовок",
+            "name": "title-text",
+            "type": "text",
+            "instructions": "Укажите заголовок, который будет отображаться над описанием офиса",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e2827bd5b76f",
+            "label": "Описание 1",
+            "name": "descr-text-1",
+            "type": "textarea",
+            "instructions": "Укажите описание, чем занимается офис",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5e2828575b770",
+            "label": "Описание 2",
+            "name": "descr-text-2",
+            "type": "textarea",
+            "instructions": "Укажите описание, чем занимается офис, которое будет отображаться под картинкой на всю ширину",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f216fb16e043",
+            "label": "Услуги",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e2ad3ab7a52e",
+            "label": "Колонки с услугами",
+            "name": "service-column",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Добавить",
+            "sub_fields": [
+                {
+                    "key": "field_5e2ad6fd15edb",
+                    "label": "Заголовок колонки",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e2ad7c6229ee",
+                    "label": "Выберите услуги",
+                    "name": "list",
+                    "type": "post_object",
+                    "instructions": "Выберите услуги, которые будут отображаться в столбце",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": [
+                        "cats_page:services_usa"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 1,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        },
+        {
+            "key": "field_5f216fc76e044",
+            "label": "Специалисты",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e28454dfcf33",
+            "label": "Заголовок над специалистами",
+            "name": "title_specialists",
+            "type": "text",
+            "instructions": "Укажите заголовок, который будет отображаться над специалистами",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e2841e0a1245",
+            "label": "Профили специалистов",
+            "name": "profile",
+            "type": "repeater",
+            "instructions": "Заполните профиль специалиста",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5e284227a1246",
+                    "label": "Фото специалиста",
+                    "name": "photo_profile",
+                    "type": "image",
+                    "instructions": "Выберите фото специалиста",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "large",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5e284272a1247",
+                    "label": "Имя\/Фамилия",
+                    "name": "name_profile",
+                    "type": "text",
+                    "instructions": "Укажите имя и фамилию специалиста",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e2842e9a1248",
+                    "label": "Должность",
+                    "name": "rank_profile",
+                    "type": "text",
+                    "instructions": "Укажите должность специалиста",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e284317a1249",
+                    "label": "E-mail",
+                    "name": "email_profile",
+                    "type": "text",
+                    "instructions": "Укажите e-mail специалиста(не обязательно)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5e284922fd182",
+            "label": "Адресс",
+            "name": "adress",
+            "type": "text",
+            "instructions": "Укажите адресс офиса",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e284992fd183",
+            "label": "Телефон",
+            "name": "phone",
+            "type": "text",
+            "instructions": "Укажите телефон офиса",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f216fd96e045",
+            "label": "Новости",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e5505ea4ddcb",
+            "label": "Включить блок с новостями\/исследованиями?",
+            "name": "on_off_news",
+            "type": "true_false",
+            "instructions": "Отображает или скрывает блок с новостями\/исследованиями.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Показать",
+            "ui_off_text": "Скрыть"
+        },
+        {
+            "key": "field_5f27bfb954a0c",
+            "label": "Цвет фона блока новостей",
+            "name": "color-bg_news",
+            "type": "radio",
+            "instructions": "Выберите цвет блока.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e5505ea4ddcb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bg_white": "Белый",
+                "bg_gray": "Светло-серый"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "bg_white : Белый",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5e54f121b5501",
+            "label": "Заголовок над новостями",
+            "name": "title_news",
+            "type": "text",
+            "instructions": "Укажите заголовок, который будет отображаться над новостями",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e5505ea4ddcb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e54f52d8dc82",
+            "label": "Новости",
+            "name": "select_category",
+            "type": "select",
+            "instructions": "Выберите категории, которые будут отображаться в новостном блоке.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e5505ea4ddcb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "news-company": "Новости компании",
+                "news-russia": "Новости России",
+                "news-usa": "Новости США",
+                "news-israel": "Новости Израиля"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e54fa69fc18a",
+            "label": "Читать больше новостей",
+            "name": "link_news",
+            "type": "page_link",
+            "instructions": "Укажите ссылку на страницу новостей.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e5505ea4ddcb",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "allow_archives": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_5f216fea6e046",
+            "label": "Проекты",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e54e4747940b",
+            "label": "Включить блок с проектами?",
+            "name": "on_off_project",
+            "type": "true_false",
+            "instructions": "Отображает или скрывает блок с проектами",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Да",
+            "ui_off_text": "Нет"
+        },
+        {
+            "key": "field_5e54ec2ad32c0",
+            "label": "Включить блок с отзывами?",
+            "name": "on_off_feedback",
+            "type": "true_false",
+            "instructions": "Отображает или скрывает блок с отзывами",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Да",
+            "ui_off_text": "Нет"
+        },
+        {
+            "key": "field_5f216ff76e047",
+            "label": "Отзывы",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e54ccb2108ba",
+            "label": "Заголовок над отзывами",
+            "name": "title_review",
+            "type": "text",
+            "instructions": "Укажите заголовок, который будет отображаться над отзывами клиентов",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e54cae2108b5",
+            "label": "Отзывы клиентов",
+            "name": "review",
+            "type": "repeater",
+            "instructions": "Добавьте отзыв клиента",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5e54cae2108b6",
+                    "label": "Логотип клиента",
+                    "name": "photo_review",
+                    "type": "image",
+                    "instructions": "Выберите логотип клиента",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "large",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5e54cae2108b7",
+                    "label": "Имя\/Фамилия",
+                    "name": "name_review",
+                    "type": "text",
+                    "instructions": "Укажите имя и фамилию клиента",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e54cae2108b8",
+                    "label": "Название фирмы",
+                    "name": "rank_review",
+                    "type": "text",
+                    "instructions": "Укажите название фирмы клиента",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e54cae2108b9",
+                    "label": "Текст отзыва",
+                    "name": "text_review",
+                    "type": "textarea",
+                    "instructions": "Отзыв клиента",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-company\/page-company-usa.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-company\/page-company-russia.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-company\/page-company-israel.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры страницы page-company-usa\\russia\\israel",
+    "show_in_rest": 0,
+    "modified": 1663512795
+}

@@ -1,0 +1,137 @@
+{
+    "key": "group_5f21273f1ba2b",
+    "title": "Параметры главной страницы",
+    "fields": [
+        {
+            "key": "field_5f27c22815faf",
+            "label": "Новости",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5f27c4b4a7ead",
+            "label": "Включить блок с новостями\/исследованиями?",
+            "name": "on_off_news",
+            "type": "true_false",
+            "instructions": "Отображает или скрывает блок с новостями\/исследованиями.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Показать",
+            "ui_off_text": "Скрыть"
+        },
+        {
+            "key": "field_5f27c23b15fb0",
+            "label": "Цвет фона блока новостей",
+            "name": "color-bg_news",
+            "type": "radio",
+            "instructions": "Выберите цвет блока.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bg_white": "Белый",
+                "bg_gray": "Светло-серый"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5f216994ec5f3",
+            "label": "Выбор категорий новостей",
+            "name": "select_category",
+            "type": "select",
+            "instructions": "Выберите категории, которые будут отображаться в новостном блоке.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "news-company": "Новости компании",
+                "news-russia": "Новости России",
+                "news-usa": "Новости США",
+                "news-israel": "Новости Израиля",
+                "research-ru": "Все Исследования",
+                "research_business-ru": "Исследования Сопровождение бизнеса",
+                "research_legal-ru": "Исследования Судебная практика",
+                "research_anti-ru": "Исследования Антикризисные решения",
+                "research_international-ru": "Исследования Международная практика"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f2127765582e",
+            "label": "Ссылка на страницу новостей",
+            "name": "link_news",
+            "type": "page_link",
+            "instructions": "Укажите ссылку на страницу новостей.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры страницы page-home.php",
+    "show_in_rest": 0,
+    "modified": 1663512670
+}

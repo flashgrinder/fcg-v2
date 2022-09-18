@@ -1,0 +1,386 @@
+{
+    "key": "group_5e18590800eda",
+    "title": "Параметры раздела",
+    "fields": [
+        {
+            "key": "field_5e185a38ac0ee",
+            "label": "Подзаголовок",
+            "name": "subtitle-page",
+            "type": "text",
+            "instructions": "Напишите короткий подзаголовок",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e26966bf1fac",
+            "label": "Блок Услуги",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e1862f7f2112",
+            "label": "Заголовок над списком услуг",
+            "name": "services",
+            "type": "text",
+            "instructions": "Укажите заголовок, который будет отображаться над списком услуг",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e1c140837b5c",
+            "label": "Колонки с услугами",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1
+        },
+        {
+            "key": "field_5e1c00aba3bc7",
+            "label": "Первая колонка",
+            "name": "column_one",
+            "type": "post_object",
+            "instructions": "Выберите страницы, которые будут отображаться в первом столбце",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [
+                "cats_page:crisis_management_solutions",
+                "cats_page:international_practice",
+                "cats_page:business_support",
+                "cats_page:arbitrage_practice"
+            ],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5e1c00e5a3bc8",
+            "label": "Вторая колонка",
+            "name": "column_two",
+            "type": "post_object",
+            "instructions": "Выберите страницы, которые будут отображаться во втором столбце",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [
+                "cats_page:crisis_management_solutions",
+                "cats_page:international_practice",
+                "cats_page:business_support",
+                "cats_page:arbitrage_practice"
+            ],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5e2696cbf1fad",
+            "label": "Блок Специалисты",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e18644cf99ba",
+            "label": "Заголовок над специалистами",
+            "name": "title_specialists",
+            "type": "text",
+            "instructions": "Укажите заголовок, который будет отображаться над специалистами",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e1c5a800d360",
+            "label": "Специалисты",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1
+        },
+        {
+            "key": "field_5e1c4dd56bac6",
+            "label": "Профили специалистов",
+            "name": "profile",
+            "type": "repeater",
+            "instructions": "Заполните профиль специалиста",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5e1c4e3ac66a4",
+                    "label": "Фото специалиста",
+                    "name": "photo_profile",
+                    "type": "image",
+                    "instructions": "Выберите фото специалиста",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "large",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5e1c52ec0d35d",
+                    "label": "Имя\/Фамилия",
+                    "name": "name_profile",
+                    "type": "text",
+                    "instructions": "Укажите имя и фамилию специалиста",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e1c59650d35e",
+                    "label": "Должность",
+                    "name": "rank_profile",
+                    "type": "text",
+                    "instructions": "Укажите должность специалиста",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e1c5a290d35f",
+                    "label": "E-mail",
+                    "name": "email_profile",
+                    "type": "text",
+                    "instructions": "Укажите e-mail специалиста(не обязательно)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5e2697d5a555c",
+            "label": "Блок Исследования",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e269d73ca9ec",
+            "label": "Показать блок с исследованиями",
+            "name": "show_block",
+            "type": "true_false",
+            "instructions": "Показать или скрыть блок с исследованиями",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Показать",
+            "ui_off_text": "Скрыть"
+        },
+        {
+            "key": "field_5e26bfd8b6df2",
+            "label": "Заголовок над исследованиями",
+            "name": "research_title",
+            "type": "text",
+            "instructions": "Укажите заголовок, который будет отображаться над исследованиями",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e26949eb8c9d",
+            "label": "Исследования",
+            "name": "research",
+            "type": "select",
+            "instructions": "Выберите категорию исследований, которые будут отображаться в блоке Исследования",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "research_business-ru": "Исследования Сопровождение бизнеса",
+                "research_legal-ru": "Исследования Судебная практика",
+                "research_anti-ru": "Исследования Антикризисные решения",
+                "research_international-ru": "Исследования Международная практика"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-section.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры страницы page-section.php",
+    "show_in_rest": 0,
+    "modified": 1663512715
+}

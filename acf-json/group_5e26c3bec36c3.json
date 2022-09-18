@@ -1,0 +1,76 @@
+{
+    "key": "group_5e26c3bec36c3",
+    "title": "Параметры страницы",
+    "fields": [
+        {
+            "key": "field_5e26c3ff87e6e",
+            "label": "Заголовок",
+            "name": "block_title",
+            "type": "text",
+            "instructions": "Укажите заголовок, который будет отображаться над исследованиями",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e26c4e325838",
+            "label": "Категории Новостей \\ Исследований",
+            "name": "block_content",
+            "type": "select",
+            "instructions": "Выберите категорию исследований, которые будут отображаться в блоке Новости \\ Исследования",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "news-company": "Новости компании",
+                "news-russia": "Новости России",
+                "news-usa": "Новости США",
+                "news-israel": "Новости Израиля",
+                "research-ru": "Все Исследования",
+                "research_business-ru": "Исследования Сопровождение бизнеса",
+                "research_legal-ru": "Исследования Судебная практика",
+                "research_anti-ru": "Исследования Антикризисные решения",
+                "research_international-ru": "Исследования Международная практика"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-research.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры страницы(Новости \\ Исследования) page-research.php",
+    "show_in_rest": 0,
+    "modified": 1663512766
+}

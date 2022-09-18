@@ -1,0 +1,44 @@
+{
+    "key": "group_5e1c70d6683d8",
+    "title": "Параметры услуги",
+    "fields": [
+        {
+            "key": "field_5e1c71078aaff",
+            "label": "Подзаголовок",
+            "name": "subtitle-page",
+            "type": "text",
+            "instructions": "Напишите короткий подзаголовок",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-service.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры страницы page-service.php",
+    "show_in_rest": 0,
+    "modified": 1663512840
+}

@@ -1,0 +1,76 @@
+{
+    "key": "group_5da0452f53048",
+    "title": "Параметры страницы",
+    "fields": [
+        {
+            "key": "field_5da0453b38874",
+            "label": "Цвет заднего фона",
+            "name": "czvet_zadnego_fona",
+            "type": "color_picker",
+            "instructions": "Задайте цвет заднего фона страницы",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_5da047d630f6b",
+            "label": "Цвет текста",
+            "name": "czvet_teksta",
+            "type": "color_picker",
+            "instructions": "Цвет текста стрницы",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_5da048bcadf1c",
+            "label": "Цвет заголовка",
+            "name": "czvet_zagolovka",
+            "type": "color_picker",
+            "instructions": "Задайте цвет главного заголовка",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": false,
+            "return_format": "string"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Параметры страницы page-templ.php",
+    "show_in_rest": 0,
+    "modified": 1663512739
+}
