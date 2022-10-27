@@ -2900,6 +2900,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   max-height: 130px;
 }
 
+/* Devsite */
+
+.devsite {
+  padding: 15px;
+  background: #4c4c4c;
+}
+
+.devsite__outer {
+  text-align: center;
+}
+
+.devsite__link {
+  display: inline-flex;
+  align-items: center;
+  grid-gap: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.devsite__logo,
+.devsite__logo-img {
+  display: block;
+  max-width: 30px;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
