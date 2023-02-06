@@ -10,6 +10,8 @@
 
     });
 
+    add_post_type_support( 'page', array('excerpt') );
+
     /* Actions */
     include_once(__DIR__ . '/inc/actions.php');
     /* Битрикс 24 - вебхук */

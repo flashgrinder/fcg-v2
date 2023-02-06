@@ -1,0 +1,414 @@
+{
+    "key": "group_63e0e531ae46f",
+    "title": "Настройки услуги",
+    "fields": [
+        {
+            "key": "field_63e0e5314bca7",
+            "label": "Контентные блоки",
+            "name": "service-blocks",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_63e0e55d70ab8": {
+                    "key": "layout_63e0e55d70ab8",
+                    "name": "service_why-us",
+                    "label": "Преимущества",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63e0e6764bca8",
+                            "label": "Заголовок блока",
+                            "name": "why-us_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Заголовок блока",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63e0e6e94bcaa",
+                            "label": "Текстовый редактор",
+                            "name": "why-us_wysiwyg",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Укажите текст.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_63e0f909b3a59",
+                            "label": "Карточки",
+                            "name": "why-us_cards",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Добавить",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_63e0f92fb3a5a",
+                                    "label": "Карточка преимущества",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 1,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63e0f909b3a59"
+                                },
+                                {
+                                    "key": "field_63e0f947b3a5b",
+                                    "label": "Заголовок",
+                                    "name": "why-us_card-title",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Укажите заголовок карточки.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Заголовок",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "br",
+                                    "parent_repeater": "field_63e0f909b3a59"
+                                },
+                                {
+                                    "key": "field_63e0f96eb3a5c",
+                                    "label": "Короткое описание",
+                                    "name": "why-us_card-descr",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Укажите короткое описание.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Короткое описание",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "br",
+                                    "parent_repeater": "field_63e0f909b3a59"
+                                },
+                                {
+                                    "key": "field_63e0f99db3a5d",
+                                    "label": "Изображение",
+                                    "name": "why-us_card-img",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "Добавьте изображение карточки.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "full",
+                                    "parent_repeater": "field_63e0f909b3a59"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_63e0fb3244ca6",
+                            "label": "Название кнопки",
+                            "name": "why-us_btn",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Укажите название кнопки.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Заказать звонок",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63e0ee2130250": {
+                    "key": "layout_63e0ee2130250",
+                    "name": "service_text-block",
+                    "label": "Текстовый блок",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63e0ed9d7ae21",
+                            "label": "Заголовок блока",
+                            "name": "text-block_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Заголовок блока",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63e0edc77ae23",
+                            "label": "Иконка",
+                            "name": "text-block_icon",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Укажите иконку рядом с заголовком блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "10",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "full"
+                        },
+                        {
+                            "key": "field_63e0eda37ae22",
+                            "label": "Текстовый редактор",
+                            "name": "text-block_wysiwyg",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Укажите текст.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63e0fcc67013a": {
+                    "key": "layout_63e0fcc67013a",
+                    "name": "service_faq",
+                    "label": "FAQ",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63e0fce87013c",
+                            "label": "Заголовок блока",
+                            "name": "faq_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "FAQ | Часто задаваемые вопросы",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63e0fd197013d",
+                            "label": "FAQ",
+                            "name": "faq",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Добавить",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_63e0fd6a7013e",
+                                    "label": "Вопрос\/Ответ",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 1,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63e0fd197013d"
+                                },
+                                {
+                                    "key": "field_63e0fd767013f",
+                                    "label": "Вопрос",
+                                    "name": "faq_ask",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Укажите вопрос.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Вопрос?",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "br",
+                                    "parent_repeater": "field_63e0fd197013d"
+                                },
+                                {
+                                    "key": "field_63e0fd9670140",
+                                    "label": "Ответ",
+                                    "name": "faq_answer",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Укажите ответ.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Ответ",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "br",
+                                    "parent_repeater": "field_63e0fd197013d"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Добавить"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-services-single-new-2.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Шаблон услуги v2.2",
+    "show_in_rest": 0,
+    "modified": 1675689417
+}
