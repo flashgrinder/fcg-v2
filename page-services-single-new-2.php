@@ -133,128 +133,52 @@
                 <section class="table-price block--padding bg--white">
                     <div class="table-price__body container">
                         <h2 class="table-price__heading title title--large title--dark title--w-medium title--indent">
-                            Прайс
+                            <?php echo get_sub_field('table-price_title'); ?>
                         </h2>
                         <div class="table-price__grid">
-                            <div class="table-price__column table-price__column--one">
-                                <h4 class="table-price__col-title text text--dark text--w-regular">
-                                    Услуги
-                                </h4>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    Бухгалтерское сопроводждение
+                        <?php if( have_rows('table-price_col') ): ?>
+                            <?php while( have_rows('table-price_col') ): the_row(); ?>
+                                <div class="table-price__column <?php echo (get_row_index() == 1) ? 'table-price__column--one ' : ''; echo (get_row_index() == 3 || get_row_index() == 4) ? 'hide-mobile-xs' : ''; ?>">
+                                    <?php if( have_rows('table-price_row') ): ?>
+                                        <?php while( have_rows('table-price_row') ): the_row(); 
+                                                
+                                                $table_price_row_title = get_sub_field('table-price_row-title');
+                                                $table_price_row_mobile = get_sub_field('table_price_row_mobile');
+                                            
+                                            ?>
+                                            <?php if( get_row_index() == 1 ) : ?>
+                                                <h4 class="table-price__col-title text text--dark text--w-regular">
+                                                    <?php echo $table_price_row_title; ?>
+                                                </h4>
+                                            <?php else : ?>
+                                                <div class="table-price__row text text--dark text--w-regular text--normal">
+                                                    <?php echo $table_price_row_title; ?>
+                                                </div>
+                                            <?php endif; ?>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
                                 </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    Консультация экспертов
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    Услуги представителя
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    Аренда офиса
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    Открытие корпоративного счёта
-                                    <br>
-                                    <span class="table-price__terms text text--dark-gray-low text--w-regular text--normal">от 5 дней</span>
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    Разработка фин. модели
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    Регистрация компании
-                                    <br>
-                                    <span class="table-price__terms text text--dark-gray-low text--w-regular text--normal">5-7 раб. дней</span>
-                                </div>
-                            </div>
-                            <div class="table-price__column">
-                                <h4 class="table-price__col-title text text--dark text--w-regular">
-                                    Стоимость
-                                </h4>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    от 100€/мес
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    200€
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    200€/мес
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    500€/6 мес
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    500€
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    от 500€
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    1000€
-                                </div>
-                            </div>
-                            <div class="table-price__column hide-mobile-xs">
-                                <h4 class="table-price__col-title text text--dark text--w-regular">
-                                    Сроки
-                                </h4>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    ежемесячная услуга
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    разовая услуга
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    ежемесячная услуга
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    ежемесячная услуга
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    от 5 дней
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    разовая услуга
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    5-7 рабочих дней
-                                </div>
-                            </div>
-                            <div class="table-price__column hide-mobile-xs">
-                                <h4 class="table-price__col-title text text--dark text--w-regular">
-                                    Дополнительные условия
-                                </h4>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    Дополнительно оплачивается комиссия банка
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                                </div>
-                                <div class="table-price__row text text--dark text--w-regular text--normal">
-                                    Дополнительно оплачивается налог в АПР
-                                </div>
-                            </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                         </div>
-                        <div class="table-price__ad-text text text--dark-gray-low text--w-regular text--normal">
-                            *дополнительно оплачивается комиссия банка
-                            <br>
-                            <br>*дополнительно оплачивается налог в АПР
-                        </div>
-                        <div class="table-price__action">
-                            <a href="#" class="table-price__btn button button--blue btn-modal" data-hover-btn="Оставить заявку">
-                                Оставить заявку
-                            </a>
-                        </div>
+                        <?php
+
+                            $table_price_add_text = get_sub_field('table-price_add-text');
+                            $table_price_btn = get_sub_field('table-price_btn');
+                        
+                        ?>
+                        <?php if( !empty($table_price_add_text) ) : ?>
+                            <div class="table-price__ad-text text text--dark-gray-low text--w-regular text--normal">
+                                <?php echo $table_price_add_text; ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if( !empty($table_price_btn) ) : ?>
+                            <div class="table-price__action">
+                                <a href="#" class="table-price__btn button button--blue btn-modal" data-hover-btn="<?php echo $table_price_btn; ?>">
+                                    <?php echo $table_price_btn; ?>
+                                </a>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </section>
                 <!-- /. Table-price -->
@@ -293,136 +217,6 @@
 
         <?php endwhile; ?>
     <?php endif; ?>    
-    
-    <!-- Table-price -->
-    <section class="table-price block--padding bg--white">
-        <div class="table-price__body container">
-            <h2 class="table-price__heading title title--large title--dark title--w-medium title--indent">
-                Прайс
-            </h2>
-            <div class="table-price__grid">
-                <div class="table-price__column table-price__column--one">
-                    <h4 class="table-price__col-title text text--dark text--w-regular">
-                        Услуги
-                    </h4>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        Бухгалтерское сопроводждение
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        Консультация экспертов
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        Услуги представителя
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        Аренда офиса
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        Открытие корпоративного счёта
-                        <br>
-                        <span class="table-price__terms text text--dark-gray-low text--w-regular text--normal">от 5 дней</span>
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        Разработка фин. модели
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        Регистрация компании
-                        <br>
-                        <span class="table-price__terms text text--dark-gray-low text--w-regular text--normal">5-7 раб. дней</span>
-                    </div>
-                </div>
-                <div class="table-price__column">
-                    <h4 class="table-price__col-title text text--dark text--w-regular">
-                        Стоимость
-                    </h4>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        от 100€/мес
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        200€
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        200€/мес
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        500€/6 мес
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        500€
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        от 500€
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        1000€
-                    </div>
-                </div>
-                <div class="table-price__column hide-mobile-xs">
-                    <h4 class="table-price__col-title text text--dark text--w-regular">
-                        Сроки
-                    </h4>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        ежемесячная услуга
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        разовая услуга
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        ежемесячная услуга
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        ежемесячная услуга
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        от 5 дней
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        разовая услуга
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        5-7 рабочих дней
-                    </div>
-                </div>
-                <div class="table-price__column hide-mobile-xs">
-                    <h4 class="table-price__col-title text text--dark text--w-regular">
-                        Дополнительные условия
-                    </h4>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        Дополнительно оплачивается комиссия банка
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-
-                    </div>
-                    <div class="table-price__row text text--dark text--w-regular text--normal">
-                        Дополнительно оплачивается налог в АПР
-                    </div>
-                </div>
-            </div>
-            <div class="table-price__ad-text text text--dark-gray-low text--w-regular text--normal">
-                *дополнительно оплачивается комиссия банка
-                <br>
-                <br>*дополнительно оплачивается налог в АПР
-            </div>
-            <div class="table-price__action">
-                <a href="#" class="table-price__btn button button--blue btn-modal" data-hover-btn="Оставить заявку">
-                    Оставить заявку
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- /. Table-price -->
 
     <?php 
         get_template_part('templ/main-form');

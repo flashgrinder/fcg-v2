@@ -385,6 +385,164 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_63e1faba2e7ef": {
+                    "key": "layout_63e1faba2e7ef",
+                    "name": "service_table-price",
+                    "label": "Прайс",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63e1fad52e7f1",
+                            "label": "Заголовок блока",
+                            "name": "table-price_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Прайс",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63e1faff2e7f2",
+                            "label": "Колонки таблицы",
+                            "name": "table-price_col",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 4,
+                            "collapsed": "",
+                            "button_label": "Добавить",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_63e1fb282e7f3",
+                                    "label": "Колонка",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 1,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63e1faff2e7f2"
+                                },
+                                {
+                                    "key": "field_63e1fb3b2e7f4",
+                                    "label": "Ячейки колонки",
+                                    "name": "table-price_row",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "row",
+                                    "pagination": 0,
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Добавить",
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_63e1fbae2e7f5",
+                                            "label": "Название ячейки",
+                                            "name": "table-price_row-title",
+                                            "aria-label": "",
+                                            "type": "textarea",
+                                            "instructions": "Укажите название ячейки.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Название ячейки",
+                                            "maxlength": "",
+                                            "rows": "",
+                                            "placeholder": "",
+                                            "new_lines": "br",
+                                            "parent_repeater": "field_63e1fb3b2e7f4"
+                                        }
+                                    ],
+                                    "parent_repeater": "field_63e1faff2e7f2"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_63e1ffdeb69dd",
+                            "label": "Дополнительный текст",
+                            "name": "table-price_add-text",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите дополнительный текст со звёздочкой. Отображается только на мобильных.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63e2000eb69de",
+                            "label": "Название кнопки",
+                            "name": "table-price_btn",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Укажите название кнопки.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Заказать звонок",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -410,5 +568,5 @@
     "active": true,
     "description": "Шаблон услуги v2.2",
     "show_in_rest": 0,
-    "modified": 1675689417
+    "modified": 1675755827
 }
