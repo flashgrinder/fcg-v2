@@ -119,6 +119,7 @@
 .header-page__img {
     display: block;
     max-height: 550px;
+    object-fit: contain;
     @include tablet-block {
         max-height: 450px;
     }

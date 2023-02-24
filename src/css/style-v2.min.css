@@ -646,13 +646,11 @@ img {
 }
 
 .swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper {
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
 }
 
 .swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 :root {
@@ -1517,7 +1515,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
-  border-color: #a90707;
+  border-color: rgb(169, 7, 7);
 }
 
 .lg-outer .lg-thumb-item img {
@@ -1715,6 +1713,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 .header-page__img {
   display: block;
   max-height: 550px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .header-page__subtitle {
@@ -1739,9 +1739,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 .why-us__cards {
   margin-top: 45px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(0, 248px) 50px minmax(0, 248px) 50px minmax(0, 248px) 50px minmax(0, 248px);
   grid-template-columns: repeat(4, minmax(0, 248px));
   grid-auto-rows: 1fr;
   grid-gap: 50px;
@@ -1974,7 +1972,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 .custom-select {
   -webkit-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 100%;
 }
@@ -2103,7 +2100,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   height: 27px;
   border-radius: 5px;
   -webkit-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -2468,10 +2464,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   color: var(--color-white-75);
 }
 
-.form__input.v2:-ms-input-placeholder {
-  color: var(--color-white-75);
-}
-
 .form__input.v2::placeholder {
   color: var(--color-white-75);
 }
@@ -2766,38 +2758,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 /* Table-price */
 
 .table-price__grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(100px, 200px) 30px minmax(155px, 300px) 30px minmax(155px, 300px) 30px minmax(155px, 300px);
   grid-template-columns: minmax(100px, 200px) minmax(155px, 300px) minmax(155px, 300px) minmax(155px, 300px);
-  -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
   grid-gap: 30px;
   align-items: stretch;
 }
 
-.table-price__grid > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.table-price__grid > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.table-price__grid > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-
-.table-price__grid > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-}
-
 .table-price__column {
-  display: -ms-grid;
   display: grid;
   grid-auto-rows: 1fr;
   text-align: center;
@@ -2862,12 +2830,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 /* Why-us-cards */
 
 .why-us-cards__items {
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, auto));
   grid-gap: 20px;
   align-items: stretch;
-  -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
 }
 
@@ -2976,7 +2942,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .why-us__cards {
-    -ms-grid-columns: minmax(0, 1fr) 15px minmax(0, 1fr) 15px minmax(0, 1fr) 15px minmax(0, 1fr);
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-gap: 15px;
   }
@@ -3038,7 +3003,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .why-us__cards {
-    -ms-grid-columns: minmax(0, 1fr) 35px minmax(0, 1fr);
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-column-gap: 35px;
     grid-row-gap: 25px;
@@ -3298,7 +3262,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .table-price__grid {
-    -ms-grid-columns: 1fr 0px 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 
