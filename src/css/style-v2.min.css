@@ -2892,6 +2892,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   max-width: 30px;
 }
 
+/* Remake Old Styles */
+
+/* Screen main */
+
+.screen-main {
+  background: url("../img/screen-main/screen-main.jpg") center no-repeat;
+  background-size: cover;
+  padding: 120px 0 120px;
+}
+
+.screen-main__inner {
+  text-align: center;
+}
+
+.screen-main__action {
+  margin-top: 50px;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
