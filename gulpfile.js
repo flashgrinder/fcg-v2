@@ -114,7 +114,10 @@ gulp.task('js', js);
 function watch() {
 	browserSync.init({
 		server: {
-			baseDir: source.root
+			// baseDir: source.root
+            proxy: 'fc-g/wp-content/themes/fc-g/src',
+            notify: true,
+            tunnel: false
 		},
 		notify: true,
 		tunnel: false
