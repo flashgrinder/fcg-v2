@@ -113,14 +113,14 @@ gulp.task('js', js);
 // Watch files
 function watch() {
 	browserSync.init({
-		server: {
+		// server: {
 			// baseDir: source.root
-            proxy: 'fc-g/wp-content/themes/fc-g/src',
+            proxy: 'fc-g/wp-content/themes/fcg-v2/src',
             notify: true,
             tunnel: false
-		},
-		notify: true,
-		tunnel: false
+		// },
+		// notify: true,
+		// tunnel: false
 	});
 	gulp.watch(source.watch.css);
 	gulp.watch(source.watch.sass, styles);
