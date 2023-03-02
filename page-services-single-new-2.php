@@ -128,6 +128,44 @@
                 <!-- /. Text-block -->
             <?php endif; ?>
 
+            <?php if( get_row_layout() == 'service_text-items-block' ): ?>
+                <!-- Text-items -->
+                <div class="text-items block--padding bg--white">
+                    <div class="text-items__body container">
+                        <div class="text-items__grid">
+                        <?php if( have_rows('text-blocks') ): ?>
+                            <?php while( have_rows('text-blocks') ): the_row(); 
+                            
+                                $text_block_title = get_sub_field('text-block_title');
+                                $text_block_title_icon = get_sub_field('text-block_title-icon');
+                                $text_block_wysiwyg = get_sub_field('text-block_wysiwyg');
+                            
+                            ?>
+                                <!-- Text-block -->
+                                <section class="text-block">
+                                    <div class="text-block__body">
+                                        <h2 class="text-block__heading title title--large title--dark title--w-medium title--indent">
+                                            <?php echo $text_block_title; ?>
+                                            <?php if( !empty( $text_block_title_icon )) : ?>
+                                                <span class="text-block__icon">
+                                                    <img src="<?php echo esc_url($text_block_title_icon['url']); ?>" alt="<?php echo esc_attr($text_block_title_icon['alt']); ?>" class="text-block__icon-svg">                
+                                                </span>
+                                            <?php endif; ?>
+                                        </h2>
+                                        <div class="text-block__content wysiwyg">
+                                            <?php echo $text_block_wysiwyg; ?>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- /. Text-block -->
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. Text-items -->
+            <?php endif; ?>
+
             <?php if( get_row_layout() == 'service_table-price' ): ?>
                 <!-- Table-price -->
                 <section class="table-price block--padding bg--white">

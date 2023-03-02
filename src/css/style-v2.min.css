@@ -2740,6 +2740,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   transition: ease 0.2s;
 }
 
+/* Text-items */
+
+.text-items__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+  grid-gap: 100px 80px;
+  align-items: stretch;
+  grid-template-rows: 1fr;
+}
+
 /* Text-block */
 
 .text-block__heading {

@@ -272,6 +272,126 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_640054e27734a": {
+                    "key": "layout_640054e27734a",
+                    "name": "service_text-items-block",
+                    "label": "Текстовый блоки(Колонки)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_640054f17734e",
+                            "label": "Текстовые блоки",
+                            "name": "text-blocks",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Добавить",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_640055aa38f83",
+                                    "label": "Текстовый блок",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 1,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_640054f17734e"
+                                },
+                                {
+                                    "key": "field_640054e27734b",
+                                    "label": "Заголовок блока",
+                                    "name": "text-block_title",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Укажите заголовок блока.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Заголовок блока",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "br",
+                                    "parent_repeater": "field_640054f17734e"
+                                },
+                                {
+                                    "key": "field_640054e27734c",
+                                    "label": "Иконка",
+                                    "name": "text-block_title-icon",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "Укажите иконку рядом с заголовком блока.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "10",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "full",
+                                    "parent_repeater": "field_640054f17734e"
+                                },
+                                {
+                                    "key": "field_640054e27734d",
+                                    "label": "Текстовый редактор",
+                                    "name": "text-block_wysiwyg",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "Укажите текст.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0,
+                                    "parent_repeater": "field_640054f17734e"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_63e0fcc67013a": {
                     "key": "layout_63e0fcc67013a",
                     "name": "service_faq",
@@ -568,5 +688,5 @@
     "active": true,
     "description": "Шаблон услуги v2.2",
     "show_in_rest": 0,
-    "modified": 1675755827
+    "modified": 1677743567
 }
